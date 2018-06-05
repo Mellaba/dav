@@ -8,4 +8,4 @@ nf = df.drop(['incident_url', 'source_url', 'incident_url_fields_missing', 'gun_
 
 nf.replace('', np.nan, inplace=True)
 nf.to_csv('gunfire.csv', index=False)
-print(nf)
+# print(nf)
