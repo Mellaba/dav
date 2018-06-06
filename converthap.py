@@ -41,17 +41,58 @@ for key in data:
 # for entry in copydata:
 #     for key in entry:
 #         if 'participant' in key:
-#             # re.match(pattern, string, flags=0)
-#             key = key
+
+#             re.match(pattern, string, flags=0)
+
+for entry in copydata:
+    for key in entry:
+        if 'participant' in key:
+            value = entry.get(key)
+            if value == None:
+                continue
+            newvalue = value.split("||")
+            splitted = {}
+            for e in newvalue:
+                newlist = e.split("::")
+                if len(newlist) == 1:
+                    continue
+                splitted[newlist[0]] = newlist[1]
+            entry[key] = splitted
+        if 'characteristics' in key:
+            value = entry.get(key)
+            if value == None:
+                continue
+            newvalue = value.split("||")
+            entry[key] = newvalue #HIER STAAT NU EEN LIJST IN MOET GEFIXT WORDEN
+
+        # if 'participant' in key:
+        #     value = entry.get(key)
+        #     if value == None:
+        #         continue
+        #     value = value.replace('|', ',')
+        #     entry[key] = value
+
 
 # for entry in copydata:
 #     for key in entry:
 #         if 'participant' in key:
-#             value = entry.get(key)
-#             if value == None:
-#                 continue
-#             value = value.replace('|', ',')
-#             entry[key] = value
+#             value = str(entry.get(key))
+#             newvalue = value.split("||")
+#             entry[key] = newvalue
+
+# x = "0::Arrested||1::Injured||2::Injured||3::Injured||4::Injured"
+
+# y = x.split("||")
+
+# splitted_dict = {}
+# for e in y:
+#     index, status = e.split("::")
+#     splitted_dict[index] = status
+    
+
+# print(splitted_dict)
+# blabla[participant_status] = splitted_dict
+
 #             # if value == None:
 #             #     continue
 #             # for i in value:
@@ -69,5 +110,8 @@ for key in data:
 # for i in range(len(copydata)):
 #     if i < 4:
 #         print(copydata[i])
+
+with open('gunfire_indent.json', 'w') as f:
+    json.dump(copydata, f, indent=2)
 
 
