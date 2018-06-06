@@ -2,12 +2,20 @@ import json
 import copy
 import re
 
+
 with open('gunfire.json') as f:
-    data = json.load(f)
+     data = json.load(f)
 
-# new_string = json.dumps(data, indent=2)
-# print(new_string)
+new_string = json.dumps(data, indent=2)
+print(new_string)
 
+
+i = 0
+for key in data:
+    i+=1
+    print(key)
+    if i == 5:
+        break
 
 
 # for key in data:
@@ -25,42 +33,41 @@ with open('gunfire.json') as f:
 #                 i-1 = ''
 #                 i = ','
 #             elif i == '|':
+# #                 continue
+
+# # Convert | to , add 1 to value.replace for only first occurrence
+# copydata = copy.deepcopy(data)
+
+# for entry in copydata:
+#     for key in entry:
+#         if 'participant' in key:
+#             # re.match(pattern, string, flags=0)
+#             key = key
+
+# for entry in copydata:
+#     for key in entry:
+#         if 'participant' in key:
+#             value = entry.get(key)
+#             if value == None:
 #                 continue
-
-# Convert | to , add 1 to value.replace for only first occurrence
-copydata = copy.deepcopy(data)
-
-for entry in copydata:
-    for key in entry:
-        if 'participant' in key:
-            # re.match(pattern, string, flags=0)
-            key = key
-
-for entry in copydata:
-    for key in entry:
-        if 'participant' in key:
-            value = entry.get(key)
-            if value == None:
-                continue
-            value = value.replace('|', ',')
-            entry[key] = value
-            # if value == None:
-            #     continue
-            # for i in value:
-            #     if i == '|':
-            #         # print("HOI")
-            #         i = ',' 
+#             value = value.replace('|', ',')
+#             entry[key] = value
+#             # if value == None:
+#             #     continue
+#             # for i in value:
+#             #     if i == '|':
+#             #         # print("HOI")
+#             #         i = ',' 
                 
-        # if 'participant' in key:
-        #     for i in data.get(key):
-        #         if i == '|':
-        #             i = ','
-        #         else:
-        #             continue
+#         # if 'participant' in key:
+#         #     for i in data.get(key):
+#         #         if i == '|':
+#         #             i = ','
+#         #         else:
+#         #             continue
 
-for i in range(len(copydata)):
-    if i < 4:
-        print(copydata[i])
-# # with open('gunfire_indent.json', 'w') as f:
-#     json.dump(data, f, indent=2)
+# for i in range(len(copydata)):
+#     if i < 4:
+#         print(copydata[i])
+
 

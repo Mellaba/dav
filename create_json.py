@@ -6,6 +6,7 @@ import json
 
 '''
 # run only once first time:
+# will delete the koloms we do not want to use from the csv file
 
 df = pd.read_csv('gunfire.csv', sep=',')
 
@@ -17,5 +18,6 @@ nf.to_csv('gunfire.csv', index=False)
 '''
 
 
+# create json file from the csv
 df = pd.read_csv('gunfire.csv', sep=',', encoding='latin-1')
-df = df.to_json('gunfire.json', orient='records')
+df.to_json('gunfire.json', orient='records')
