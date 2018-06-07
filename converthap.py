@@ -72,7 +72,7 @@ for entry in copydata:
         #     value = value.replace('|', ',')
         #     entry[key] = value
 
-print(copydata[:2])
+# print(copydata[:2])
 
 # for entry in copydata:
 #     for key in entry:
@@ -112,7 +112,7 @@ print(copydata[:2])
 #     if i < 4:
 #         print(copydata[i])
 
-# with open('gunfire_indent.json', 'w') as f:
-#     json.dump(copydata, f, indent=2)
+with open('gunfire_indent.json', 'w') as f:
+    json.dump(copydata, f, indent=2)
 
 
