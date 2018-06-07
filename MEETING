@@ -8,3 +8,12 @@ A: Script voor cleanen kolommen csv, json bekeken
  - json afmaken
  - globaal overzicht van wat we willen gaan visualiseren en hoe het er uit moet komen te zien
  
+
+Besproken:
+- onderbouwen wat we weg doen - behouden
+- onderbouwen waarom json
+- report
+- gaan kijken wat we met de data gaan doen
+- lege waarden? Hoe zit het in json?
+- wat voor vragen willen we nog beantwoorden?
+- bokeh
