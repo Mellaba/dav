@@ -112,7 +112,7 @@ print(copydata[:2])
 #     if i < 4:
 #         print(copydata[i])
 
-# with open('gunfire_indent.json', 'w') as f:
-#     json.dump(copydata, f, indent=2)
+with open('gunfire_small.json', 'w') as f:
+    json.dump(copydata, f, indent=2)
 
 
