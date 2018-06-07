@@ -2,7 +2,7 @@
 A: Script voor cleanen kolommen csv, json bekeken
 
 * Write down the difficulties and problems that have arisen during the time between the meetings. If you have solved them in the meanwhile, also note these down.
- - Format van json: nu nog een single line string, moet dat met enters?
+ - Format van json: nu nog een single line string, moet dat multiline?
 
 * Write down a plan of attack for the next few days, for your TA to review during the meeting.
  - json afmaken
