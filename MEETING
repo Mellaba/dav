@@ -1,5 +1,6 @@
 * A written description of what each person has done, in between the current and the last meeting.
 A: Script voor cleanen kolommen csv, json bekeken
+M: Nested dictionary, JSON indent
 
 * Write down the difficulties and problems that have arisen during the time between the meetings. If you have solved them in the meanwhile, also note these down.
  - Format van json: nu nog een single line string, moet dat met enters?
