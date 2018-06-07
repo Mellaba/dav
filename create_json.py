@@ -3,10 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import json
 
-
-
-
-
 def delete_columns():
 	'''run only once first time:
 	will delete the koloms we do not want to use from the csv file'''
@@ -17,8 +13,6 @@ def delete_columns():
 	nf.to_csv('gunfire.csv', index=False)
 	# print(nf)
 	return None
-
-
 
 def csv_to_json():
 	'''create json file from the csv'''
