@@ -3,19 +3,19 @@ import copy
 import re
 
 
-with open('gunfire.json') as f:
+with open('gunfire_small.json') as f:
      data = json.load(f)
 
-new_string = json.dumps(data, indent=2)
-print(new_string)
+# new_string = json.dumps(data, indent=2)
+# print(new_string)
 
 
-i = 0
-for key in data:
-    i+=1
-    print(key)
-    if i == 5:
-        break
+# i = 0
+# for key in data:
+#     i+=1
+#     print(key)
+#     if i == 5:
+#         break
 
 
 # for key in data:
@@ -36,7 +36,7 @@ for key in data:
 # #                 continue
 
 # # Convert | to , add 1 to value.replace for only first occurrence
-# copydata = copy.deepcopy(data)
+copydata = copy.deepcopy(data)
 
 # for entry in copydata:
 #     for key in entry:
@@ -63,7 +63,7 @@ for entry in copydata:
             if value == None:
                 continue
             newvalue = value.split("||")
-            entry[key] = newvalue #HIER STAAT NU EEN LIJST IN MOET GEFIXT WORDEN
+            entry[key] = newvalue[0] #HIER STAAT NU EEN LIJST IN MOET GEFIXT WORDEN
 
         # if 'participant' in key:
         #     value = entry.get(key)
@@ -72,6 +72,7 @@ for entry in copydata:
         #     value = value.replace('|', ',')
         #     entry[key] = value
 
+print(copydata[:1])
 
 # for entry in copydata:
 #     for key in entry:
@@ -111,7 +112,7 @@ for entry in copydata:
 #     if i < 4:
 #         print(copydata[i])
 
-with open('gunfire_indent.json', 'w') as f:
-    json.dump(copydata, f, indent=2)
+# with open('gunfire_indent.json', 'w') as f:
+#     json.dump(copydata, f, indent=2)
 
 
