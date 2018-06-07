@@ -47,13 +47,12 @@ def nice_indent(from_file, to_file):
 				if value == None:
 					continue
 				newvalue = value.split("||")
-				print(newvalue)
 				entry[key] = newvalue
 
 	with open(to_file, 'w') as f:
 		json.dump(copydata, f, indent=2)
 
 
-#delete_columns('gunfire_small.csv')
+# delete_columns('gunfire_small.csv')
 csv_to_json('gunfire_small.csv', 'gunfire_small.json')
 nice_indent('gunfire_small.json', 'gunfire_small.json')
