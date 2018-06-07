@@ -5,8 +5,6 @@ import json
 import copy
 import re
 
-
-
 def delete_columns(csv_file):
 	'''run only once first time:
 	will delete the koloms we do not want to use from the csv file'''
@@ -49,6 +47,7 @@ def nice_indent(from_file, to_file):
 				if value == None:
 					continue
 				newvalue = value.split("||")
+				print(newvalue)
 				entry[key] = newvalue
 
 	with open(to_file, 'w') as f:
