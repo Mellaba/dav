@@ -1,30 +1,7 @@
-<<<<<<< HEAD
-Datum - Naam - Wat gedaan
-
-5 juni - Lisa - Deze file gemaakt
-5 juni - Melanie - data_types file met welke data typen we hebben en welke data we verwijderen
-5 juni - Melanie - converthap.py die de json file op een overzichtelijke manier indent
-5 juni - Anna - script gemaakt om csv kolommen te verwijderen en json string te maken
-
-=======
->>>>>>> c64b4a74f43b1c11070c3978d84b06881b0c269a
 5 juni		Lisa		Deze file gemaakt, git gefixt
 5 juni		Melanie		data_types file met welke data typen we hebben en welke data we verwijderen
 5 juni		Melanie		converthap.py die de json file op een overzichtelijke manier indent
 6 juni		Lisa		gekeken naar mogelijkheden van de dataset en error gefixt
-<<<<<<< HEAD
-6 juni      Melanie     nested dictionary gemaakt
-7 juni - Anna - create_json aangepast
-
-MILESTONES WEEK 1:
-Completed classification of attribute types for the attributes in your dataset
-Cleaned/pre-processed dataset
-Explicit list of steps taken and their motivation (might be quite useful for the report as well)
-Examples of some of the findings or hypotheses that you have made while cleaning the dataset.
-A plan on what you wish to accomplish during this project, now that you have had a first look at the data. If you noticed that you require additional sources, you have to discuss this with your TA as well.
-
-=======
 6 juni      	Melanie     	nested dictionary gemaakt
 5 juni		Anna		script gemaakt om csv kolommen te verwijderen en json string te maken
->>>>>>> c64b4a74f43b1c11070c3978d84b06881b0c269a
 
