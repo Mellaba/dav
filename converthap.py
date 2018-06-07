@@ -63,6 +63,7 @@ for entry in copydata:
             if value == None:
                 continue
             newvalue = value.split("||")
+            print(newvalue)
             entry[key] = newvalue[0] #HIER STAAT NU EEN LIJST IN MOET GEFIXT WORDEN
 
         # if 'participant' in key:
@@ -112,7 +113,7 @@ for entry in copydata:
 #     if i < 4:
 #         print(copydata[i])
 
-with open('gunfire_small.json', 'w') as f:
-    json.dump(copydata, f, indent=2)
+# with open('gunfire_small.json', 'w') as f:
+#     json.dump(copydata, f, indent=2)
 
 
