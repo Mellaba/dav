@@ -72,7 +72,7 @@ for entry in copydata:
         #     value = value.replace('|', ',')
         #     entry[key] = value
 
-print(copydata[:1])
+print(copydata[:2])
 
 # for entry in copydata:
 #     for key in entry:
