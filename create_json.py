@@ -60,11 +60,11 @@ def nice_indent(from_file, to_file):
 
 # create small gunfire json
 # #delete_columns('gunfire_small.csv')
-# csv_to_json('gunfire_small.csv', 'gunfire_small.json')
-# nice_indent('gunfire_small.json', 'gunfire_small.json')
+csv_to_json('gunfire_small.csv', 'gunfire_small.json')
+nice_indent('gunfire_small.json', 'gunfire_small.json')
 
 
 # create large gunfire json
 # #delete_columns('gunfire.csv')
-# csv_to_json('gunfire.csv', 'gunfire.json')
-# nice_indent('gunfire.json', 'gunfire.json')
+csv_to_json('gunfire.csv', 'gunfire.json')
+nice_indent('gunfire.json', 'gunfire.json')
