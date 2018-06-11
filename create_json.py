@@ -30,6 +30,8 @@ def nice_indent(from_file, to_file):
 
 	for entry in copydata:
 		for key in entry:
+			if key == 'date':
+				entry[key] = re.split('-', entry[key])
 			if 'participant' in key or 'gun_type' in key:
 				value = entry.get(key)
 				if value == None:
@@ -50,10 +52,10 @@ def nice_indent(from_file, to_file):
 				entry[key] = newvalue
 
 
+
 	with open(to_file, 'w') as f:
 		json.dump(copydata, f, indent=2)
 
-
-# delete_columns('gunfire_small.csv')
+#delete_columns('gunfire_small_all_columns.csv')
 csv_to_json('gunfire_small.csv', 'gunfire_small.json')
 nice_indent('gunfire_small.json', 'gunfire_small.json')
