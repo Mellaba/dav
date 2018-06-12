@@ -51,10 +51,8 @@ def plot(data, years):
 	p = figure(x_range=years, plot_height=350, title="Injuries and Killings by Year",
 	           toolbar_location=None, tools="")
 
-	print([x for x in types])
 	renderers = p.vbar_stack(types, x='years', width=0.9, color=colors, source=source,
 	                         legend=[value(x) for x in types], name=types)
-
 	for r in renderers:
 	    types = r.name
 	    hover = HoverTool(tooltips=[
