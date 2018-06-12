@@ -66,5 +66,10 @@ nice_indent('gunfire_small.json', 'gunfire_small.json')
 
 # create large gunfire json
 # #delete_columns('gunfire.csv')
+<<<<<<< HEAD
 # csv_to_json('gunfire.csv', 'gunfire.json')
 # nice_indent('gunfire.json', 'gunfire.json')
+=======
+csv_to_json('gunfire.csv', 'gunfire.json')
+nice_indent('gunfire.json', 'gunfire.json')
+>>>>>>> 16d1578dade8455e553f04f6f752c0b246f85d6c
