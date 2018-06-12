@@ -1,13 +1,7 @@
-* A written description of what each person has done, in between the current and the last meeting.
-A: Script voor cleanen kolommen csv, json bekeken
+Meeting 11-6:
+- Moeten we alle waarden in de dataset lowercase maken?
 
-* Write down the difficulties and problems that have arisen during the time between the meetings. If you have solved them in the meanwhile, also note these down.
- - Format van json: nu nog een single line string, moet dat multiline?
 
-* Write down a plan of attack for the next few days, for your TA to review during the meeting.
- - json afmaken
- - globaal overzicht van wat we willen gaan visualiseren en hoe het er uit moet komen te zien
- 
 
 Besproken:
 - onderbouwen wat we weg doen - behouden

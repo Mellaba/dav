@@ -1,7 +1,11 @@
 [
   {
     "incident_id": 461105,
-    "date": "2013-01-01",
+    "date": [
+      "2013",
+      "01",
+      "01"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Mckeesport",
     "address": "1506 Versailles Avenue and Coursin Street",
@@ -55,7 +59,11 @@
   },
   {
     "incident_id": 460726,
-    "date": "2013-01-01",
+    "date": [
+      "2013",
+      "01",
+      "01"
+    ],
     "state": "California",
     "city_or_county": "Hawthorne",
     "address": "13500 block of Cerise Avenue",
@@ -104,7 +112,11 @@
   },
   {
     "incident_id": 478855,
-    "date": "2013-01-01",
+    "date": [
+      "2013",
+      "01",
+      "01"
+    ],
     "state": "Ohio",
     "city_or_county": "Lorain",
     "address": "1776 East 28th Street",
@@ -170,7 +182,11 @@
   },
   {
     "incident_id": 478925,
-    "date": "2013-01-05",
+    "date": [
+      "2013",
+      "01",
+      "05"
+    ],
     "state": "Colorado",
     "city_or_county": "Aurora",
     "address": "16000 block of East Ithaca Place",
@@ -229,7 +245,11 @@
   },
   {
     "incident_id": 478959,
-    "date": "2013-01-07",
+    "date": [
+      "2013",
+      "01",
+      "07"
+    ],
     "state": "North Carolina",
     "city_or_county": "Greensboro",
     "address": "307 Mourning Dove Terrace",
@@ -291,7 +311,11 @@
   },
   {
     "incident_id": 478948,
-    "date": "2013-01-07",
+    "date": [
+      "2013",
+      "01",
+      "07"
+    ],
     "state": "Oklahoma",
     "city_or_county": "Tulsa",
     "address": "6000 block of South Owasso",
@@ -359,7 +383,11 @@
   },
   {
     "incident_id": 479363,
-    "date": "2013-01-19",
+    "date": [
+      "2013",
+      "01",
+      "19"
+    ],
     "state": "New Mexico",
     "city_or_county": "Albuquerque",
     "address": "2806 Long Lane",
@@ -430,7 +458,11 @@
   },
   {
     "incident_id": 479374,
-    "date": "2013-01-21",
+    "date": [
+      "2013",
+      "01",
+      "21"
+    ],
     "state": "Louisiana",
     "city_or_county": "New Orleans",
     "address": "LaSalle Street and Martin Luther King Jr. Boulevard",
@@ -475,7 +507,11 @@
   },
   {
     "incident_id": 479389,
-    "date": "2013-01-21",
+    "date": [
+      "2013",
+      "01",
+      "21"
+    ],
     "state": "California",
     "city_or_county": "Brentwood",
     "address": "1100 block of Breton Drive",
@@ -525,7 +561,11 @@
   },
   {
     "incident_id": 492151,
-    "date": "2013-01-23",
+    "date": [
+      "2013",
+      "01",
+      "23"
+    ],
     "state": "Maryland",
     "city_or_county": "Baltimore",
     "address": "1500 block of W. Fayette St.",
@@ -581,7 +621,11 @@
   },
   {
     "incident_id": 491674,
-    "date": "2013-01-23",
+    "date": [
+      "2013",
+      "01",
+      "23"
+    ],
     "state": "Tennessee",
     "city_or_county": "Chattanooga",
     "address": "1501 Dodds Ave",
@@ -632,7 +676,11 @@
   },
   {
     "incident_id": 479413,
-    "date": "2013-01-25",
+    "date": [
+      "2013",
+      "01",
+      "25"
+    ],
     "state": "Missouri",
     "city_or_county": "Saint Louis",
     "address": "W Florissant Ave and Riverview Blvd",
@@ -681,7 +729,11 @@
   },
   {
     "incident_id": 479561,
-    "date": "2013-01-26",
+    "date": [
+      "2013",
+      "01",
+      "26"
+    ],
     "state": "Louisiana",
     "city_or_county": "Charenton",
     "address": "1000 block of Flat Town Road",
@@ -748,7 +800,11 @@
   },
   {
     "incident_id": 479554,
-    "date": "2013-01-26",
+    "date": [
+      "2013",
+      "01",
+      "26"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington",
     "address": "2403 Benning Road Northeast",
@@ -804,7 +860,11 @@
   },
   {
     "incident_id": 479460,
-    "date": "2013-01-26",
+    "date": [
+      "2013",
+      "01",
+      "26"
+    ],
     "state": "Ohio",
     "city_or_county": "Springfield",
     "address": "601 West Main Street",
@@ -867,7 +927,11 @@
   },
   {
     "incident_id": 479573,
-    "date": "2013-02-02",
+    "date": [
+      "2013",
+      "02",
+      "02"
+    ],
     "state": "Tennessee",
     "city_or_county": "Memphis",
     "address": "2514 Mount Moriah",
@@ -927,7 +991,11 @@
   },
   {
     "incident_id": 479580,
-    "date": "2013-02-03",
+    "date": [
+      "2013",
+      "02",
+      "03"
+    ],
     "state": "California",
     "city_or_county": "Yuba (county)",
     "address": "5800 block of Poplar Avenue",
@@ -1001,7 +1069,11 @@
   },
   {
     "incident_id": 479592,
-    "date": "2013-02-07",
+    "date": [
+      "2013",
+      "02",
+      "07"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "2500 block of East 75th Street",
@@ -1059,7 +1131,11 @@
   },
   {
     "incident_id": 479603,
-    "date": "2013-02-09",
+    "date": [
+      "2013",
+      "02",
+      "09"
+    ],
     "state": "Louisiana",
     "city_or_county": "New Orleans",
     "address": "400 block of Bourbon Street",
@@ -1131,7 +1207,11 @@
   },
   {
     "incident_id": 480311,
-    "date": "2013-02-11",
+    "date": [
+      "2013",
+      "02",
+      "11"
+    ],
     "state": "California",
     "city_or_county": "Vallejo",
     "address": "800 block of Humboldt Street",
@@ -1185,7 +1265,11 @@
   },
   {
     "incident_id": 480327,
-    "date": "2013-02-11",
+    "date": [
+      "2013",
+      "02",
+      "11"
+    ],
     "state": "Delaware",
     "city_or_county": "Wilmington",
     "address": "500 North King Street",
@@ -1251,7 +1335,11 @@
   },
   {
     "incident_id": 480344,
-    "date": "2013-02-12",
+    "date": [
+      "2013",
+      "02",
+      "12"
+    ],
     "state": "Utah",
     "city_or_county": "Midvale",
     "address": "8286 Adams Street and 450 West Street",
@@ -1318,7 +1406,11 @@
   },
   {
     "incident_id": 480358,
-    "date": "2013-02-19",
+    "date": [
+      "2013",
+      "02",
+      "19"
+    ],
     "state": "California",
     "city_or_county": "Orange (county)",
     "address": "Katella Avenue",
@@ -1389,7 +1481,11 @@
   },
   {
     "incident_id": 480383,
-    "date": "2013-02-21",
+    "date": [
+      "2013",
+      "02",
+      "21"
+    ],
     "state": "Oklahoma",
     "city_or_county": "Tulsa",
     "address": "1200 block of North 89th East Avenue",
@@ -1448,7 +1544,11 @@
   },
   {
     "incident_id": 480401,
-    "date": "2013-02-22",
+    "date": [
+      "2013",
+      "02",
+      "22"
+    ],
     "state": "Michigan",
     "city_or_county": "Grand Rapids",
     "address": "1447 Grandville Ave. SW",
@@ -1497,7 +1597,11 @@
   },
   {
     "incident_id": 480407,
-    "date": "2013-02-23",
+    "date": [
+      "2013",
+      "02",
+      "23"
+    ],
     "state": "California",
     "city_or_county": "Lancaster",
     "address": "43145 Business Center Parkway",
@@ -1552,7 +1656,11 @@
   },
   {
     "incident_id": 480443,
-    "date": "2013-02-24",
+    "date": [
+      "2013",
+      "02",
+      "24"
+    ],
     "state": "Georgia",
     "city_or_county": "Macon",
     "address": "2800 block of Mercer University Drive",
@@ -1621,7 +1729,11 @@
   },
   {
     "incident_id": 481186,
-    "date": "2013-03-02",
+    "date": [
+      "2013",
+      "03",
+      "02"
+    ],
     "state": "Louisiana",
     "city_or_county": "Shreveport",
     "address": "7000 block of Burlingame Boulevard",
@@ -1688,7 +1800,11 @@
   },
   {
     "incident_id": 481198,
-    "date": "2013-03-03",
+    "date": [
+      "2013",
+      "03",
+      "03"
+    ],
     "state": "Georgia",
     "city_or_county": "Moultrie",
     "address": "224 Second Street Northwest",
@@ -1756,7 +1872,11 @@
   },
   {
     "incident_id": 481208,
-    "date": "2013-03-03",
+    "date": [
+      "2013",
+      "03",
+      "03"
+    ],
     "state": "Michigan",
     "city_or_county": "Saginaw (county)",
     "address": "4030 Dixie Hwy",
@@ -1810,7 +1930,11 @@
   },
   {
     "incident_id": 481213,
-    "date": "2013-03-04",
+    "date": [
+      "2013",
+      "03",
+      "04"
+    ],
     "state": "California",
     "city_or_county": "Los Banos",
     "address": "800 block of La Mesa Lane",
@@ -1872,7 +1996,11 @@
   },
   {
     "incident_id": 481220,
-    "date": "2013-03-05",
+    "date": [
+      "2013",
+      "03",
+      "05"
+    ],
     "state": "Indiana",
     "city_or_county": "Indianapolis",
     "address": "1800 block of Edinburge Square",
@@ -1929,7 +2057,11 @@
   },
   {
     "incident_id": 481229,
-    "date": "2013-03-07",
+    "date": [
+      "2013",
+      "03",
+      "07"
+    ],
     "state": "Mississippi",
     "city_or_county": "Jackson",
     "address": "2900 block of Greenwood Avenue",
@@ -1994,7 +2126,11 @@
   },
   {
     "incident_id": 481237,
-    "date": "2013-03-10",
+    "date": [
+      "2013",
+      "03",
+      "10"
+    ],
     "state": "Missouri",
     "city_or_county": "Kansas City",
     "address": "9331 Hillcrest Rd",
@@ -2052,7 +2188,11 @@
   },
   {
     "incident_id": 482771,
-    "date": "2013-03-11",
+    "date": [
+      "2013",
+      "03",
+      "11"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington",
     "address": "1200 North Capitol Street",
@@ -2164,7 +2304,11 @@
   },
   {
     "incident_id": 482801,
-    "date": "2013-03-13",
+    "date": [
+      "2013",
+      "03",
+      "13"
+    ],
     "state": "California",
     "city_or_county": "Oceanside",
     "address": "504 Calle Montecito",
@@ -2241,7 +2385,11 @@
   },
   {
     "incident_id": 482856,
-    "date": "2013-03-13",
+    "date": [
+      "2013",
+      "03",
+      "13"
+    ],
     "state": "New York",
     "city_or_county": "Mohawk",
     "address": "17 W Main St",
@@ -2326,7 +2474,11 @@
   },
   {
     "incident_id": 482838,
-    "date": "2013-03-14",
+    "date": [
+      "2013",
+      "03",
+      "14"
+    ],
     "state": "California",
     "city_or_county": "Modesto",
     "address": "1400 block of Western Way",
@@ -2373,7 +2525,11 @@
   },
   {
     "incident_id": 482926,
-    "date": "2013-03-16",
+    "date": [
+      "2013",
+      "03",
+      "16"
+    ],
     "state": "California",
     "city_or_county": "Galt",
     "address": "Dover Drive",
@@ -2415,7 +2571,11 @@
   },
   {
     "incident_id": 482934,
-    "date": "2013-03-17",
+    "date": [
+      "2013",
+      "03",
+      "17"
+    ],
     "state": "California",
     "city_or_county": "Stockton",
     "address": "1800 block of East Sonora Street",
@@ -2470,7 +2630,11 @@
   },
   {
     "incident_id": 482942,
-    "date": "2013-03-17",
+    "date": [
+      "2013",
+      "03",
+      "17"
+    ],
     "state": "Florida",
     "city_or_county": "Belle Glade",
     "address": "Northwest 16th Street and Northwest Avenue L",
@@ -2509,7 +2673,11 @@
   },
   {
     "incident_id": 483737,
-    "date": "2013-03-21",
+    "date": [
+      "2013",
+      "03",
+      "21"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "West 87th Street and Ashland Avenue",
@@ -2588,7 +2756,11 @@
   },
   {
     "incident_id": 483765,
-    "date": "2013-03-21",
+    "date": [
+      "2013",
+      "03",
+      "21"
+    ],
     "state": "Missouri",
     "city_or_county": "Kansas City",
     "address": "4900 block of Brookside Blvd",
@@ -2657,7 +2829,11 @@
   },
   {
     "incident_id": 483788,
-    "date": "2013-03-22",
+    "date": [
+      "2013",
+      "03",
+      "22"
+    ],
     "state": "New York",
     "city_or_county": "Brooklyn",
     "address": "2703 W. 33rd Street",
@@ -2717,7 +2893,11 @@
   },
   {
     "incident_id": 483835,
-    "date": "2013-03-30",
+    "date": [
+      "2013",
+      "03",
+      "30"
+    ],
     "state": "California",
     "city_or_county": "Merced (county)",
     "address": "9200 block of Westside Boulevard",
@@ -2790,7 +2970,11 @@
   },
   {
     "incident_id": 483817,
-    "date": "2013-03-31",
+    "date": [
+      "2013",
+      "03",
+      "31"
+    ],
     "state": "Washington",
     "city_or_county": "Auburn",
     "address": "2802 Auburn Way North",
@@ -2850,7 +3034,11 @@
   },
   {
     "incident_id": 483861,
-    "date": "2013-04-06",
+    "date": [
+      "2013",
+      "04",
+      "06"
+    ],
     "state": "South Carolina",
     "city_or_county": "Greenwood",
     "address": "Tabor Street",
@@ -2902,7 +3090,11 @@
   },
   {
     "incident_id": 483872,
-    "date": "2013-04-07",
+    "date": [
+      "2013",
+      "04",
+      "07"
+    ],
     "state": "New York",
     "city_or_county": "New York (Manhattan)",
     "address": "900 Garden Way",
@@ -2964,7 +3156,11 @@
   },
   {
     "incident_id": 483878,
-    "date": "2013-04-07",
+    "date": [
+      "2013",
+      "04",
+      "07"
+    ],
     "state": "California",
     "city_or_county": "Long Beach",
     "address": "300 block of East Home Street",
@@ -3011,7 +3207,11 @@
   },
   {
     "incident_id": 484268,
-    "date": "2013-04-09",
+    "date": [
+      "2013",
+      "04",
+      "09"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Philadelphia",
     "address": "Somerset Street and Lee Street",
@@ -3072,7 +3272,11 @@
   },
   {
     "incident_id": 484279,
-    "date": "2013-04-10",
+    "date": [
+      "2013",
+      "04",
+      "10"
+    ],
     "state": "California",
     "city_or_county": "Vallejo",
     "address": "1800 block of Mini Drive",
@@ -3118,7 +3322,11 @@
   },
   {
     "incident_id": 484307,
-    "date": "2013-04-14",
+    "date": [
+      "2013",
+      "04",
+      "14"
+    ],
     "state": "Arizona",
     "city_or_county": "Phoenix",
     "address": "12400 North 25th Avenue",
@@ -3189,7 +3397,11 @@
   },
   {
     "incident_id": 484287,
-    "date": "2013-04-14",
+    "date": [
+      "2013",
+      "04",
+      "14"
+    ],
     "state": "Kentucky",
     "city_or_county": "Lexington",
     "address": "750 East New Circle Rd",
@@ -3256,7 +3468,11 @@
   },
   {
     "incident_id": 484317,
-    "date": "2013-04-18",
+    "date": [
+      "2013",
+      "04",
+      "18"
+    ],
     "state": "Ohio",
     "city_or_county": "Akron",
     "address": "Kimlyn Circle",
@@ -3322,7 +3538,11 @@
   },
   {
     "incident_id": 484333,
-    "date": "2013-04-21",
+    "date": [
+      "2013",
+      "04",
+      "21"
+    ],
     "state": "Washington",
     "city_or_county": "Federal Way",
     "address": "33300 block of 18th Lane South",
@@ -3392,7 +3612,11 @@
   },
   {
     "incident_id": 484351,
-    "date": "2013-04-22",
+    "date": [
+      "2013",
+      "04",
+      "22"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago (Englewood)",
     "address": "5700 block of South Lowe Avenue",
@@ -3448,7 +3672,11 @@
   },
   {
     "incident_id": 485746,
-    "date": "2013-04-22",
+    "date": [
+      "2013",
+      "04",
+      "22"
+    ],
     "state": "Louisiana",
     "city_or_county": "Harvey",
     "address": "2300 block of Lapalco Boulevard",
@@ -3541,7 +3769,11 @@
   },
   {
     "incident_id": 485811,
-    "date": "2013-04-24",
+    "date": [
+      "2013",
+      "04",
+      "24"
+    ],
     "state": "Illinois",
     "city_or_county": "Manchester",
     "address": "East Street",
@@ -3621,7 +3853,11 @@
   },
   {
     "incident_id": 489185,
-    "date": "2013-04-25",
+    "date": [
+      "2013",
+      "04",
+      "25"
+    ],
     "state": "Ohio",
     "city_or_county": "Oberlin",
     "address": "500 block of West College Street",
@@ -3678,7 +3914,11 @@
   },
   {
     "incident_id": 485821,
-    "date": "2013-04-27",
+    "date": [
+      "2013",
+      "04",
+      "27"
+    ],
     "state": "Florida",
     "city_or_county": "Williston",
     "address": "County Road 318",
@@ -3744,7 +3984,11 @@
   },
   {
     "incident_id": 485874,
-    "date": "2013-04-28",
+    "date": [
+      "2013",
+      "04",
+      "28"
+    ],
     "state": "North Carolina",
     "city_or_county": "Charlotte",
     "address": "William Reynolds Drive",
@@ -3793,7 +4037,11 @@
   },
   {
     "incident_id": 485885,
-    "date": "2013-04-28",
+    "date": [
+      "2013",
+      "04",
+      "28"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Chester",
     "address": "Rose and Upland Street",
@@ -3862,7 +4110,11 @@
   },
   {
     "incident_id": 485979,
-    "date": "2013-04-28",
+    "date": [
+      "2013",
+      "04",
+      "28"
+    ],
     "state": "Tennessee",
     "city_or_county": "Jackson",
     "address": "438 East Main Street",
@@ -3937,7 +4189,11 @@
   },
   {
     "incident_id": 984353,
-    "date": "2013-05-02",
+    "date": [
+      "2013",
+      "05",
+      "02"
+    ],
     "state": "Maryland",
     "city_or_county": "Baltimore",
     "address": "600 block of Cokesbury Ave",
@@ -3983,7 +4239,11 @@
   },
   {
     "incident_id": 486005,
-    "date": "2013-05-02",
+    "date": [
+      "2013",
+      "05",
+      "02"
+    ],
     "state": "New Jersey",
     "city_or_county": "Newark",
     "address": "804 S. 16th St",
@@ -4042,7 +4302,11 @@
   },
   {
     "incident_id": 486027,
-    "date": "2013-05-04",
+    "date": [
+      "2013",
+      "05",
+      "04"
+    ],
     "state": "North Carolina",
     "city_or_county": "Smithfield",
     "address": "150 South Equity Drive",
@@ -4101,7 +4365,11 @@
   },
   {
     "incident_id": 486056,
-    "date": "2013-05-05",
+    "date": [
+      "2013",
+      "05",
+      "05"
+    ],
     "state": "California",
     "city_or_county": "Palo Alto",
     "address": "Bay Road and University Avenue",
@@ -4152,7 +4420,11 @@
   },
   {
     "incident_id": 486068,
-    "date": "2013-05-06",
+    "date": [
+      "2013",
+      "05",
+      "06"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Johnstown",
     "address": "Horner and Messenger streets",
@@ -4197,7 +4469,11 @@
   },
   {
     "incident_id": 486109,
-    "date": "2013-05-10",
+    "date": [
+      "2013",
+      "05",
+      "10"
+    ],
     "state": "California",
     "city_or_county": "Los Angeles",
     "address": "1600 block of West 205th Street",
@@ -4252,7 +4528,11 @@
   },
   {
     "incident_id": 486142,
-    "date": "2013-05-11",
+    "date": [
+      "2013",
+      "05",
+      "11"
+    ],
     "state": "Indiana",
     "city_or_county": "Columbus",
     "address": "E Main Cross St",
@@ -4317,7 +4597,11 @@
   },
   {
     "incident_id": 486121,
-    "date": "2013-05-11",
+    "date": [
+      "2013",
+      "05",
+      "11"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Philadelphia",
     "address": "21st Street and Medary Avenue",
@@ -4372,7 +4656,11 @@
   },
   {
     "incident_id": 486244,
-    "date": "2013-05-11",
+    "date": [
+      "2013",
+      "05",
+      "11"
+    ],
     "state": "New Jersey",
     "city_or_county": "Jersey City",
     "address": "Fremont Street",
@@ -4419,7 +4707,11 @@
   },
   {
     "incident_id": 486153,
-    "date": "2013-05-12",
+    "date": [
+      "2013",
+      "05",
+      "12"
+    ],
     "state": "Arizona",
     "city_or_county": "Apache Junction",
     "address": "3600 block of East Apache Trail",
@@ -4476,7 +4768,11 @@
   },
   {
     "incident_id": 486209,
-    "date": "2013-05-12",
+    "date": [
+      "2013",
+      "05",
+      "12"
+    ],
     "state": "Louisiana",
     "city_or_county": "New Orleans",
     "address": "Frenchmen Street",
@@ -4606,7 +4902,11 @@
   },
   {
     "incident_id": 486316,
-    "date": "2013-05-13",
+    "date": [
+      "2013",
+      "05",
+      "13"
+    ],
     "state": "Ohio",
     "city_or_county": "Cincinnati",
     "address": "Kings Run Road",
@@ -4657,7 +4957,11 @@
   },
   {
     "incident_id": 1007785,
-    "date": "2013-05-14",
+    "date": [
+      "2013",
+      "05",
+      "14"
+    ],
     "state": "New Jersey",
     "city_or_county": "Delanco",
     "address": "Delaware Ave",
@@ -4702,7 +5006,11 @@
   },
   {
     "incident_id": 486327,
-    "date": "2013-05-15",
+    "date": [
+      "2013",
+      "05",
+      "15"
+    ],
     "state": "Michigan",
     "city_or_county": "Detroit",
     "address": "9000 block of Carlin",
@@ -4763,7 +5071,11 @@
   },
   {
     "incident_id": 486334,
-    "date": "2013-05-16",
+    "date": [
+      "2013",
+      "05",
+      "16"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Philadelphia",
     "address": "2600 block of Daggett Street",
@@ -4822,7 +5134,11 @@
   },
   {
     "incident_id": 873575,
-    "date": "2013-05-18",
+    "date": [
+      "2013",
+      "05",
+      "18"
+    ],
     "state": "New York",
     "city_or_county": "Jamaica",
     "address": "Sutphin Blvd and Rockaway Blvd",
@@ -4874,7 +5190,11 @@
   },
   {
     "incident_id": 486611,
-    "date": "2013-05-18",
+    "date": [
+      "2013",
+      "05",
+      "18"
+    ],
     "state": "Virginia",
     "city_or_county": "Victoria",
     "address": "2073 Pleasant Oak Rd",
@@ -4942,7 +5262,11 @@
   },
   {
     "incident_id": 486586,
-    "date": "2013-05-19",
+    "date": [
+      "2013",
+      "05",
+      "19"
+    ],
     "state": "Tennessee",
     "city_or_county": "Memphis",
     "address": "2281 Ketchum Rd",
@@ -4997,7 +5321,11 @@
   },
   {
     "incident_id": 486605,
-    "date": "2013-05-19",
+    "date": [
+      "2013",
+      "05",
+      "19"
+    ],
     "state": "Michigan",
     "city_or_county": "Detroit",
     "address": null,
@@ -5054,7 +5382,11 @@
   },
   {
     "incident_id": 486617,
-    "date": "2013-05-20",
+    "date": [
+      "2013",
+      "05",
+      "20"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "5200 block of West Iowa Street",
@@ -5109,7 +5441,11 @@
   },
   {
     "incident_id": 486623,
-    "date": "2013-05-23",
+    "date": [
+      "2013",
+      "05",
+      "23"
+    ],
     "state": "Tennessee",
     "city_or_county": "Bean Station",
     "address": "1034 Main Street",
@@ -5172,7 +5508,11 @@
   },
   {
     "incident_id": 486971,
-    "date": "2013-05-24",
+    "date": [
+      "2013",
+      "05",
+      "24"
+    ],
     "state": "California",
     "city_or_county": "Bakersfield",
     "address": "3700 block of Columbus Street",
@@ -5226,7 +5566,11 @@
   },
   {
     "incident_id": 486977,
-    "date": "2013-05-25",
+    "date": [
+      "2013",
+      "05",
+      "25"
+    ],
     "state": "Michigan",
     "city_or_county": "Flint",
     "address": "1100 block of Paterson",
@@ -5285,7 +5629,11 @@
   },
   {
     "incident_id": 486998,
-    "date": "2013-05-25",
+    "date": [
+      "2013",
+      "05",
+      "25"
+    ],
     "state": "Virginia",
     "city_or_county": "Hampton",
     "address": "1900 block of Coliseum Drive",
@@ -5350,7 +5698,11 @@
   },
   {
     "incident_id": 487052,
-    "date": "2013-05-28",
+    "date": [
+      "2013",
+      "05",
+      "28"
+    ],
     "state": "Tennessee",
     "city_or_county": "Memphis",
     "address": "2850 Brewer Avenue",
@@ -5401,7 +5753,11 @@
   },
   {
     "incident_id": 487082,
-    "date": "2013-05-29",
+    "date": [
+      "2013",
+      "05",
+      "29"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": null,
@@ -5456,7 +5812,11 @@
   },
   {
     "incident_id": 487088,
-    "date": "2013-05-31",
+    "date": [
+      "2013",
+      "05",
+      "31"
+    ],
     "state": "Georgia",
     "city_or_county": "Atlanta",
     "address": "1000 block of Fair Street",
@@ -5505,7 +5865,11 @@
   },
   {
     "incident_id": 487261,
-    "date": "2013-06-01",
+    "date": [
+      "2013",
+      "06",
+      "01"
+    ],
     "state": "Wisconsin",
     "city_or_county": "Milwaukee",
     "address": "4126 N Teutonia Ave",
@@ -5546,7 +5910,11 @@
   },
   {
     "incident_id": 489314,
-    "date": "2013-06-01",
+    "date": [
+      "2013",
+      "06",
+      "01"
+    ],
     "state": "California",
     "city_or_county": "Vallejo",
     "address": "1st block of Linfield Drive",
@@ -5596,7 +5964,11 @@
   },
   {
     "incident_id": 487266,
-    "date": "2013-06-02",
+    "date": [
+      "2013",
+      "06",
+      "02"
+    ],
     "state": "Indiana",
     "city_or_county": "Indianapolis",
     "address": "1913 East 46th Street",
@@ -5631,7 +6003,11 @@
   },
   {
     "incident_id": 487271,
-    "date": "2013-06-02",
+    "date": [
+      "2013",
+      "06",
+      "02"
+    ],
     "state": "Virginia",
     "city_or_county": "Virginia Beach",
     "address": "4000 block of Roebling Lane",
@@ -5694,7 +6070,11 @@
   },
   {
     "incident_id": 487435,
-    "date": "2013-06-02",
+    "date": [
+      "2013",
+      "06",
+      "02"
+    ],
     "state": "Georgia",
     "city_or_county": "Lagrange",
     "address": "Union Street",
@@ -5774,7 +6154,11 @@
   },
   {
     "incident_id": 489581,
-    "date": "2013-06-07",
+    "date": [
+      "2013",
+      "06",
+      "07"
+    ],
     "state": "California",
     "city_or_county": "Santa Monica",
     "address": "2036 Yorkshire Ave",
@@ -5862,7 +6246,11 @@
   },
   {
     "incident_id": 487645,
-    "date": "2013-06-09",
+    "date": [
+      "2013",
+      "06",
+      "09"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "York",
     "address": "600 block of West Princess Street",
@@ -5911,7 +6299,11 @@
   },
   {
     "incident_id": 487659,
-    "date": "2013-06-10",
+    "date": [
+      "2013",
+      "06",
+      "10"
+    ],
     "state": "Missouri",
     "city_or_county": "Saint Louis",
     "address": "4700 block of Highland Ave",
@@ -5979,7 +6371,11 @@
   },
   {
     "incident_id": 487670,
-    "date": "2013-06-10",
+    "date": [
+      "2013",
+      "06",
+      "10"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "5700 block of South Sangamon Street",
@@ -6046,7 +6442,11 @@
   },
   {
     "incident_id": 487715,
-    "date": "2013-06-14",
+    "date": [
+      "2013",
+      "06",
+      "14"
+    ],
     "state": "North Carolina",
     "city_or_county": "High Point",
     "address": "2201 Little Avenue",
@@ -6113,7 +6513,11 @@
   },
   {
     "incident_id": 488992,
-    "date": "2013-06-15",
+    "date": [
+      "2013",
+      "06",
+      "15"
+    ],
     "state": "Rhode Island",
     "city_or_county": "Providence",
     "address": "256 Hartford Ave",
@@ -6200,7 +6604,11 @@
   },
   {
     "incident_id": 487833,
-    "date": "2013-06-15",
+    "date": [
+      "2013",
+      "06",
+      "15"
+    ],
     "state": "Tennessee",
     "city_or_county": "Nashville",
     "address": "135 Brinkhaven Ave",
@@ -6265,7 +6673,11 @@
   },
   {
     "incident_id": 487891,
-    "date": "2013-06-15",
+    "date": [
+      "2013",
+      "06",
+      "15"
+    ],
     "state": "Texas",
     "city_or_county": "Houston",
     "address": "9780 Bissonnet",
@@ -6322,7 +6734,11 @@
   },
   {
     "incident_id": 488134,
-    "date": "2013-06-16",
+    "date": [
+      "2013",
+      "06",
+      "16"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "900block of East 79th Street",
@@ -6378,7 +6794,11 @@
   },
   {
     "incident_id": 488426,
-    "date": "2013-06-21",
+    "date": [
+      "2013",
+      "06",
+      "21"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "2900 block of North Kilpatrick Avenue",
@@ -6437,7 +6857,11 @@
   },
   {
     "incident_id": 488505,
-    "date": "2013-06-21",
+    "date": [
+      "2013",
+      "06",
+      "21"
+    ],
     "state": "Virginia",
     "city_or_county": "Norfolk",
     "address": "1225 Tidewater Drive",
@@ -6508,7 +6932,11 @@
   },
   {
     "incident_id": 488547,
-    "date": "2013-06-21",
+    "date": [
+      "2013",
+      "06",
+      "21"
+    ],
     "state": "North Carolina",
     "city_or_county": "Greenville",
     "address": "205 Greenville Blvd SW",
@@ -6576,7 +7004,11 @@
   },
   {
     "incident_id": 488833,
-    "date": "2013-06-22",
+    "date": [
+      "2013",
+      "06",
+      "22"
+    ],
     "state": "Maryland",
     "city_or_county": "Baltimore",
     "address": "700 block of N. Kenwood Avenue",
@@ -6632,7 +7064,11 @@
   },
   {
     "incident_id": 488970,
-    "date": "2013-06-22",
+    "date": [
+      "2013",
+      "06",
+      "22"
+    ],
     "state": "Rhode Island",
     "city_or_county": "Providence",
     "address": "55 Curtis",
@@ -6686,7 +7122,11 @@
   },
   {
     "incident_id": 489061,
-    "date": "2013-06-23",
+    "date": [
+      "2013",
+      "06",
+      "23"
+    ],
     "state": "Tennessee",
     "city_or_county": "Chattanooga",
     "address": "1501 Dodds Ave",
@@ -6745,7 +7185,11 @@
   },
   {
     "incident_id": 489096,
-    "date": "2013-06-23",
+    "date": [
+      "2013",
+      "06",
+      "23"
+    ],
     "state": "California",
     "city_or_county": "Sacramento",
     "address": "Sea Drift Way",
@@ -6811,7 +7255,11 @@
   },
   {
     "incident_id": 489105,
-    "date": "2013-06-23",
+    "date": [
+      "2013",
+      "06",
+      "23"
+    ],
     "state": "Missouri",
     "city_or_county": "Kansas City",
     "address": "1917 Prospect Ave",
@@ -6874,7 +7322,11 @@
   },
   {
     "incident_id": 489121,
-    "date": "2013-06-23",
+    "date": [
+      "2013",
+      "06",
+      "23"
+    ],
     "state": "Louisiana",
     "city_or_county": "New Orleans",
     "address": "5700 block of Wickfield Drive",
@@ -6930,7 +7382,11 @@
   },
   {
     "incident_id": 489129,
-    "date": "2013-06-23",
+    "date": [
+      "2013",
+      "06",
+      "23"
+    ],
     "state": "Virginia",
     "city_or_county": "Virginia Beach",
     "address": "4600 block of Columbus Street",
@@ -6977,7 +7433,11 @@
   },
   {
     "incident_id": 489934,
-    "date": "2013-06-24",
+    "date": [
+      "2013",
+      "06",
+      "24"
+    ],
     "state": "Missouri",
     "city_or_county": "Kansas City",
     "address": "1711 Kansas Avenue",
@@ -7027,7 +7487,11 @@
   },
   {
     "incident_id": 489987,
-    "date": "2013-06-25",
+    "date": [
+      "2013",
+      "06",
+      "25"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "73rd Street and King Drive",
@@ -7086,7 +7550,11 @@
   },
   {
     "incident_id": 490048,
-    "date": "2013-06-27",
+    "date": [
+      "2013",
+      "06",
+      "27"
+    ],
     "state": "California",
     "city_or_county": "Three Rivers",
     "address": "39553-39833 Sierra Dr",
@@ -7156,7 +7624,11 @@
   },
   {
     "incident_id": 490115,
-    "date": "2013-06-28",
+    "date": [
+      "2013",
+      "06",
+      "28"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "4800 block of North Sheridan Road",
@@ -7217,7 +7689,11 @@
   },
   {
     "incident_id": 490150,
-    "date": "2013-06-29",
+    "date": [
+      "2013",
+      "06",
+      "29"
+    ],
     "state": "South Carolina",
     "city_or_county": "North Charleston",
     "address": "4400 Dorchester Road; Suite 115",
@@ -7284,7 +7760,11 @@
   },
   {
     "incident_id": 490226,
-    "date": "2013-06-30",
+    "date": [
+      "2013",
+      "06",
+      "30"
+    ],
     "state": "New York",
     "city_or_county": "Brooklyn",
     "address": "616 E. 52nd Street",
@@ -7341,7 +7821,11 @@
   },
   {
     "incident_id": 490166,
-    "date": "2013-06-30",
+    "date": [
+      "2013",
+      "06",
+      "30"
+    ],
     "state": "Colorado",
     "city_or_county": "Aurora",
     "address": "2300 block of Paris St",
@@ -7377,7 +7861,11 @@
   },
   {
     "incident_id": 893251,
-    "date": "2013-07-01",
+    "date": [
+      "2013",
+      "07",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Locust Valley",
     "address": "99 Horse Hollow Rd",
@@ -7418,7 +7906,11 @@
   },
   {
     "incident_id": 490245,
-    "date": "2013-07-01",
+    "date": [
+      "2013",
+      "07",
+      "01"
+    ],
     "state": "Texas",
     "city_or_county": "Fort Worth",
     "address": "2900 block of Pate Drive",
@@ -7478,7 +7970,11 @@
   },
   {
     "incident_id": 1023908,
-    "date": "2013-07-02",
+    "date": [
+      "2013",
+      "07",
+      "02"
+    ],
     "state": "New Jersey",
     "city_or_county": "Jersey City",
     "address": "Dwight St",
@@ -7523,7 +8019,11 @@
   },
   {
     "incident_id": 490335,
-    "date": "2013-07-04",
+    "date": [
+      "2013",
+      "07",
+      "04"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "6000 block of South Cottage Grove Avenue",
@@ -7576,7 +8076,11 @@
   },
   {
     "incident_id": 490351,
-    "date": "2013-07-04",
+    "date": [
+      "2013",
+      "07",
+      "04"
+    ],
     "state": "Michigan",
     "city_or_county": "Pontiac",
     "address": "441 N Perry St",
@@ -7650,7 +8154,11 @@
   },
   {
     "incident_id": 490750,
-    "date": "2013-07-06",
+    "date": [
+      "2013",
+      "07",
+      "06"
+    ],
     "state": "New York",
     "city_or_county": "Brooklyn",
     "address": "472 Marcy Avenue",
@@ -7710,7 +8218,11 @@
   },
   {
     "incident_id": 490395,
-    "date": "2013-07-06",
+    "date": [
+      "2013",
+      "07",
+      "06"
+    ],
     "state": "Alabama",
     "city_or_county": "Florence",
     "address": "West Mobile Street",
@@ -7755,7 +8267,11 @@
   },
   {
     "incident_id": 490772,
-    "date": "2013-07-07",
+    "date": [
+      "2013",
+      "07",
+      "07"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "11300 block of South Forest Avenue",
@@ -7821,7 +8337,11 @@
   },
   {
     "incident_id": 490767,
-    "date": "2013-07-07",
+    "date": [
+      "2013",
+      "07",
+      "07"
+    ],
     "state": "Mississippi",
     "city_or_county": "Meridian",
     "address": "2500 block of 5th Street",
@@ -7860,7 +8380,11 @@
   },
   {
     "incident_id": 490893,
-    "date": "2013-07-07",
+    "date": [
+      "2013",
+      "07",
+      "07"
+    ],
     "state": "California",
     "city_or_county": "Stockton",
     "address": "2600 block of Connecticut Avenue",
@@ -7918,7 +8442,11 @@
   },
   {
     "incident_id": 490793,
-    "date": "2013-07-07",
+    "date": [
+      "2013",
+      "07",
+      "07"
+    ],
     "state": "Florida",
     "city_or_county": "Pompano Beach",
     "address": "1600 block of Northwest 7th Lane",
@@ -7991,7 +8519,11 @@
   },
   {
     "incident_id": 490909,
-    "date": "2013-07-09",
+    "date": [
+      "2013",
+      "07",
+      "09"
+    ],
     "state": "Maryland",
     "city_or_county": "Baltimore",
     "address": "600 block of N. Carrollton Ave",
@@ -8044,7 +8576,11 @@
   },
   {
     "incident_id": 490917,
-    "date": "2013-07-09",
+    "date": [
+      "2013",
+      "07",
+      "09"
+    ],
     "state": "Illinois",
     "city_or_county": "Rockford",
     "address": "600 block of Woodlawn Avenue",
@@ -8095,7 +8631,11 @@
   },
   {
     "incident_id": 490922,
-    "date": "2013-07-11",
+    "date": [
+      "2013",
+      "07",
+      "11"
+    ],
     "state": "North Carolina",
     "city_or_county": "Charlotte",
     "address": "6300 block of Reagan Drive",
@@ -8149,7 +8689,11 @@
   },
   {
     "incident_id": 490943,
-    "date": "2013-07-12",
+    "date": [
+      "2013",
+      "07",
+      "12"
+    ],
     "state": "California",
     "city_or_county": "San Francisco",
     "address": "3192 16th St",
@@ -8205,7 +8749,11 @@
   },
   {
     "incident_id": 490954,
-    "date": "2013-07-12",
+    "date": [
+      "2013",
+      "07",
+      "12"
+    ],
     "state": "Kentucky",
     "city_or_county": "Greensburg",
     "address": "194 C Mays Rd",
@@ -8263,7 +8811,11 @@
   },
   {
     "incident_id": 491162,
-    "date": "2013-07-13",
+    "date": [
+      "2013",
+      "07",
+      "13"
+    ],
     "state": "Ohio",
     "city_or_county": "Campbell",
     "address": "Seventh Street",
@@ -8324,7 +8876,11 @@
   },
   {
     "incident_id": 490979,
-    "date": "2013-07-13",
+    "date": [
+      "2013",
+      "07",
+      "13"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington",
     "address": "2700 block of Stanton Road",
@@ -8363,7 +8919,11 @@
   },
   {
     "incident_id": 490963,
-    "date": "2013-07-13",
+    "date": [
+      "2013",
+      "07",
+      "13"
+    ],
     "state": "Oklahoma",
     "city_or_county": "Oklahoma City",
     "address": "5405 N. Lincoln Blvd",
@@ -8420,7 +8980,11 @@
   },
   {
     "incident_id": 490932,
-    "date": "2013-07-13",
+    "date": [
+      "2013",
+      "07",
+      "13"
+    ],
     "state": "New Jersey",
     "city_or_county": "Trenton (Hamilton Township)",
     "address": "1100 block of Deutz Ave",
@@ -8477,7 +9041,11 @@
   },
   {
     "incident_id": 491037,
-    "date": "2013-07-14",
+    "date": [
+      "2013",
+      "07",
+      "14"
+    ],
     "state": "Michigan",
     "city_or_county": "Grand Rapids (Kentwood)",
     "address": "Farmview Ct SE",
@@ -8532,7 +9100,11 @@
   },
   {
     "incident_id": 491001,
-    "date": "2013-07-14",
+    "date": [
+      "2013",
+      "07",
+      "14"
+    ],
     "state": "Kansas",
     "city_or_county": "Wichita",
     "address": "11th Street and Mead",
@@ -8599,7 +9171,11 @@
   },
   {
     "incident_id": 491046,
-    "date": "2013-07-17",
+    "date": [
+      "2013",
+      "07",
+      "17"
+    ],
     "state": "California",
     "city_or_county": "Oakland",
     "address": "3400 block of Wilson Avenue",
@@ -8668,7 +9244,11 @@
   },
   {
     "incident_id": 491073,
-    "date": "2013-07-19",
+    "date": [
+      "2013",
+      "07",
+      "19"
+    ],
     "state": "California",
     "city_or_county": "Madera",
     "address": "Yosemite Avenue and Cleveland",
@@ -8709,7 +9289,11 @@
   },
   {
     "incident_id": 491082,
-    "date": "2013-07-19",
+    "date": [
+      "2013",
+      "07",
+      "19"
+    ],
     "state": "Connecticut",
     "city_or_county": "Hartford",
     "address": "3155 Main St",
@@ -8759,7 +9343,11 @@
   },
   {
     "incident_id": 491181,
-    "date": "2013-07-20",
+    "date": [
+      "2013",
+      "07",
+      "20"
+    ],
     "state": "New York",
     "city_or_county": "Brooklyn",
     "address": "Grove Street",
@@ -8828,7 +9416,11 @@
   },
   {
     "incident_id": 491214,
-    "date": "2013-07-21",
+    "date": [
+      "2013",
+      "07",
+      "21"
+    ],
     "state": "New York",
     "city_or_county": "Brooklyn",
     "address": "1445 Lincoln Place",
@@ -8882,7 +9474,11 @@
   },
   {
     "incident_id": 491226,
-    "date": "2013-07-24",
+    "date": [
+      "2013",
+      "07",
+      "24"
+    ],
     "state": "Kansas",
     "city_or_county": "Topeka",
     "address": "221 SE Lawrence St",
@@ -8936,7 +9532,11 @@
   },
   {
     "incident_id": 491243,
-    "date": "2013-07-25",
+    "date": [
+      "2013",
+      "07",
+      "25"
+    ],
     "state": "Michigan",
     "city_or_county": "Inkster",
     "address": "Oakwood Street",
@@ -8974,7 +9574,11 @@
   },
   {
     "incident_id": 491253,
-    "date": "2013-07-26",
+    "date": [
+      "2013",
+      "07",
+      "26"
+    ],
     "state": "West Virginia",
     "city_or_county": "Clarksburg",
     "address": "743 Locust Avenue",
@@ -9037,7 +9641,11 @@
   },
   {
     "incident_id": 491265,
-    "date": "2013-07-26",
+    "date": [
+      "2013",
+      "07",
+      "26"
+    ],
     "state": "Florida",
     "city_or_county": "Hialeah",
     "address": "1485 W 46th St",
@@ -9115,7 +9723,11 @@
   },
   {
     "incident_id": 491287,
-    "date": "2013-07-28",
+    "date": [
+      "2013",
+      "07",
+      "28"
+    ],
     "state": "Texas",
     "city_or_county": "Dallas",
     "address": "2400 block of Royal Lane",
@@ -9160,7 +9772,11 @@
   },
   {
     "incident_id": 491281,
-    "date": "2013-07-29",
+    "date": [
+      "2013",
+      "07",
+      "29"
+    ],
     "state": "Washington",
     "city_or_county": "Granger",
     "address": "300 block of S. Outlook Rd.",
@@ -9213,7 +9829,11 @@
   },
   {
     "incident_id": 491292,
-    "date": "2013-07-30",
+    "date": [
+      "2013",
+      "07",
+      "30"
+    ],
     "state": "New Mexico",
     "city_or_county": "Hobbs",
     "address": "2000 block of North Bensing Rd",
@@ -9276,7 +9896,11 @@
   },
   {
     "incident_id": 491438,
-    "date": "2013-08-02",
+    "date": [
+      "2013",
+      "08",
+      "02"
+    ],
     "state": "Indiana",
     "city_or_county": "Indianapolis",
     "address": "62nd and College Ave",
@@ -9336,7 +9960,11 @@
   },
   {
     "incident_id": 491416,
-    "date": "2013-08-02",
+    "date": [
+      "2013",
+      "08",
+      "02"
+    ],
     "state": "New Jersey",
     "city_or_county": "Newark",
     "address": "Livingston St. and 18th Avenue",
@@ -9404,7 +10032,11 @@
   },
   {
     "incident_id": 491461,
-    "date": "2013-08-03",
+    "date": [
+      "2013",
+      "08",
+      "03"
+    ],
     "state": "Michigan",
     "city_or_county": "Detroit",
     "address": "Murray Hill St",
@@ -9454,7 +10086,11 @@
   },
   {
     "incident_id": 491473,
-    "date": "2013-08-04",
+    "date": [
+      "2013",
+      "08",
+      "04"
+    ],
     "state": "California",
     "city_or_county": "Salinas",
     "address": "624 Williams Road",
@@ -9529,7 +10165,11 @@
   },
   {
     "incident_id": 491546,
-    "date": "2013-08-04",
+    "date": [
+      "2013",
+      "08",
+      "04"
+    ],
     "state": "Missouri",
     "city_or_county": "Kansas City",
     "address": "2400 block of Park Avenue",
@@ -9576,7 +10216,11 @@
   },
   {
     "incident_id": 964573,
-    "date": "2013-08-05",
+    "date": [
+      "2013",
+      "08",
+      "05"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Philadelphia",
     "address": "5100 Parrish St",
@@ -9621,7 +10265,11 @@
   },
   {
     "incident_id": 491609,
-    "date": "2013-08-06",
+    "date": [
+      "2013",
+      "08",
+      "06"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Saylorsburg",
     "address": "1000 Ross Municipal Dr",
@@ -9695,7 +10343,11 @@
   },
   {
     "incident_id": 491630,
-    "date": "2013-08-06",
+    "date": [
+      "2013",
+      "08",
+      "06"
+    ],
     "state": "New Jersey",
     "city_or_county": "Montclair",
     "address": "Mission Street",
@@ -9752,7 +10404,11 @@
   },
   {
     "incident_id": 491698,
-    "date": "2013-08-07",
+    "date": [
+      "2013",
+      "08",
+      "07"
+    ],
     "state": "Texas",
     "city_or_county": "Dallas",
     "address": "7100 block of Long Canyon Trail",
@@ -9839,7 +10495,11 @@
   },
   {
     "incident_id": 491734,
-    "date": "2013-08-09",
+    "date": [
+      "2013",
+      "08",
+      "09"
+    ],
     "state": "Missouri",
     "city_or_county": "Saint Louis",
     "address": "4200 block of Kossuth Ave",
@@ -9895,7 +10555,11 @@
   },
   {
     "incident_id": 491729,
-    "date": "2013-08-10",
+    "date": [
+      "2013",
+      "08",
+      "10"
+    ],
     "state": "Delaware",
     "city_or_county": "Wilmington",
     "address": "1200 block of Second Street",
@@ -9945,7 +10609,11 @@
   },
   {
     "incident_id": 491710,
-    "date": "2013-08-11",
+    "date": [
+      "2013",
+      "08",
+      "11"
+    ],
     "state": "New York",
     "city_or_county": "Brooklyn",
     "address": "395 East 48th Street",
@@ -9990,7 +10658,11 @@
   },
   {
     "incident_id": 491749,
-    "date": "2013-08-11",
+    "date": [
+      "2013",
+      "08",
+      "11"
+    ],
     "state": "Virginia",
     "city_or_county": "Portsmouth",
     "address": "1100 block of Mt. Vernon Ave",
@@ -10045,7 +10717,11 @@
   },
   {
     "incident_id": 491770,
-    "date": "2013-08-13",
+    "date": [
+      "2013",
+      "08",
+      "13"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Philadelphia",
     "address": "1100 block of Divinity Street",
@@ -10090,7 +10766,11 @@
   },
   {
     "incident_id": 492001,
-    "date": "2013-08-14",
+    "date": [
+      "2013",
+      "08",
+      "14"
+    ],
     "state": "Oklahoma",
     "city_or_county": "Oklahoma City",
     "address": "4601 SE 79",
@@ -10154,7 +10834,11 @@
   },
   {
     "incident_id": 1074613,
-    "date": "2013-08-17",
+    "date": [
+      "2013",
+      "08",
+      "17"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "York",
     "address": "376 Walnut St",
@@ -10199,7 +10883,11 @@
   },
   {
     "incident_id": 491819,
-    "date": "2013-08-17",
+    "date": [
+      "2013",
+      "08",
+      "17"
+    ],
     "state": "California",
     "city_or_county": "San Francisco",
     "address": "1738 Telegraph Avenue",
@@ -10247,7 +10935,11 @@
   },
   {
     "incident_id": 491948,
-    "date": "2013-08-18",
+    "date": [
+      "2013",
+      "08",
+      "18"
+    ],
     "state": "New Jersey",
     "city_or_county": "Port Norris",
     "address": "1600 block of North Avenue",
@@ -10287,7 +10979,11 @@
   },
   {
     "incident_id": 491937,
-    "date": "2013-08-18",
+    "date": [
+      "2013",
+      "08",
+      "18"
+    ],
     "state": "Ohio",
     "city_or_county": "Toledo",
     "address": "2272 Scottwood Ave",
@@ -10342,7 +11038,11 @@
   },
   {
     "incident_id": 491898,
-    "date": "2013-08-18",
+    "date": [
+      "2013",
+      "08",
+      "18"
+    ],
     "state": "South Carolina",
     "city_or_county": "Chesterfield",
     "address": "3217 Center Point Rd",
@@ -10431,7 +11131,11 @@
   },
   {
     "incident_id": 491840,
-    "date": "2013-08-18",
+    "date": [
+      "2013",
+      "08",
+      "18"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "100 block of South Springfield",
@@ -10482,7 +11186,11 @@
   },
   {
     "incident_id": 491965,
-    "date": "2013-08-19",
+    "date": [
+      "2013",
+      "08",
+      "19"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "1011 W. Wilson",
@@ -10544,7 +11252,11 @@
   },
   {
     "incident_id": 491992,
-    "date": "2013-08-20",
+    "date": [
+      "2013",
+      "08",
+      "20"
+    ],
     "state": "Maryland",
     "city_or_county": "Baltimore",
     "address": "1200 block of S. Carey St",
@@ -10604,7 +11316,11 @@
   },
   {
     "incident_id": 958032,
-    "date": "2013-08-23",
+    "date": [
+      "2013",
+      "08",
+      "23"
+    ],
     "state": "New Jersey",
     "city_or_county": "Trenton",
     "address": "Middle Rose St and Brunswick Ave",
@@ -10648,7 +11364,11 @@
   },
   {
     "incident_id": 492260,
-    "date": "2013-08-25",
+    "date": [
+      "2013",
+      "08",
+      "25"
+    ],
     "state": "South Carolina",
     "city_or_county": "Latta",
     "address": "214 Willis St",
@@ -10706,7 +11426,11 @@
   },
   {
     "incident_id": 492270,
-    "date": "2013-08-25",
+    "date": [
+      "2013",
+      "08",
+      "25"
+    ],
     "state": "Minnesota",
     "city_or_county": "Minneapolis",
     "address": "2600 block of Cedar and 2600 block of 18th Avenue South",
@@ -10763,7 +11487,11 @@
   },
   {
     "incident_id": 492276,
-    "date": "2013-08-25",
+    "date": [
+      "2013",
+      "08",
+      "25"
+    ],
     "state": "Florida",
     "city_or_county": "Lake Butler",
     "address": "1050 Southeast 6th Street",
@@ -10832,7 +11560,11 @@
   },
   {
     "incident_id": 479646,
-    "date": "2013-08-25",
+    "date": [
+      "2013",
+      "08",
+      "25"
+    ],
     "state": "California",
     "city_or_county": "Oakland",
     "address": "1300 block of 104th Avenue",
@@ -10882,7 +11614,11 @@
   },
   {
     "incident_id": 479682,
-    "date": "2013-09-05",
+    "date": [
+      "2013",
+      "09",
+      "05"
+    ],
     "state": "North Carolina",
     "city_or_county": "Charlotte",
     "address": "2500 block of Pinckney Avenue",
@@ -10941,7 +11677,11 @@
   },
   {
     "incident_id": 479727,
-    "date": "2013-09-07",
+    "date": [
+      "2013",
+      "09",
+      "07"
+    ],
     "state": "Missouri",
     "city_or_county": "Saint Louis",
     "address": "5000 block of Durant Ave",
@@ -11003,7 +11743,11 @@
   },
   {
     "incident_id": 479709,
-    "date": "2013-09-07",
+    "date": [
+      "2013",
+      "09",
+      "07"
+    ],
     "state": "Indiana",
     "city_or_county": "Gary",
     "address": "9300 block of Sunrise Boulevard",
@@ -11060,7 +11804,11 @@
   },
   {
     "incident_id": 479734,
-    "date": "2013-09-10",
+    "date": [
+      "2013",
+      "09",
+      "10"
+    ],
     "state": "Connecticut",
     "city_or_county": "Bridgeport",
     "address": "Reservoir Ave and Grandview Ave",
@@ -11141,7 +11889,11 @@
   },
   {
     "incident_id": 479774,
-    "date": "2013-09-11",
+    "date": [
+      "2013",
+      "09",
+      "11"
+    ],
     "state": "New York",
     "city_or_county": "New York",
     "address": "204 Varick St",
@@ -11190,7 +11942,11 @@
   },
   {
     "incident_id": 479747,
-    "date": "2013-09-12",
+    "date": [
+      "2013",
+      "09",
+      "12"
+    ],
     "state": "Tennessee",
     "city_or_county": "Crab Orchard",
     "address": null,
@@ -11260,7 +12016,11 @@
   },
   {
     "incident_id": 479757,
-    "date": "2013-09-12",
+    "date": [
+      "2013",
+      "09",
+      "12"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington",
     "address": "First Street and Pierce Street NW",
@@ -11309,7 +12069,11 @@
   },
   {
     "incident_id": 479821,
-    "date": "2013-09-14",
+    "date": [
+      "2013",
+      "09",
+      "14"
+    ],
     "state": "North Carolina",
     "city_or_county": "Marion",
     "address": "80 Finley Road",
@@ -11362,7 +12126,11 @@
   },
   {
     "incident_id": 480104,
-    "date": "2013-09-15",
+    "date": [
+      "2013",
+      "09",
+      "15"
+    ],
     "state": "Colorado",
     "city_or_county": "Colorado Springs",
     "address": "1609 South Nevada",
@@ -11401,7 +12169,11 @@
   },
   {
     "incident_id": 480058,
-    "date": "2013-09-15",
+    "date": [
+      "2013",
+      "09",
+      "15"
+    ],
     "state": "Georgia",
     "city_or_county": "Snellville",
     "address": "4630 Anderson Livsey Lane",
@@ -11465,7 +12237,11 @@
   },
   {
     "incident_id": 480071,
-    "date": "2013-09-15",
+    "date": [
+      "2013",
+      "09",
+      "15"
+    ],
     "state": "Washington",
     "city_or_county": "Yakima",
     "address": "2209 W Nob Hill Blvd",
@@ -11530,7 +12306,11 @@
   },
   {
     "incident_id": 480366,
-    "date": "2013-09-16",
+    "date": [
+      "2013",
+      "09",
+      "16"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington Navy Yard",
     "address": "1336 Isaac Hull Ave",
@@ -11655,7 +12435,11 @@
   },
   {
     "incident_id": 480394,
-    "date": "2013-09-17",
+    "date": [
+      "2013",
+      "09",
+      "17"
+    ],
     "state": "California",
     "city_or_county": "Stockton",
     "address": "700 block of North Airport Way",
@@ -11715,7 +12499,11 @@
   },
   {
     "incident_id": 480415,
-    "date": "2013-09-17",
+    "date": [
+      "2013",
+      "09",
+      "17"
+    ],
     "state": "Michigan",
     "city_or_county": "Lansing",
     "address": "1500 block of Ottawa Street",
@@ -11776,7 +12564,11 @@
   },
   {
     "incident_id": 480453,
-    "date": "2013-09-17",
+    "date": [
+      "2013",
+      "09",
+      "17"
+    ],
     "state": "Nevada",
     "city_or_county": "Las Vegas",
     "address": "1300 block of Bartlett Avenue",
@@ -11820,7 +12612,11 @@
   },
   {
     "incident_id": 480462,
-    "date": "2013-09-17",
+    "date": [
+      "2013",
+      "09",
+      "17"
+    ],
     "state": "Florida",
     "city_or_county": "Kissimmee",
     "address": "Flying Fortress Avenue",
@@ -11857,7 +12653,11 @@
   },
   {
     "incident_id": 480470,
-    "date": "2013-09-18",
+    "date": [
+      "2013",
+      "09",
+      "18"
+    ],
     "state": "Tennessee",
     "city_or_county": "Memphis",
     "address": "1033 Whitaker",
@@ -11903,7 +12703,11 @@
   },
   {
     "incident_id": 480521,
-    "date": "2013-09-19",
+    "date": [
+      "2013",
+      "09",
+      "19"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "1809 W 50th St",
@@ -12042,7 +12846,11 @@
   },
   {
     "incident_id": 480582,
-    "date": "2013-09-20",
+    "date": [
+      "2013",
+      "09",
+      "20"
+    ],
     "state": "California",
     "city_or_county": "Long Beach",
     "address": "6500 block of Rose Avenue",
@@ -12094,7 +12902,11 @@
   },
   {
     "incident_id": 480605,
-    "date": "2013-09-20",
+    "date": [
+      "2013",
+      "09",
+      "20"
+    ],
     "state": "Texas",
     "city_or_county": "Rice",
     "address": "700 block of NW 0149",
@@ -12161,7 +12973,11 @@
   },
   {
     "incident_id": 480632,
-    "date": "2013-09-21",
+    "date": [
+      "2013",
+      "09",
+      "21"
+    ],
     "state": "Florida",
     "city_or_county": "Palm Beach",
     "address": "2600 block of Forest Hill Boulevard",
@@ -12202,7 +13018,11 @@
   },
   {
     "incident_id": 480661,
-    "date": "2013-09-22",
+    "date": [
+      "2013",
+      "09",
+      "22"
+    ],
     "state": "Missouri",
     "city_or_county": "Saint Louis",
     "address": "3916 North Florissant Road",
@@ -12255,7 +13075,11 @@
   },
   {
     "incident_id": 480669,
-    "date": "2013-09-22",
+    "date": [
+      "2013",
+      "09",
+      "22"
+    ],
     "state": "Michigan",
     "city_or_county": "Muskegon",
     "address": "149 Ottawa Ave",
@@ -12329,7 +13153,11 @@
   },
   {
     "incident_id": 480646,
-    "date": "2013-09-22",
+    "date": [
+      "2013",
+      "09",
+      "22"
+    ],
     "state": "Kansas",
     "city_or_county": "Wichita",
     "address": "100 block of N. Mead",
@@ -12398,7 +13226,11 @@
   },
   {
     "incident_id": 480691,
-    "date": "2013-09-24",
+    "date": [
+      "2013",
+      "09",
+      "24"
+    ],
     "state": "West Virginia",
     "city_or_county": "Huntington",
     "address": "300 W 7th Ave",
@@ -12475,7 +13307,11 @@
   },
   {
     "incident_id": 480700,
-    "date": "2013-09-25",
+    "date": [
+      "2013",
+      "09",
+      "25"
+    ],
     "state": "North Carolina",
     "city_or_county": "Haw River",
     "address": "1003 W. Main St",
@@ -12533,7 +13369,11 @@
   },
   {
     "incident_id": 480720,
-    "date": "2013-09-27",
+    "date": [
+      "2013",
+      "09",
+      "27"
+    ],
     "state": "Ohio",
     "city_or_county": "Zanesville",
     "address": "753 Putnam Ave",
@@ -12589,7 +13429,11 @@
   },
   {
     "incident_id": 480730,
-    "date": "2013-09-29",
+    "date": [
+      "2013",
+      "09",
+      "29"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "6000 block of South Indiana Avenue",
@@ -12640,7 +13484,11 @@
   },
   {
     "incident_id": 480747,
-    "date": "2013-10-02",
+    "date": [
+      "2013",
+      "10",
+      "02"
+    ],
     "state": "Nebraska",
     "city_or_county": "Omaha",
     "address": "North 42nd and Browne streets",
@@ -12695,7 +13543,11 @@
   },
   {
     "incident_id": 670964,
-    "date": "2013-10-05",
+    "date": [
+      "2013",
+      "10",
+      "05"
+    ],
     "state": "Indiana",
     "city_or_county": "Fort Wayne",
     "address": "2020 Hobson Rd",
@@ -12738,7 +13590,11 @@
   },
   {
     "incident_id": 480765,
-    "date": "2013-10-05",
+    "date": [
+      "2013",
+      "10",
+      "05"
+    ],
     "state": "California",
     "city_or_county": "Fresno",
     "address": "3883 E. Calwa #114",
@@ -12812,7 +13668,11 @@
   },
   {
     "incident_id": 480882,
-    "date": "2013-10-05",
+    "date": [
+      "2013",
+      "10",
+      "05"
+    ],
     "state": "New York",
     "city_or_county": "Buffalo",
     "address": "102 Zelmer Street",
@@ -12862,7 +13722,11 @@
   },
   {
     "incident_id": 480897,
-    "date": "2013-10-06",
+    "date": [
+      "2013",
+      "10",
+      "06"
+    ],
     "state": "Arizona",
     "city_or_county": "Avondale",
     "address": "11120 W Van Buren St",
@@ -12902,7 +13766,11 @@
   },
   {
     "incident_id": 480961,
-    "date": "2013-10-06",
+    "date": [
+      "2013",
+      "10",
+      "06"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Philadelphia",
     "address": "54th St. and Florence Ave",
@@ -12964,7 +13832,11 @@
   },
   {
     "incident_id": 984965,
-    "date": "2013-10-07",
+    "date": [
+      "2013",
+      "10",
+      "07"
+    ],
     "state": "New Jersey",
     "city_or_county": "Tabernacle",
     "address": "US 206",
@@ -13009,7 +13881,11 @@
   },
   {
     "incident_id": 480981,
-    "date": "2013-10-09",
+    "date": [
+      "2013",
+      "10",
+      "09"
+    ],
     "state": "Texas",
     "city_or_county": "Paris",
     "address": "400 block of NE 6th Street",
@@ -13065,7 +13941,11 @@
   },
   {
     "incident_id": 481029,
-    "date": "2013-10-12",
+    "date": [
+      "2013",
+      "10",
+      "12"
+    ],
     "state": "Oklahoma",
     "city_or_county": "Tulsa",
     "address": "12000 E 31st St",
@@ -13131,7 +14011,11 @@
   },
   {
     "incident_id": 1007851,
-    "date": "2013-10-13",
+    "date": [
+      "2013",
+      "10",
+      "13"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Wilkes Barre",
     "address": "650 S Main St",
@@ -13177,7 +14061,11 @@
   },
   {
     "incident_id": 481043,
-    "date": "2013-10-13",
+    "date": [
+      "2013",
+      "10",
+      "13"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Harrisburg",
     "address": "1524 Walnut St",
@@ -13228,7 +14116,11 @@
   },
   {
     "incident_id": 481254,
-    "date": "2013-10-20",
+    "date": [
+      "2013",
+      "10",
+      "20"
+    ],
     "state": "Florida",
     "city_or_county": "Margate",
     "address": "7400 block of Santa Monica Drive",
@@ -13278,7 +14170,11 @@
   },
   {
     "incident_id": 481263,
-    "date": "2013-10-20",
+    "date": [
+      "2013",
+      "10",
+      "20"
+    ],
     "state": "Florida",
     "city_or_county": "Miami",
     "address": "19600 block of Southwest 168th Street",
@@ -13332,7 +14228,11 @@
   },
   {
     "incident_id": 481268,
-    "date": "2013-10-21",
+    "date": [
+      "2013",
+      "10",
+      "21"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Pittsburgh (Homewood)",
     "address": "7200 block of Kelly Street",
@@ -13394,7 +14294,11 @@
   },
   {
     "incident_id": 492366,
-    "date": "2013-10-26",
+    "date": [
+      "2013",
+      "10",
+      "26"
+    ],
     "state": "Connecticut",
     "city_or_county": "New Haven",
     "address": "85 Saint John St",
@@ -13468,7 +14372,11 @@
   },
   {
     "incident_id": 481419,
-    "date": "2013-10-26",
+    "date": [
+      "2013",
+      "10",
+      "26"
+    ],
     "state": "Florida",
     "city_or_county": "Miami Gardens",
     "address": "NW 187 Street and 30 Avenue",
@@ -13517,7 +14425,11 @@
   },
   {
     "incident_id": 492325,
-    "date": "2013-10-26",
+    "date": [
+      "2013",
+      "10",
+      "26"
+    ],
     "state": "Arizona",
     "city_or_county": "Phoenix",
     "address": "17th Avenue and Hazelwood Street",
@@ -13584,7 +14496,11 @@
   },
   {
     "incident_id": 492427,
-    "date": "2013-10-27",
+    "date": [
+      "2013",
+      "10",
+      "27"
+    ],
     "state": "Texas",
     "city_or_county": "Beaumont",
     "address": "500 block of Edgemore Drive",
@@ -13629,7 +14545,11 @@
   },
   {
     "incident_id": 492699,
-    "date": "2013-10-27",
+    "date": [
+      "2013",
+      "10",
+      "27"
+    ],
     "state": "California",
     "city_or_county": "Roseville",
     "address": "6th Street and Hampton",
@@ -13691,7 +14611,11 @@
   },
   {
     "incident_id": 492393,
-    "date": "2013-10-27",
+    "date": [
+      "2013",
+      "10",
+      "27"
+    ],
     "state": "North Carolina",
     "city_or_county": "Southern Pines",
     "address": "115 Turner St",
@@ -13754,7 +14678,11 @@
   },
   {
     "incident_id": 492570,
-    "date": "2013-10-27",
+    "date": [
+      "2013",
+      "10",
+      "27"
+    ],
     "state": "California",
     "city_or_county": "Vallejo",
     "address": "200 block of Princeton Avenue",
@@ -13806,7 +14734,11 @@
   },
   {
     "incident_id": 492914,
-    "date": "2013-10-29",
+    "date": [
+      "2013",
+      "10",
+      "29"
+    ],
     "state": "South Carolina",
     "city_or_county": "Bradley (Callison)",
     "address": "Callison Highway",
@@ -13877,7 +14809,11 @@
   },
   {
     "incident_id": 492933,
-    "date": "2013-11-02",
+    "date": [
+      "2013",
+      "11",
+      "02"
+    ],
     "state": "Kentucky",
     "city_or_county": "Radcliff",
     "address": "355 Shelby Avenue",
@@ -13927,7 +14863,11 @@
   },
   {
     "incident_id": 492985,
-    "date": "2013-11-03",
+    "date": [
+      "2013",
+      "11",
+      "03"
+    ],
     "state": "California",
     "city_or_county": "Perris",
     "address": "2900 block of Perris Boulevard",
@@ -13982,7 +14922,11 @@
   },
   {
     "incident_id": 492950,
-    "date": "2013-11-03",
+    "date": [
+      "2013",
+      "11",
+      "03"
+    ],
     "state": "California",
     "city_or_county": "Los Angeles",
     "address": "1 World Way",
@@ -14040,7 +14984,11 @@
   },
   {
     "incident_id": 492999,
-    "date": "2013-11-05",
+    "date": [
+      "2013",
+      "11",
+      "05"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington",
     "address": "3900 block of Minnesota Ave",
@@ -14094,7 +15042,11 @@
   },
   {
     "incident_id": 493109,
-    "date": "2013-11-05",
+    "date": [
+      "2013",
+      "11",
+      "05"
+    ],
     "state": "Florida",
     "city_or_county": "Jacksonville",
     "address": "1100 block of Randolph",
@@ -14150,7 +15102,11 @@
   },
   {
     "incident_id": 493035,
-    "date": "2013-11-07",
+    "date": [
+      "2013",
+      "11",
+      "07"
+    ],
     "state": "Michigan",
     "city_or_county": "Detroit",
     "address": "Conley and 7 Mile",
@@ -14223,7 +15179,11 @@
   },
   {
     "incident_id": 493842,
-    "date": "2013-11-09",
+    "date": [
+      "2013",
+      "11",
+      "09"
+    ],
     "state": "Texas",
     "city_or_county": "Cypress",
     "address": "7300 block of Enchanted Creek Drive",
@@ -14315,7 +15275,11 @@
   },
   {
     "incident_id": 493893,
-    "date": "2013-11-10",
+    "date": [
+      "2013",
+      "11",
+      "10"
+    ],
     "state": "Ohio",
     "city_or_county": "Canton",
     "address": "1215 Tuscarawas St W",
@@ -14381,7 +15345,11 @@
   },
   {
     "incident_id": 493863,
-    "date": "2013-11-10",
+    "date": [
+      "2013",
+      "11",
+      "10"
+    ],
     "state": "Arizona",
     "city_or_county": "Phoenix",
     "address": "5800 South 53rd Glen",
@@ -14463,7 +15431,11 @@
   },
   {
     "incident_id": 493882,
-    "date": "2013-11-11",
+    "date": [
+      "2013",
+      "11",
+      "11"
+    ],
     "state": "New York",
     "city_or_county": "Brooklyn",
     "address": "318 Maujer St",
@@ -14529,7 +15501,11 @@
   },
   {
     "incident_id": 494033,
-    "date": "2013-11-15",
+    "date": [
+      "2013",
+      "11",
+      "15"
+    ],
     "state": "Texas",
     "city_or_county": "Houston",
     "address": "4400 block of Tiffany",
@@ -14574,7 +15550,11 @@
   },
   {
     "incident_id": 494072,
-    "date": "2013-11-20",
+    "date": [
+      "2013",
+      "11",
+      "20"
+    ],
     "state": "Texas",
     "city_or_county": "Houston",
     "address": "8200 block of Sunbury",
@@ -14634,7 +15614,11 @@
   },
   {
     "incident_id": 494116,
-    "date": "2013-11-21",
+    "date": [
+      "2013",
+      "11",
+      "21"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Philadelphia",
     "address": "1400 block of N. 60th Street",
@@ -14684,7 +15668,11 @@
   },
   {
     "incident_id": 964582,
-    "date": "2013-11-22",
+    "date": [
+      "2013",
+      "11",
+      "22"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Philadelphia",
     "address": "Westminster Ave and Paxson St",
@@ -14725,7 +15713,11 @@
   },
   {
     "incident_id": 964576,
-    "date": "2013-11-22",
+    "date": [
+      "2013",
+      "11",
+      "22"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Philadelphia",
     "address": "5100 Parrish St",
@@ -14770,7 +15762,11 @@
   },
   {
     "incident_id": 494155,
-    "date": "2013-11-23",
+    "date": [
+      "2013",
+      "11",
+      "23"
+    ],
     "state": "Oklahoma",
     "city_or_county": "Tulsa",
     "address": "Pine Street and Harvard Avenue",
@@ -14834,7 +15830,11 @@
   },
   {
     "incident_id": 495145,
-    "date": "2013-11-25",
+    "date": [
+      "2013",
+      "11",
+      "25"
+    ],
     "state": "California",
     "city_or_county": "Oakland",
     "address": "96th Avenue and Olive Street",
@@ -14905,7 +15905,11 @@
   },
   {
     "incident_id": 494215,
-    "date": "2013-11-25",
+    "date": [
+      "2013",
+      "11",
+      "25"
+    ],
     "state": "Minnesota",
     "city_or_county": "Minneapolis",
     "address": "1611 E Lake St",
@@ -14960,7 +15964,11 @@
   },
   {
     "incident_id": 495171,
-    "date": "2013-11-28",
+    "date": [
+      "2013",
+      "11",
+      "28"
+    ],
     "state": "New York",
     "city_or_county": "Rochester",
     "address": "St. Paul Boulevard and Andrews Street",
@@ -15017,7 +16025,11 @@
   },
   {
     "incident_id": 495178,
-    "date": "2013-11-29",
+    "date": [
+      "2013",
+      "11",
+      "29"
+    ],
     "state": "Indiana",
     "city_or_county": "Indianapolis",
     "address": "3400 block of East 34th Street",
@@ -15067,7 +16079,11 @@
   },
   {
     "incident_id": 495195,
-    "date": "2013-11-29",
+    "date": [
+      "2013",
+      "11",
+      "29"
+    ],
     "state": "California",
     "city_or_county": "Fresno",
     "address": "Oleander and Modoc",
@@ -15115,7 +16131,11 @@
   },
   {
     "incident_id": 495268,
-    "date": "2013-11-30",
+    "date": [
+      "2013",
+      "11",
+      "30"
+    ],
     "state": "Georgia",
     "city_or_county": "Valdosta",
     "address": "Gordon Street and North Ashley Street",
@@ -15164,7 +16184,11 @@
   },
   {
     "incident_id": 495323,
-    "date": "2013-11-30",
+    "date": [
+      "2013",
+      "11",
+      "30"
+    ],
     "state": "Michigan",
     "city_or_county": "Lansing",
     "address": null,
@@ -15207,7 +16231,11 @@
   },
   {
     "incident_id": 495347,
-    "date": "2013-12-01",
+    "date": [
+      "2013",
+      "12",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Miami",
     "address": "NW 64th Street and 12th Avenue",
@@ -15261,7 +16289,11 @@
   },
   {
     "incident_id": 972570,
-    "date": "2013-12-01",
+    "date": [
+      "2013",
+      "12",
+      "01"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Derry",
     "address": null,
@@ -15306,7 +16338,11 @@
   },
   {
     "incident_id": 495332,
-    "date": "2013-12-01",
+    "date": [
+      "2013",
+      "12",
+      "01"
+    ],
     "state": "Kansas",
     "city_or_county": "Topeka",
     "address": "1629 SW Central Park",
@@ -15363,7 +16399,11 @@
   },
   {
     "incident_id": 495374,
-    "date": "2013-12-07",
+    "date": [
+      "2013",
+      "12",
+      "07"
+    ],
     "state": "Delaware",
     "city_or_county": "Wilmington",
     "address": "3421 Kirkwood Hwy",
@@ -15414,7 +16454,11 @@
   },
   {
     "incident_id": 979523,
-    "date": "2013-12-07",
+    "date": [
+      "2013",
+      "12",
+      "07"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "York",
     "address": "N George St and North St",
@@ -15458,7 +16502,11 @@
   },
   {
     "incident_id": 495506,
-    "date": "2013-12-14",
+    "date": [
+      "2013",
+      "12",
+      "14"
+    ],
     "state": "North Carolina",
     "city_or_county": "Statesville",
     "address": "167 Wallace Springs",
@@ -15507,7 +16555,11 @@
   },
   {
     "incident_id": 495530,
-    "date": "2013-12-15",
+    "date": [
+      "2013",
+      "12",
+      "15"
+    ],
     "state": "Texas",
     "city_or_county": "Channelview",
     "address": "900 block of Ashland Boulevard",
@@ -15554,7 +16606,11 @@
   },
   {
     "incident_id": 495543,
-    "date": "2013-12-15",
+    "date": [
+      "2013",
+      "12",
+      "15"
+    ],
     "state": "Florida",
     "city_or_county": "Homestead (Florida City)",
     "address": "7th Avenue and 13th Terrace",
@@ -15590,7 +16646,11 @@
   },
   {
     "incident_id": 495548,
-    "date": "2013-12-21",
+    "date": [
+      "2013",
+      "12",
+      "21"
+    ],
     "state": "New Jersey",
     "city_or_county": "Trenton",
     "address": "Jersey Street and Home Avenue",
@@ -15644,7 +16704,11 @@
   },
   {
     "incident_id": 495557,
-    "date": "2013-12-21",
+    "date": [
+      "2013",
+      "12",
+      "21"
+    ],
     "state": "North Carolina",
     "city_or_county": "Shelby",
     "address": "Jose Street",
@@ -15685,7 +16749,11 @@
   },
   {
     "incident_id": 495566,
-    "date": "2013-12-22",
+    "date": [
+      "2013",
+      "12",
+      "22"
+    ],
     "state": "Michigan",
     "city_or_county": "Muskegon",
     "address": "2300 block of W McMillan Rd",
@@ -15743,7 +16811,11 @@
   },
   {
     "incident_id": 495577,
-    "date": "2013-12-25",
+    "date": [
+      "2013",
+      "12",
+      "25"
+    ],
     "state": "New York",
     "city_or_county": "Medford",
     "address": "33A Cedarhurst Ave",
@@ -15797,7 +16869,11 @@
   },
   {
     "incident_id": 1012298,
-    "date": "2013-12-25",
+    "date": [
+      "2013",
+      "12",
+      "25"
+    ],
     "state": "New Jersey",
     "city_or_county": "Plainfield",
     "address": "Park Ave and E 9th St",
@@ -15835,7 +16911,11 @@
   },
   {
     "incident_id": 495588,
-    "date": "2013-12-25",
+    "date": [
+      "2013",
+      "12",
+      "25"
+    ],
     "state": "New Jersey",
     "city_or_county": "Irvington",
     "address": "Nye Avenue and 21st Street",
@@ -15898,7 +16978,11 @@
   },
   {
     "incident_id": 496584,
-    "date": "2013-12-26",
+    "date": [
+      "2013",
+      "12",
+      "26"
+    ],
     "state": "Louisiana",
     "city_or_county": "Lockport",
     "address": "313 Tenth St",
@@ -15971,7 +17055,11 @@
   },
   {
     "incident_id": 496634,
-    "date": "2013-12-26",
+    "date": [
+      "2013",
+      "12",
+      "26"
+    ],
     "state": "Louisiana",
     "city_or_county": "Slidell",
     "address": "2144 First St",
@@ -16037,7 +17125,11 @@
   },
   {
     "incident_id": 496668,
-    "date": "2013-12-28",
+    "date": [
+      "2013",
+      "12",
+      "28"
+    ],
     "state": "Alabama",
     "city_or_county": "Montgomery",
     "address": "954 Highland Ave",
@@ -16126,7 +17218,11 @@
   },
   {
     "incident_id": 93832,
-    "date": "2013-12-29",
+    "date": [
+      "2013",
+      "12",
+      "29"
+    ],
     "state": "California",
     "city_or_county": "Duarte",
     "address": "2400 block of El Toro Rd",
@@ -16169,7 +17265,11 @@
   },
   {
     "incident_id": 520496,
-    "date": "2013-12-29",
+    "date": [
+      "2013",
+      "12",
+      "29"
+    ],
     "state": "New Jersey",
     "city_or_county": "Lodi",
     "address": null,
@@ -16211,7 +17311,11 @@
   },
   {
     "incident_id": 496703,
-    "date": "2013-12-31",
+    "date": [
+      "2013",
+      "12",
+      "31"
+    ],
     "state": "Ohio",
     "city_or_county": "Barberton",
     "address": "300 block of Seventh Street Northeast",
@@ -16282,7 +17386,11 @@
   },
   {
     "incident_id": 496684,
-    "date": "2013-12-31",
+    "date": [
+      "2013",
+      "12",
+      "31"
+    ],
     "state": "New York",
     "city_or_county": "Brooklyn",
     "address": "60 Glenmore Ave",
@@ -16353,7 +17461,11 @@
   },
   {
     "incident_id": 935147,
-    "date": "2013-12-31",
+    "date": [
+      "2013",
+      "12",
+      "31"
+    ],
     "state": "California",
     "city_or_county": "Oakland",
     "address": "104th Ave and Walnut St",
@@ -16391,7 +17503,11 @@
   },
   {
     "incident_id": 95289,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Michigan",
     "city_or_county": "Muskegon",
     "address": "300 block of Monroe Avenue ",
@@ -16423,7 +17539,11 @@
   },
   {
     "incident_id": 92401,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New Jersey",
     "city_or_county": "Newark",
     "address": "Central Avenue",
@@ -16447,7 +17567,11 @@
   },
   {
     "incident_id": 92383,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Queens",
     "address": "113th Avenue",
@@ -16489,7 +17613,11 @@
   },
   {
     "incident_id": 92142,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Brooklyn",
     "address": "St. Johns Place",
@@ -16526,7 +17654,11 @@
   },
   {
     "incident_id": 95261,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Missouri",
     "city_or_county": "Springfield",
     "address": "Beverly Hills and Temple",
@@ -16564,7 +17696,11 @@
   },
   {
     "incident_id": 92272,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Georgia",
     "city_or_county": "Columbus",
     "address": "1327 23rd Street",
@@ -16605,7 +17741,11 @@
   },
   {
     "incident_id": 92428,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Syracuse",
     "address": "200 block of Ballard Avenue",
@@ -16641,7 +17781,11 @@
   },
   {
     "incident_id": 94205,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Kentucky",
     "city_or_county": "Lexington",
     "address": "Kenton and Fourth streets",
@@ -16666,7 +17810,11 @@
   },
   {
     "incident_id": 92218,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Georgia",
     "city_or_county": "Bibb County",
     "address": null,
@@ -16708,7 +17856,11 @@
   },
   {
     "incident_id": 104905,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Prince William County",
     "address": "10100 block of Shiloh Ct",
@@ -16749,7 +17901,11 @@
   },
   {
     "incident_id": 92423,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Philadelphia",
     "address": "34th Street and Haverford Avenue",
@@ -16784,7 +17940,11 @@
   },
   {
     "incident_id": 94154,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Hampton",
     "address": "West Queen Street and Stewart Street",
@@ -16825,7 +17985,11 @@
   },
   {
     "incident_id": 92215,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "South Carolina",
     "city_or_county": "North Charleston",
     "address": "Niagara Street",
@@ -16861,7 +18025,11 @@
   },
   {
     "incident_id": 104022,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Maryland",
     "city_or_county": "Baltimore",
     "address": "2100 block of Tucker Lane",
@@ -16900,7 +18068,11 @@
   },
   {
     "incident_id": 92357,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Delaware",
     "city_or_county": "Wilmington",
     "address": "1400 block of West 3rd",
@@ -16936,7 +18108,11 @@
   },
   {
     "incident_id": 92790,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Colorado",
     "city_or_county": "Grand Junction",
     "address": " 2846 Unaweep Ave",
@@ -16972,7 +18148,11 @@
   },
   {
     "incident_id": 92213,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "South Carolina",
     "city_or_county": "North Charleston",
     "address": "Aintree Street",
@@ -17004,7 +18184,11 @@
   },
   {
     "incident_id": 102729,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Missouri",
     "city_or_county": "Springfield",
     "address": "Mexican Villa restaurant on South National Avenue ",
@@ -17047,7 +18231,11 @@
   },
   {
     "incident_id": 92342,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Alabama",
     "city_or_county": "Huntsville",
     "address": "2700 block of Bridge Road",
@@ -17089,7 +18277,11 @@
   },
   {
     "incident_id": 92747,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New Jersey",
     "city_or_county": "Camden",
     "address": null,
@@ -17122,7 +18314,11 @@
   },
   {
     "incident_id": 92153,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Louisiana",
     "city_or_county": "New Orleans",
     "address": "2300 block of North Prieur Street",
@@ -17154,7 +18350,11 @@
   },
   {
     "incident_id": 95266,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Utah",
     "city_or_county": "Hurricane",
     "address": "2500 S. 3900 W.",
@@ -17189,7 +18389,11 @@
   },
   {
     "incident_id": 92284,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Indiana",
     "city_or_county": "Fort Wayne",
     "address": "3700 block of Trace Cir",
@@ -17223,7 +18427,11 @@
   },
   {
     "incident_id": 92578,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Louisiana",
     "city_or_county": "Marrero",
     "address": "6100 block of Ray Street",
@@ -17259,7 +18467,11 @@
   },
   {
     "incident_id": 92623,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Illinois",
     "city_or_county": "Pinckneyville",
     "address": "13 S Walnut St",
@@ -17300,7 +18512,11 @@
   },
   {
     "incident_id": 92131,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Bronx",
     "address": "Soundview Ave",
@@ -17334,7 +18550,11 @@
   },
   {
     "incident_id": 92614,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Colorado",
     "city_or_county": "Canon City",
     "address": "205 Tunnel Drive",
@@ -17382,7 +18602,11 @@
   },
   {
     "incident_id": 92144,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Bronx",
     "address": "Valentine Ave.",
@@ -17416,7 +18640,11 @@
   },
   {
     "incident_id": 92734,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Texas",
     "city_or_county": "Lubbock",
     "address": " 1704 East 4th Street.",
@@ -17464,7 +18692,11 @@
   },
   {
     "incident_id": 96019,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Nebraska",
     "city_or_county": "North Platte",
     "address": "1500 block of N. Sherman",
@@ -17500,7 +18732,11 @@
   },
   {
     "incident_id": 92252,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "South Carolina",
     "city_or_county": "Johns Island",
     "address": "3579 Savannah Highway",
@@ -17524,7 +18760,11 @@
   },
   {
     "incident_id": 92725,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Texas",
     "city_or_county": "Houston",
     "address": null,
@@ -17560,7 +18800,11 @@
   },
   {
     "incident_id": 95622,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Massachusetts",
     "city_or_county": "Lynn",
     "address": "Linwood Street",
@@ -17592,7 +18836,11 @@
   },
   {
     "incident_id": 92204,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Newport News",
     "address": "Circuit and Deputy Lane",
@@ -17624,7 +18872,11 @@
   },
   {
     "incident_id": 854799,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Milton",
     "address": null,
@@ -17672,7 +18924,11 @@
   },
   {
     "incident_id": 92497,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Fort Myers",
     "address": "2600 block of Edison Avenue",
@@ -17703,7 +18959,11 @@
   },
   {
     "incident_id": 98134,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Louisiana",
     "city_or_county": "Marrero",
     "address": "6100 block of Ray St",
@@ -17748,7 +19008,11 @@
   },
   {
     "incident_id": 94194,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Alabama",
     "city_or_county": "Tuscaloosa",
     "address": "2823 Hunter Creek Road",
@@ -17813,7 +19077,11 @@
   },
   {
     "incident_id": 92563,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Mississippi",
     "city_or_county": "Bogue Chitto",
     "address": "1347 Brumfield Rd SW",
@@ -17859,7 +19127,11 @@
   },
   {
     "incident_id": 92418,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New Jersey",
     "city_or_county": "Clementon",
     "address": "Blue Jay Drive",
@@ -17911,7 +19183,11 @@
   },
   {
     "incident_id": 92282,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "South Carolina",
     "city_or_county": "Olanta",
     "address": "Highway 301",
@@ -17952,7 +19228,11 @@
   },
   {
     "incident_id": 92315,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Wisconsin",
     "city_or_county": "Janesville",
     "address": "Beltline from Stoughton Road",
@@ -18001,7 +19281,11 @@
   },
   {
     "incident_id": 92337,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Alabama",
     "city_or_county": "Crenshaw",
     "address": "Campground Church Road",
@@ -18043,7 +19327,11 @@
   },
   {
     "incident_id": 92328,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Arizona",
     "city_or_county": "Tolleson",
     "address": "92nd and Jefferson",
@@ -18091,7 +19379,11 @@
   },
   {
     "incident_id": 97976,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Hawaii",
     "city_or_county": "Lihue",
     "address": null,
@@ -18135,7 +19427,11 @@
   },
   {
     "incident_id": 92345,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Washington",
     "city_or_county": "Georgetown",
     "address": "957 South Doris St",
@@ -18175,7 +19471,11 @@
   },
   {
     "incident_id": 92479,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Homestead",
     "address": "13416 Southwest 270th Terrace",
@@ -18234,7 +19534,11 @@
   },
   {
     "incident_id": 92490,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Orlando",
     "address": "Sun Dew Drive",
@@ -18276,7 +19580,11 @@
   },
   {
     "incident_id": 92501,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Orlando",
     "address": "5200 block of Via Alizar",
@@ -18312,7 +19620,11 @@
   },
   {
     "incident_id": 92117,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Kentucky",
     "city_or_county": "Cynthiana",
     "address": null,
@@ -18357,7 +19669,11 @@
   },
   {
     "incident_id": 92540,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Orlando",
     "address": "Sky Lake Circle",
@@ -18406,7 +19722,11 @@
   },
   {
     "incident_id": 92180,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Ohio",
     "city_or_county": "Toledo",
     "address": "East Oakland Street",
@@ -18441,7 +19761,11 @@
   },
   {
     "incident_id": 95264,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Kansas",
     "city_or_county": "Wichita",
     "address": "near I-135 and Pawnee ",
@@ -18483,7 +19807,11 @@
   },
   {
     "incident_id": 92279,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Indiana",
     "city_or_county": "Fort Wayne",
     "address": "3600 block of Logan Av",
@@ -18515,7 +19843,11 @@
   },
   {
     "incident_id": 92576,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Louisiana",
     "city_or_county": "New Orleans",
     "address": "7600 block of Symmes Avenue",
@@ -18551,7 +19883,11 @@
   },
   {
     "incident_id": 92660,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Maryland",
     "city_or_county": "Clinton",
     "address": "9100 block of Goldfield Place",
@@ -18593,7 +19929,11 @@
   },
   {
     "incident_id": 95209,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington",
     "address": "300 blo k of N. Capitol Street NW",
@@ -18621,7 +19961,11 @@
   },
   {
     "incident_id": 92305,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "West Virginia",
     "city_or_county": "Princeton",
     "address": null,
@@ -18655,7 +19999,11 @@
   },
   {
     "incident_id": 151443,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Massachusetts",
     "city_or_county": "Springfield",
     "address": "Franklin and Genesee Streets",
@@ -18679,7 +20027,11 @@
   },
   {
     "incident_id": 92506,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Georgia",
     "city_or_county": "Warner Robins",
     "address": "2715 Watson Blvd",
@@ -18713,7 +20065,11 @@
   },
   {
     "incident_id": 93194,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Texas",
     "city_or_county": "Borger",
     "address": null,
@@ -18756,7 +20112,11 @@
   },
   {
     "incident_id": 92303,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Wisconsin",
     "city_or_county": "Milwaukee",
     "address": "Locust and Humboldt Blvd",
@@ -18786,7 +20146,11 @@
   },
   {
     "incident_id": 150404,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New Hampshire",
     "city_or_county": "Manchester",
     "address": "Laurel and Beech streets",
@@ -18810,7 +20174,11 @@
   },
   {
     "incident_id": 92504,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Deltona",
     "address": "1300 block of W. Hartley Circle",
@@ -18846,7 +20214,11 @@
   },
   {
     "incident_id": 93182,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Rhode Island",
     "city_or_county": "Providence",
     "address": null,
@@ -18888,7 +20260,11 @@
   },
   {
     "incident_id": 92238,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "North Carolina",
     "city_or_county": "Duplin County",
     "address": "Highway 24/50 towards Kenansville",
@@ -18920,7 +20296,11 @@
   },
   {
     "incident_id": 95287,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Arizona",
     "city_or_county": "Rio Rico",
     "address": "Yave Court",
@@ -18944,7 +20324,11 @@
   },
   {
     "incident_id": 92487,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Tampa",
     "address": "2408 W. Kennedy Blvd.",
@@ -18989,7 +20373,11 @@
   },
   {
     "incident_id": 93067,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Ohio",
     "city_or_county": "Toledo",
     "address": "2125 S. Byrne Rd",
@@ -19030,7 +20418,11 @@
   },
   {
     "incident_id": 92236,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "North Carolina",
     "city_or_county": "Raleigh",
     "address": "Rock Quarry Road and Martin Luther King Jr. Boulevard",
@@ -19073,7 +20465,11 @@
   },
   {
     "incident_id": 95284,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Hazleton",
     "address": "Hazleton Apartments",
@@ -19097,7 +20493,11 @@
   },
   {
     "incident_id": 92395,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Buffalo",
     "address": "Michigan Avenue and Genesee Street",
@@ -19133,7 +20533,11 @@
   },
   {
     "incident_id": 92670,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Maryland",
     "city_or_county": "Baltimore",
     "address": "900 block of South Canton Avenue",
@@ -19165,7 +20569,11 @@
   },
   {
     "incident_id": 92194,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Norfolk",
     "address": "Rockingham Street and Berkley Avenue Extended",
@@ -19217,7 +20625,11 @@
   },
   {
     "incident_id": 95234,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Texas",
     "city_or_county": "Port Arthur",
     "address": null,
@@ -19252,7 +20664,11 @@
   },
   {
     "incident_id": 92393,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "California",
     "city_or_county": "Merced",
     "address": "1300 block of Derby Court",
@@ -19285,7 +20701,11 @@
   },
   {
     "incident_id": 92662,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Maryland",
     "city_or_county": "New Carrollton",
     "address": "5500 block of Karen Elaine Drive",
@@ -19321,7 +20741,11 @@
   },
   {
     "incident_id": 92189,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Kentucky",
     "city_or_county": "Boston",
     "address": "11600 Old Boston Rd",
@@ -19357,7 +20781,11 @@
   },
   {
     "incident_id": 92389,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "California",
     "city_or_county": "Fresno",
     "address": "Mono Avenue and First Street",
@@ -19396,7 +20824,11 @@
   },
   {
     "incident_id": 95232,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "California",
     "city_or_county": "Glendale",
     "address": "2600 block of Sleepy Hollow Drive",
@@ -19436,7 +20868,11 @@
   },
   {
     "incident_id": 92736,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Texas",
     "city_or_county": "Lubbock",
     "address": "1704 East 4th Street",
@@ -19479,7 +20915,11 @@
   },
   {
     "incident_id": 95281,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Washington",
     "city_or_county": "Tulalip",
     "address": "Warm Beach",
@@ -19513,7 +20953,11 @@
   },
   {
     "incident_id": 92125,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Oklahoma",
     "city_or_county": "Lawton",
     "address": "Sheridan and Pollard",
@@ -19548,7 +20992,11 @@
   },
   {
     "incident_id": 93854,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Illinois",
     "city_or_county": "Quincy",
     "address": "600 block of College Street",
@@ -19584,7 +21032,11 @@
   },
   {
     "incident_id": 92209,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "North Carolina",
     "city_or_county": "Greensboro",
     "address": "800 Reid Street ",
@@ -19617,7 +21069,11 @@
   },
   {
     "incident_id": 92413,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New Jersey",
     "city_or_county": "Gloucester Township",
     "address": "Chestnut Avenue",
@@ -19649,7 +21105,11 @@
   },
   {
     "incident_id": 92744,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New Jersey",
     "city_or_county": "Mount Laurel",
     "address": "500 block of Diemer Drive",
@@ -19692,7 +21152,11 @@
   },
   {
     "incident_id": 96365,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New Jersey",
     "city_or_county": "Belleville",
     "address": "Union Avenue",
@@ -19732,7 +21196,11 @@
   },
   {
     "incident_id": 92339,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Washington",
     "city_or_county": "Seattle",
     "address": "26th and East Yesler",
@@ -19767,7 +21235,11 @@
   },
   {
     "incident_id": 92740,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New Jersey",
     "city_or_county": "Dover",
     "address": "Lincoln Avenue and McDavitt Place",
@@ -19809,7 +21281,11 @@
   },
   {
     "incident_id": 92334,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Washington",
     "city_or_county": "Seattle",
     "address": "South Holden",
@@ -19851,7 +21327,11 @@
   },
   {
     "incident_id": 92269,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Georgia",
     "city_or_county": "Columbus",
     "address": "5th Avenue",
@@ -19875,7 +21355,11 @@
   },
   {
     "incident_id": 92568,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Mississippi",
     "city_or_county": "Franklin",
     "address": null,
@@ -19908,7 +21392,11 @@
   },
   {
     "incident_id": 92331,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Poughkeepsie",
     "address": "551 Main Street",
@@ -19947,7 +21435,11 @@
   },
   {
     "incident_id": 95255,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Missouri",
     "city_or_county": "Springfield",
     "address": "3200 block of West Highland Street",
@@ -19989,7 +21481,11 @@
   },
   {
     "incident_id": 92566,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Mississippi",
     "city_or_county": "Tupelo",
     "address": "Briar Ridge",
@@ -20023,7 +21519,11 @@
   },
   {
     "incident_id": 92122,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Falls Church",
     "address": "North Washington Street",
@@ -20052,7 +21552,11 @@
   },
   {
     "incident_id": 94111,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "South Carolina",
     "city_or_county": "Bucksport",
     "address": null,
@@ -20084,7 +21588,11 @@
   },
   {
     "incident_id": 92211,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "South Carolina",
     "city_or_county": "North Charleston",
     "address": "Ventura Street",
@@ -20120,7 +21628,11 @@
   },
   {
     "incident_id": 92420,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Connecticut",
     "city_or_county": "New Haven",
     "address": "La Quinta Inn on Sergeant Drive",
@@ -20156,7 +21668,11 @@
   },
   {
     "incident_id": 92119,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Kentucky",
     "city_or_county": "Louisville",
     "address": "38th and Broadway",
@@ -20188,7 +21704,11 @@
   },
   {
     "incident_id": 92174,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "100 block of West 105th St",
@@ -20244,7 +21764,11 @@
   },
   {
     "incident_id": 92207,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "North Carolina",
     "city_or_county": "Winston-Salem",
     "address": "200 block of Pine Tree Road",
@@ -20286,7 +21810,11 @@
   },
   {
     "incident_id": 92135,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Brooklyn",
     "address": "1461 Bushwick Ave",
@@ -20325,7 +21853,11 @@
   },
   {
     "incident_id": 92129,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Oklahoma",
     "city_or_county": "Okmulgee County",
     "address": "19700 block of Sharp Road",
@@ -20366,7 +21898,11 @@
   },
   {
     "incident_id": 95279,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Alabama",
     "city_or_county": "Gadsden",
     "address": "1400 block of Jackson Avenue",
@@ -20400,7 +21936,11 @@
   },
   {
     "incident_id": 92266,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Georgia",
     "city_or_county": "Columbus",
     "address": "988 Farr Road",
@@ -20451,7 +21991,11 @@
   },
   {
     "incident_id": 219530,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Philadelphia",
     "address": "Adams Avenue and Tabor Avenue",
@@ -20485,7 +22029,11 @@
   },
   {
     "incident_id": 95286,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Iowa",
     "city_or_county": "Fort Dodge",
     "address": "648 Fourth Ave. N.",
@@ -20517,7 +22065,11 @@
   },
   {
     "incident_id": 92405,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New Jersey",
     "city_or_county": "Toms River",
     "address": "Route 9, Toms River Ramada Inn",
@@ -20553,7 +22105,11 @@
   },
   {
     "incident_id": 92292,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Indiana",
     "city_or_county": "Fort Wayne",
     "address": "4815 block of Reed Street",
@@ -20597,7 +22153,11 @@
   },
   {
     "incident_id": 108870,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Alaska",
     "city_or_county": "Tanana",
     "address": null,
@@ -20621,7 +22181,11 @@
   },
   {
     "incident_id": 92469,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Arkansas",
     "city_or_county": "Little Rock",
     "address": "1624 College Street",
@@ -20668,7 +22232,11 @@
   },
   {
     "incident_id": 92839,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Louisiana",
     "city_or_county": "New Orleans",
     "address": "2100 block of North Rampart",
@@ -20708,7 +22276,11 @@
   },
   {
     "incident_id": 92288,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "North Carolina",
     "city_or_county": "Greenville",
     "address": "2315 East 10th Street",
@@ -20752,7 +22324,11 @@
   },
   {
     "incident_id": 108869,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Arizona",
     "city_or_county": "Douglas",
     "address": "200 block of 10th",
@@ -20776,7 +22352,11 @@
   },
   {
     "incident_id": 92456,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Alabama",
     "city_or_county": "Huntsville",
     "address": "4170 University Drive",
@@ -20813,7 +22393,11 @@
   },
   {
     "incident_id": 92836,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Louisiana",
     "city_or_county": "New Orleans",
     "address": "1000 block of Frenchmen Street",
@@ -20859,7 +22443,11 @@
   },
   {
     "incident_id": 92225,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Alabama",
     "city_or_county": "Huntsville",
     "address": "3900 block of Neptune Drive",
@@ -20900,7 +22488,11 @@
   },
   {
     "incident_id": 95271,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Colorado",
     "city_or_county": "Denver",
     "address": "4200 block of Cook Street ",
@@ -20941,7 +22533,11 @@
   },
   {
     "incident_id": 92434,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Connecticut",
     "city_or_county": "Cromwell",
     "address": "Crowne Plaza Hotel on Berlin Road",
@@ -20969,7 +22565,11 @@
   },
   {
     "incident_id": 92828,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Mississippi",
     "city_or_county": "Newton",
     "address": null,
@@ -21011,7 +22611,11 @@
   },
   {
     "incident_id": 92221,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Alabama",
     "city_or_county": "Birmingham",
     "address": "3200 block of Wesley Avenue",
@@ -21051,7 +22655,11 @@
   },
   {
     "incident_id": 95268,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Ohio",
     "city_or_county": "Columbus",
     "address": null,
@@ -21085,7 +22693,11 @@
   },
   {
     "incident_id": 92373,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Maryland",
     "city_or_county": "Baltimore",
     "address": "900 block of Edmondson Ave.",
@@ -21128,7 +22740,11 @@
   },
   {
     "incident_id": 92607,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Michigan",
     "city_or_county": "Detroit",
     "address": "10500 block Wayburn ",
@@ -21160,7 +22776,11 @@
   },
   {
     "incident_id": 92162,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "California",
     "city_or_county": "Los Angeles",
     "address": "6800 block of North Figueroa Street",
@@ -21196,7 +22816,11 @@
   },
   {
     "incident_id": 94637,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Georgia",
     "city_or_county": "Atlanta",
     "address": "East Lake",
@@ -21232,7 +22856,11 @@
   },
   {
     "incident_id": 92363,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Kansas",
     "city_or_county": "Saint Marys",
     "address": null,
@@ -21274,7 +22902,11 @@
   },
   {
     "incident_id": 92602,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Michigan",
     "city_or_county": "Detroit",
     "address": "12000 block of St. Patrick ",
@@ -21325,7 +22957,11 @@
   },
   {
     "incident_id": 92156,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Louisiana",
     "city_or_county": "Shreveport",
     "address": "2600 block of Lillian Street",
@@ -21359,7 +22995,11 @@
   },
   {
     "incident_id": 92139,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Staten Island",
     "address": "Park Hill Ave.",
@@ -21393,7 +23033,11 @@
   },
   {
     "incident_id": 92133,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Brooklyn",
     "address": "Sumpter St.",
@@ -21427,7 +23071,11 @@
   },
   {
     "incident_id": 94476,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New Jersey",
     "city_or_county": "Bridgeton",
     "address": "200 block of East Avenue",
@@ -21472,7 +23120,11 @@
   },
   {
     "incident_id": 92587,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "1100 block of West Ardmore Av",
@@ -21513,7 +23165,11 @@
   },
   {
     "incident_id": 92360,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Colorado",
     "city_or_county": "Colorado Springs",
     "address": "Michelle Court",
@@ -21554,7 +23210,11 @@
   },
   {
     "incident_id": 93431,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Texas",
     "city_or_county": "Hebbronville",
     "address": null,
@@ -21590,7 +23250,11 @@
   },
   {
     "incident_id": 92307,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Wisconsin",
     "city_or_county": "Milwaukee",
     "address": "4700 block of N. 50th St",
@@ -21624,7 +23288,11 @@
   },
   {
     "incident_id": 92519,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Tennessee",
     "city_or_county": "Humboldt",
     "address": null,
@@ -21660,7 +23328,11 @@
   },
   {
     "incident_id": 95244,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Chesapeake",
     "address": "405 Shell Rd",
@@ -21686,7 +23358,11 @@
   },
   {
     "incident_id": 92251,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Ohio",
     "city_or_county": "Cleveland",
     "address": "12108 Marne Av",
@@ -21723,7 +23399,11 @@
   },
   {
     "incident_id": 217091,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Arizona",
     "city_or_county": "Phoenix",
     "address": "3400 E Sky Harbor Blvd",
@@ -21747,7 +23427,11 @@
   },
   {
     "incident_id": 92512,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Riviera Beach",
     "address": "1141 West 31st Street",
@@ -21797,7 +23481,11 @@
   },
   {
     "incident_id": 95236,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Texas",
     "city_or_county": "San Antonio",
     "address": "9200 block of West Alametos",
@@ -21831,7 +23519,11 @@
   },
   {
     "incident_id": 92248,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Russell County",
     "address": "Gravel Lick ",
@@ -21870,7 +23562,11 @@
   },
   {
     "incident_id": 165411,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Texas",
     "city_or_county": "Corpus Christi",
     "address": "4600 block of Valdez",
@@ -21912,7 +23608,11 @@
   },
   {
     "incident_id": 92400,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New Jersey",
     "city_or_county": "Jersey City",
     "address": "Monticello and Jewett Avenues",
@@ -21953,7 +23653,11 @@
   },
   {
     "incident_id": 93422,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Texas",
     "city_or_county": "Harker Heights",
     "address": "300 block of East Central Texas Expressway",
@@ -21985,7 +23689,11 @@
   },
   {
     "incident_id": 289294,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Niagara Falls",
     "address": "Memorial Parkway",
@@ -22022,7 +23730,11 @@
   },
   {
     "incident_id": 92243,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Chesapeake",
     "address": "3800 block of Schooner Trail",
@@ -22056,7 +23768,11 @@
   },
   {
     "incident_id": 92397,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Pennsylvania",
     "city_or_county": "Morrisville",
     "address": "Wellington Woods Apartments along Sweetbriar Road",
@@ -22090,7 +23806,11 @@
   },
   {
     "incident_id": 93235,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Texas",
     "city_or_county": "Fort Worth",
     "address": "6800 block of the S. Freeway Service Road",
@@ -22130,7 +23850,11 @@
   },
   {
     "incident_id": 92202,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Newport News",
     "address": "11975 Jefferson Avenue",
@@ -22164,7 +23888,11 @@
   },
   {
     "incident_id": 95620,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Massachusetts",
     "city_or_county": "Lynn",
     "address": " Congress Street",
@@ -22196,7 +23924,11 @@
   },
   {
     "incident_id": 92311,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Wisconsin",
     "city_or_county": "West Allis",
     "address": "1100 block of S. 62nd St",
@@ -22234,7 +23966,11 @@
   },
   {
     "incident_id": 92677,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Maryland",
     "city_or_county": "Baltimore",
     "address": "5100 block of Queensberry Avenue",
@@ -22266,7 +24002,11 @@
   },
   {
     "incident_id": 92200,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Newport News",
     "address": "1100 block of 27th Street",
@@ -22308,7 +24048,11 @@
   },
   {
     "incident_id": 95290,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Nevada",
     "city_or_county": "Las Vegas",
     "address": "N Las Vegas",
@@ -22332,7 +24076,11 @@
   },
   {
     "incident_id": 92309,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Wisconsin",
     "city_or_county": "Milwaukee",
     "address": "1400 block of S. 11th St",
@@ -22364,7 +24112,11 @@
   },
   {
     "incident_id": 92672,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Maryland",
     "city_or_county": "Baltimore",
     "address": "5900 block of Edna Avenue",
@@ -22396,7 +24148,11 @@
   },
   {
     "incident_id": 92197,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Newport News",
     "address": "32nd Street and Marshall Avenue",
@@ -22432,7 +24188,11 @@
   },
   {
     "incident_id": 165408,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Texas",
     "city_or_county": "Corpus Christi",
     "address": "5441 Everhart Rd.",
@@ -22472,7 +24232,11 @@
   },
   {
     "incident_id": 97866,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Louisiana",
     "city_or_county": "Walker",
     "address": "12178 Village Drive",
@@ -22515,7 +24279,11 @@
   },
   {
     "incident_id": 94486,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New Jersey",
     "city_or_county": "Bridgeton",
     "address": "100 block of Irving Avenue",
@@ -22557,7 +24325,11 @@
   },
   {
     "incident_id": 92160,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Oklahoma",
     "city_or_county": "Chelsea",
     "address": "13650 S. 425 Road",
@@ -22593,7 +24365,11 @@
   },
   {
     "incident_id": 92230,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Richmond",
     "address": "4027 W. Broad St.",
@@ -22625,7 +24401,11 @@
   },
   {
     "incident_id": 141405,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Indiana",
     "city_or_county": "Fort Wayne",
     "address": "800 Growth Avenue",
@@ -22670,7 +24450,11 @@
   },
   {
     "incident_id": 92386,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "California",
     "city_or_county": "Bakersfield",
     "address": "3510 Wible Rd",
@@ -22712,7 +24496,11 @@
   },
   {
     "incident_id": 92924,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Illinois",
     "city_or_county": "Springfield",
     "address": "1801 S. 11th St",
@@ -22747,7 +24535,11 @@
   },
   {
     "incident_id": 92228,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Arkansas",
     "city_or_county": "Pine Bluff",
     "address": "2300 block of Port Road",
@@ -22787,7 +24579,11 @@
   },
   {
     "incident_id": 121881,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Minnesota",
     "city_or_county": "Rochester",
     "address": "5032 25th Ave. N.W",
@@ -22835,7 +24631,11 @@
   },
   {
     "incident_id": 92376,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Alaska",
     "city_or_county": "Anchorage",
     "address": "Woburn Circle ",
@@ -22879,7 +24679,11 @@
   },
   {
     "incident_id": 92908,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Missouri",
     "city_or_county": "Saint Louis",
     "address": "4300 block of McRee",
@@ -22921,7 +24725,11 @@
   },
   {
     "incident_id": 92186,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Kentucky",
     "city_or_county": "Leslie County",
     "address": null,
@@ -22960,7 +24768,11 @@
   },
   {
     "incident_id": 95283,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Washington",
     "city_or_county": "Cape Horn",
     "address": null,
@@ -22996,7 +24808,11 @@
   },
   {
     "incident_id": 92620,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Michigan",
     "city_or_county": "Detroit",
     "address": "Melrose",
@@ -23041,7 +24857,11 @@
   },
   {
     "incident_id": 92183,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Kentucky",
     "city_or_county": "Lexington",
     "address": "Maple Avenue",
@@ -23077,7 +24897,11 @@
   },
   {
     "incident_id": 95277,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Georgia",
     "city_or_county": "Atlanta",
     "address": "Habershal Drive",
@@ -23121,7 +24945,11 @@
   },
   {
     "incident_id": 92296,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Illinois",
     "city_or_county": "Chicago",
     "address": "7th Street and Rhodes Av",
@@ -23160,7 +24988,11 @@
   },
   {
     "incident_id": 92612,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Michigan",
     "city_or_county": "Detroit",
     "address": "11600 block of Robson",
@@ -23198,7 +25030,11 @@
   },
   {
     "incident_id": 92165,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Kentucky",
     "city_or_county": "Elliott County",
     "address": "Dehart Road",
@@ -23239,7 +25075,11 @@
   },
   {
     "incident_id": 92560,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Sunrise",
     "address": "2100 block of 64th Avenue",
@@ -23281,7 +25121,11 @@
   },
   {
     "incident_id": 95246,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Missouri",
     "city_or_county": "Saint Louis",
     "address": "Wyoming and Michigan",
@@ -23306,7 +25150,11 @@
   },
   {
     "incident_id": 92522,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Pinellas Park",
     "address": null,
@@ -23350,7 +25198,11 @@
   },
   {
     "incident_id": 95245,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Richmond",
     "address": "3215 E Broad St",
@@ -23374,7 +25226,11 @@
   },
   {
     "incident_id": 92409,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New Jersey",
     "city_or_county": "Trenton",
     "address": "800 block of Lamberton Street",
@@ -23407,7 +25263,11 @@
   },
   {
     "incident_id": 93491,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Iowa",
     "city_or_county": "Iowa City",
     "address": "backseat of victim's car",
@@ -23447,7 +25307,11 @@
   },
   {
     "incident_id": 92453,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Alabama",
     "city_or_county": "Huntsville",
     "address": "4300 block of Patton Road",
@@ -23490,7 +25354,11 @@
   },
   {
     "incident_id": 94704,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Texas",
     "city_or_county": "Killeen",
     "address": "1100 block of 38th Street ",
@@ -23534,7 +25402,11 @@
   },
   {
     "incident_id": 92472,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "North Carolina",
     "city_or_county": "Davidson County",
     "address": "1224 Old N.C. 109",
@@ -23577,7 +25449,11 @@
   },
   {
     "incident_id": 92301,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Illinois",
     "city_or_county": "Rockford",
     "address": "Auburn and Central Streets",
@@ -23609,7 +25485,11 @@
   },
   {
     "incident_id": 92233,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "North Carolina",
     "city_or_county": "Erwin",
     "address": "Bunnlevel Erwin Road",
@@ -23651,7 +25531,11 @@
   },
   {
     "incident_id": 261045,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Niagara Falls",
     "address": "Seventh Street",
@@ -23694,7 +25578,11 @@
   },
   {
     "incident_id": 150401,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Syracuse",
     "address": "800 block of North Alvord Street",
@@ -23732,7 +25620,11 @@
   },
   {
     "incident_id": 95211,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington",
     "address": "5800 block of 5th Street NW",
@@ -23758,7 +25650,11 @@
   },
   {
     "incident_id": 95207,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington",
     "address": "5100 block of Fitch Street SE",
@@ -23782,7 +25678,11 @@
   },
   {
     "incident_id": 95203,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington",
     "address": "2700 block of Langston Place SE",
@@ -23806,7 +25706,11 @@
   },
   {
     "incident_id": 95212,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington",
     "address": "4th and U Street NW",
@@ -23830,7 +25734,11 @@
   },
   {
     "incident_id": 95206,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington",
     "address": "100 Main Street NW",
@@ -23854,7 +25762,11 @@
   },
   {
     "incident_id": 95202,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington",
     "address": "Unit block of W. Street NW",
@@ -23880,7 +25792,11 @@
   },
   {
     "incident_id": 182940,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Michigan",
     "city_or_county": "Detroit (Redford Charter Township)",
     "address": "Pickford and Beech Daly",
@@ -23926,7 +25842,11 @@
   },
   {
     "incident_id": 92859,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Louisiana",
     "city_or_county": "Richland Parish (county)",
     "address": null,
@@ -23971,7 +25891,11 @@
   },
   {
     "incident_id": 92114,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Kentucky",
     "city_or_county": "Lexington",
     "address": "Sixth Street and Elm Tree Lane",
@@ -24003,7 +25927,11 @@
   },
   {
     "incident_id": 92137,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Bronx",
     "address": "E. 178th St. and Belmont Ave",
@@ -24037,7 +25965,11 @@
   },
   {
     "incident_id": 95173,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "District of Columbia",
     "city_or_county": "Washington",
     "address": "200 block of 8th Street SE",
@@ -24065,7 +25997,11 @@
   },
   {
     "incident_id": 95273,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Indiana",
     "city_or_county": "Indianapolis",
     "address": "East 38th Street and Franklin Road ",
@@ -24101,7 +26037,11 @@
   },
   {
     "incident_id": 92148,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Brooklyn",
     "address": "2210 Church Ave",
@@ -24144,7 +26084,11 @@
   },
   {
     "incident_id": 92158,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Virginia",
     "city_or_county": "Castlewood",
     "address": null,
@@ -24172,7 +26116,11 @@
   },
   {
     "incident_id": 92245,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Ohio",
     "city_or_county": "Dayton",
     "address": "800 block of Lexington Ave",
@@ -24206,7 +26154,11 @@
   },
   {
     "incident_id": 92151,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "West Virginia",
     "city_or_county": "Charleston",
     "address": "600 block of Virginia Street",
@@ -24250,7 +26202,11 @@
   },
   {
     "incident_id": 92432,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "New York",
     "city_or_county": "Rochester",
     "address": "55 Lois Street",
@@ -24299,7 +26255,11 @@
   },
   {
     "incident_id": 100729,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Orlando",
     "address": "Sun Dew Drive",
@@ -24341,7 +26301,11 @@
   },
   {
     "incident_id": 92294,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "North Carolina",
     "city_or_county": "Columbus County",
     "address": "Buffkin Road",
@@ -24377,7 +26341,11 @@
   },
   {
     "incident_id": 92481,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Florida",
     "city_or_county": "Jacksonville",
     "address": "9009 Western Lake Drive",
@@ -24416,7 +26384,11 @@
   },
   {
     "incident_id": 92177,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Ohio",
     "city_or_county": "Miami Township",
     "address": "6600 block of Faversham Rd",
@@ -24457,7 +26429,11 @@
   },
   {
     "incident_id": 95071,
-    "date": "2014-01-01",
+    "date": [
+      "2014",
+      "01",
+      "01"
+    ],
     "state": "Louisiana",
     "city_or_county": "Baton Rouge",
     "address": null,
@@ -24493,7 +26469,11 @@
   },
   {
     "incident_id": 92679,
-    "date": "2014-01-02",
+    "date": [
+      "2014",
+      "01",
+      "02"
+    ],
     "state": "Maryland",
     "city_or_county": "Baltimore",
     "address": "Kavon and Shamrock Avenues",
@@ -24525,7 +26505,11 @@
   },
   {
     "incident_id": 213872,
-    "date": "2014-01-02",
+    "date": [
+      "2014",
+      "01",
+      "02"
+    ],
     "state": "Maryland",
     "city_or_county": "Prince George's County",
     "address": "Queens Chapel Road",
@@ -24560,7 +26544,11 @@
   },
   {
     "incident_id": 152090,
-    "date": "2014-01-02",
+    "date": [
+      "2014",
+      "01",
+      "02"
+    ],
     "state": "New Jersey",
     "city_or_county": "Fort Lee",
     "address": "420 Fairview Avenue Apartment 5-C",
@@ -24594,7 +26582,11 @@
   },
   {
     "incident_id": 92524,
-    "date": "2014-01-02",
+    "date": [
+      "2014",
+      "01",
+      "02"
+    ],
     "state": "Florida",
     "city_or_county": "Saint Petersburg",
     "address": "1833 First Avenue South",
