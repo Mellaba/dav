@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="8e198d3e-510e-4e4e-b618-72a945aa87da"></div>
+        </div>
+        
+        <script type="application/json" id="d60e8061-d630-4bdd-98db-716a048d27eb">
+          {"f0c1541b-2a60-43b2-b670-d4d7da4109f5":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto"},"id":"531265d4-e5eb-4785-b5ee-e89aab4678f8","type":"Toolbar"},{"attributes":{},"id":"e5d2288c-0f3a-4953-8065-57cc40d865a9","type":"CategoricalTicker"},{"attributes":{"plot":null,"text":"Fruit Counts by Year"},"id":"c3f707ee-06f4-4559-8916-c8d6596436b5","type":"Title"},{"attributes":{"below":[{"id":"9f071db0-afa7-47b3-a359-8210e6f4e370","type":"CategoricalAxis"}],"left":[{"id":"488e7f71-bf90-40f5-baab-6e8bf4df3e54","type":"LinearAxis"}],"plot_height":350,"renderers":[{"id":"9f071db0-afa7-47b3-a359-8210e6f4e370","type":"CategoricalAxis"},{"id":"be498327-c98a-4f99-bb70-4faf95cc0fb7","type":"Grid"},{"id":"488e7f71-bf90-40f5-baab-6e8bf4df3e54","type":"LinearAxis"},{"id":"6b89dcd9-05a7-4b51-b378-7a8ff468b52b","type":"Grid"},{"id":"9c9f9a20-db72-4297-8fa6-e28b9cb0d928","type":"GlyphRenderer"}],"title":{"id":"c3f707ee-06f4-4559-8916-c8d6596436b5","type":"Title"},"toolbar":{"id":"531265d4-e5eb-4785-b5ee-e89aab4678f8","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"66510730-b9e0-4075-b38d-19d4410c9dec","type":"FactorRange"},"x_scale":{"id":"ffd1ec95-85ce-41b7-9441-93b47488f2a8","type":"CategoricalScale"},"y_range":{"id":"6ef180dd-dad6-434b-92a9-be8f02070ad5","type":"DataRange1d"},"y_scale":{"id":"f37316c9-d0e3-4d6b-ba52-d9038fa0fdf1","type":"LinearScale"}},"id":"9ffbe998-5859-470a-904d-96aeb8f72aec","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":[["January","Male"],["January","Female"],["February","Male"],["February","Female"],["March","Male"],["March","Female"],["April","Male"],["April","Female"],["May","Male"],["May","Female"],["June","Male"],["June","Female"],["July","Male"],["July","Female"],["August","Male"],["August","Female"],["September","Male"],["September","Female"],["October","Male"],["October","Female"],["November","Male"],["November","Female"],["December","Male"],["December","Female"]],"range_padding":0.1},"id":"66510730-b9e0-4075-b38d-19d4410c9dec","type":"FactorRange"},{"attributes":{"data_source":{"id":"ce8c4e4a-8b15-4a82-9472-06401f8b3531","type":"ColumnDataSource"},"glyph":{"id":"51d7f6fd-7afa-4232-94a3-404ce0fde381","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"8a31986e-bb81-4c1e-8894-c0ba53b4c2dd","type":"VBar"},"selection_glyph":null,"view":{"id":"449a1a2f-1c5e-4686-b7ea-a3748facb077","type":"CDSView"}},"id":"9c9f9a20-db72-4297-8fa6-e28b9cb0d928","type":"GlyphRenderer"},{"attributes":{"end":2,"factors":["Male","Female"],"palette":["#718dbf","#e84d60"],"start":1},"id":"2c85d162-6e2a-4f8e-87a5-1bed70fbb5ea","type":"CategoricalColorMapper"},{"attributes":{},"id":"d4faf315-a44f-480a-9078-1b57337c9598","type":"CategoricalTickFormatter"},{"attributes":{"source":{"id":"ce8c4e4a-8b15-4a82-9472-06401f8b3531","type":"ColumnDataSource"}},"id":"449a1a2f-1c5e-4686-b7ea-a3748facb077","type":"CDSView"},{"attributes":{"callback":null,"column_names":["x","counts"],"data":{"counts":[2,5,1,3,4,3,3,2,2,4,4,6,5,1,5,2,7,3,8,4,2,5,1,6],"x":[["January","Male"],["January","Female"],["February","Male"],["February","Female"],["March","Male"],["March","Female"],["April","Male"],["April","Female"],["May","Male"],["May","Female"],["June","Male"],["June","Female"],["July","Male"],["July","Female"],["August","Male"],["August","Female"],["September","Male"],["September","Female"],["October","Male"],["October","Female"],["November","Male"],["November","Female"],["December","Male"],["December","Female"]]}},"id":"ce8c4e4a-8b15-4a82-9472-06401f8b3531","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"x"}},"id":"8a31986e-bb81-4c1e-8894-c0ba53b4c2dd","type":"VBar"},{"attributes":{"fill_color":{"field":"x","transform":{"id":"2c85d162-6e2a-4f8e-87a5-1bed70fbb5ea","type":"CategoricalColorMapper"}},"line_color":{"value":"white"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"x"}},"id":"51d7f6fd-7afa-4232-94a3-404ce0fde381","type":"VBar"},{"attributes":{"formatter":{"id":"77c2db0a-4093-42c4-a05f-987058c7b2a4","type":"BasicTickFormatter"},"plot":{"id":"9ffbe998-5859-470a-904d-96aeb8f72aec","subtype":"Figure","type":"Plot"},"ticker":{"id":"3b39430b-7140-4204-a248-a99a7920a48e","type":"BasicTicker"}},"id":"488e7f71-bf90-40f5-baab-6e8bf4df3e54","type":"LinearAxis"},{"attributes":{"formatter":{"id":"d4faf315-a44f-480a-9078-1b57337c9598","type":"CategoricalTickFormatter"},"major_label_orientation":1,"plot":{"id":"9ffbe998-5859-470a-904d-96aeb8f72aec","subtype":"Figure","type":"Plot"},"ticker":{"id":"e5d2288c-0f3a-4953-8065-57cc40d865a9","type":"CategoricalTicker"}},"id":"9f071db0-afa7-47b3-a359-8210e6f4e370","type":"CategoricalAxis"},{"attributes":{},"id":"ffd1ec95-85ce-41b7-9441-93b47488f2a8","type":"CategoricalScale"},{"attributes":{},"id":"77c2db0a-4093-42c4-a05f-987058c7b2a4","type":"BasicTickFormatter"},{"attributes":{},"id":"f37316c9-d0e3-4d6b-ba52-d9038fa0fdf1","type":"LinearScale"},{"attributes":{"dimension":1,"plot":{"id":"9ffbe998-5859-470a-904d-96aeb8f72aec","subtype":"Figure","type":"Plot"},"ticker":{"id":"3b39430b-7140-4204-a248-a99a7920a48e","type":"BasicTicker"}},"id":"6b89dcd9-05a7-4b51-b378-7a8ff468b52b","type":"Grid"},{"attributes":{},"id":"3b39430b-7140-4204-a248-a99a7920a48e","type":"BasicTicker"},{"attributes":{"callback":null,"start":0},"id":"6ef180dd-dad6-434b-92a9-be8f02070ad5","type":"DataRange1d"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"9ffbe998-5859-470a-904d-96aeb8f72aec","subtype":"Figure","type":"Plot"},"ticker":{"id":"e5d2288c-0f3a-4953-8065-57cc40d865a9","type":"CategoricalTicker"}},"id":"be498327-c98a-4f99-bb70-4faf95cc0fb7","type":"Grid"}],"root_ids":["9ffbe998-5859-470a-904d-96aeb8f72aec"]},"title":"Bokeh Application","version":"0.12.13"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('d60e8061-d630-4bdd-98db-716a048d27eb').textContent;
+                  var render_items = [{"docid":"f0c1541b-2a60-43b2-b670-d4d7da4109f5","elementid":"8e198d3e-510e-4e4e-b618-72a945aa87da","modelid":"9ffbe998-5859-470a-904d-96aeb8f72aec"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    </body>
+</html>
