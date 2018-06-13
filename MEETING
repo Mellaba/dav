@@ -2,7 +2,6 @@ Meeting 11-6:
 - Moeten we alle waarden in de dataset lowercase maken?
 
 
-
 Besproken:
 - onderbouwen wat we weg doen - behouden
 - onderbouwen waarom json
@@ -11,3 +10,9 @@ Besproken:
 - lege waarden? Hoe zit het in json?
 - wat voor vragen willen we nog beantwoorden?
 - bokeh
+- 2013 niet uit de set halen maar niet gebruiken bij jaarvergelijking
+- lowercase? Hangt er vanaf hoe je ze wil vergelijken, je kan het voor de zekerheid altijd doen
+- Even kijken naar unieke waarden
+- Uiteindelijk: 1 interactieve plot 
+- plots die je gebruikt moet je uiteindelijk wel iets over kunnen zeggen
+- schrijf de vragen op
