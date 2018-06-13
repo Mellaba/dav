@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="da07e6a8-edbc-4019-9772-e3acf860bfd8"></div>
+        </div>
+        
+        <script type="application/json" id="f4d908d0-0921-4473-9a54-027bf016d2a3">
+          {"f819f26a-4bb9-4fb8-94d9-e53312f0590a":{"roots":{"references":[{"attributes":{"dimension":1,"plot":{"id":"34f1e316-184f-4316-afe1-3647e3a5f560","subtype":"Figure","type":"Plot"},"ticker":{"id":"af349ea9-b498-4cb1-af7f-833d2d9afccf","type":"BasicTicker"}},"id":"83472782-5436-4d77-992a-75d3aa574652","type":"Grid"},{"attributes":{"source":{"id":"ea31a364-a00e-44fd-a713-630be85c3abf","type":"ColumnDataSource"}},"id":"7833de82-aa4b-4f92-8858-e99865c50e86","type":"CDSView"},{"attributes":{},"id":"af349ea9-b498-4cb1-af7f-833d2d9afccf","type":"BasicTicker"},{"attributes":{"bottom":{"expr":{"id":"dbf6d7f3-c87f-4ac9-a7f4-bbb9ed04a862","type":"Stack"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"expr":{"id":"2fc7ef5a-420d-4c2d-9b9c-ea4fd83dbe81","type":"Stack"}},"width":{"value":0.9},"x":{"field":"genders"}},"id":"8029f331-6dd2-472c-8de0-bdd5410060de","type":"VBar"},{"attributes":{"callback":null,"start":0},"id":"7e3785aa-05a2-4179-bea4-44b8d38f6fc8","type":"DataRange1d"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"34f1e316-184f-4316-afe1-3647e3a5f560","subtype":"Figure","type":"Plot"},"ticker":{"id":"7e3f9782-d13d-45ba-b6eb-4a338f030e0c","type":"CategoricalTicker"}},"id":"11a9e8a0-76ae-4471-9dac-d1d59405fed2","type":"Grid"},{"attributes":{},"id":"646943cb-8a50-44c1-8540-baed158b0a03","type":"CategoricalScale"},{"attributes":{},"id":"7e3f9782-d13d-45ba-b6eb-4a338f030e0c","type":"CategoricalTicker"},{"attributes":{"items":[{"id":"a45d733f-debb-4dd2-84e8-6900aa5e8605","type":"LegendItem"},{"id":"63c686d0-a002-4eaa-abda-10db6e06e28d","type":"LegendItem"}],"location":"top_left","orientation":"horizontal","plot":{"id":"34f1e316-184f-4316-afe1-3647e3a5f560","subtype":"Figure","type":"Plot"}},"id":"ccda86be-0d0d-4e0a-b514-92c4397bbd1c","type":"Legend"},{"attributes":{"formatter":{"id":"2bbdb02c-51c2-434f-b92f-e0d0750dac42","type":"CategoricalTickFormatter"},"minor_tick_line_color":{"value":null},"plot":{"id":"34f1e316-184f-4316-afe1-3647e3a5f560","subtype":"Figure","type":"Plot"},"ticker":{"id":"7e3f9782-d13d-45ba-b6eb-4a338f030e0c","type":"CategoricalTicker"}},"id":"3b22ea24-54e9-4c77-b888-97b62cf9e892","type":"CategoricalAxis"},{"attributes":{"label":{"value":"Victim"},"renderers":[{"id":"dfba7cd6-a140-43f5-ba6f-0e9fdbc50277","type":"GlyphRenderer"}]},"id":"a45d733f-debb-4dd2-84e8-6900aa5e8605","type":"LegendItem"},{"attributes":{"formatter":{"id":"fd04c63b-8878-4503-a3a4-3c2977c51acd","type":"BasicTickFormatter"},"minor_tick_line_color":{"value":null},"plot":{"id":"34f1e316-184f-4316-afe1-3647e3a5f560","subtype":"Figure","type":"Plot"},"ticker":{"id":"af349ea9-b498-4cb1-af7f-833d2d9afccf","type":"BasicTicker"}},"id":"28c030c1-72d5-42b9-9cf5-4b2bedd1b2c4","type":"LinearAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto"},"id":"77683039-21ed-4968-be40-9df24881026a","type":"Toolbar"},{"attributes":{"bottom":{"expr":{"id":"0ed6905c-c60c-4d5a-960a-8d524994ac60","type":"Stack"}},"fill_color":{"value":"#718dbf"},"line_color":{"value":"#718dbf"},"top":{"expr":{"id":"2d4aaecd-a0bc-4c94-a228-fcf0f7d921c6","type":"Stack"}},"width":{"value":0.9},"x":{"field":"genders"}},"id":"b9cb454e-ad51-48df-82d6-570c9d23e355","type":"VBar"},{"attributes":{},"id":"b8510344-531b-405b-a186-c76963c332da","type":"LinearScale"},{"attributes":{"callback":null,"factors":["Male","Female"],"range_padding":0.1},"id":"d65112e1-0c53-4ed6-a9c7-1d90066befa7","type":"FactorRange"},{"attributes":{},"id":"fd04c63b-8878-4503-a3a4-3c2977c51acd","type":"BasicTickFormatter"},{"attributes":{"plot":null,"text":"Gender in gunviolence by type"},"id":"33a0e84a-dd4b-4bb5-b0a7-f1ecad5cb74d","type":"Title"},{"attributes":{"data_source":{"id":"ea31a364-a00e-44fd-a713-630be85c3abf","type":"ColumnDataSource"},"glyph":{"id":"7bd25e74-a800-43d2-b04d-28562ad40d73","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"name":"Victim","nonselection_glyph":{"id":"8029f331-6dd2-472c-8de0-bdd5410060de","type":"VBar"},"selection_glyph":null,"view":{"id":"7833de82-aa4b-4f92-8858-e99865c50e86","type":"CDSView"}},"id":"dfba7cd6-a140-43f5-ba6f-0e9fdbc50277","type":"GlyphRenderer"},{"attributes":{"bottom":{"expr":{"id":"dbf6d7f3-c87f-4ac9-a7f4-bbb9ed04a862","type":"Stack"}},"fill_color":{"value":"#c9d9d3"},"line_color":{"value":"#c9d9d3"},"top":{"expr":{"id":"2fc7ef5a-420d-4c2d-9b9c-ea4fd83dbe81","type":"Stack"}},"width":{"value":0.9},"x":{"field":"genders"}},"id":"7bd25e74-a800-43d2-b04d-28562ad40d73","type":"VBar"},{"attributes":{"below":[{"id":"3b22ea24-54e9-4c77-b888-97b62cf9e892","type":"CategoricalAxis"}],"left":[{"id":"28c030c1-72d5-42b9-9cf5-4b2bedd1b2c4","type":"LinearAxis"}],"outline_line_color":{"value":null},"plot_height":350,"renderers":[{"id":"3b22ea24-54e9-4c77-b888-97b62cf9e892","type":"CategoricalAxis"},{"id":"11a9e8a0-76ae-4471-9dac-d1d59405fed2","type":"Grid"},{"id":"28c030c1-72d5-42b9-9cf5-4b2bedd1b2c4","type":"LinearAxis"},{"id":"83472782-5436-4d77-992a-75d3aa574652","type":"Grid"},{"id":"ccda86be-0d0d-4e0a-b514-92c4397bbd1c","type":"Legend"},{"id":"dfba7cd6-a140-43f5-ba6f-0e9fdbc50277","type":"GlyphRenderer"},{"id":"48126472-50ce-48ac-9805-e7ae8b292f26","type":"GlyphRenderer"}],"title":{"id":"33a0e84a-dd4b-4bb5-b0a7-f1ecad5cb74d","type":"Title"},"toolbar":{"id":"77683039-21ed-4968-be40-9df24881026a","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"d65112e1-0c53-4ed6-a9c7-1d90066befa7","type":"FactorRange"},"x_scale":{"id":"646943cb-8a50-44c1-8540-baed158b0a03","type":"CategoricalScale"},"y_range":{"id":"7e3785aa-05a2-4179-bea4-44b8d38f6fc8","type":"DataRange1d"},"y_scale":{"id":"b8510344-531b-405b-a186-c76963c332da","type":"LinearScale"}},"id":"34f1e316-184f-4316-afe1-3647e3a5f560","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"2bbdb02c-51c2-434f-b92f-e0d0750dac42","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"column_names":["genders","Victim","Suspect"],"data":{"Suspect":[167708,11746],"Victim":[136394,30630],"genders":["Male","Female"]}},"id":"ea31a364-a00e-44fd-a713-630be85c3abf","type":"ColumnDataSource"},{"attributes":{"source":{"id":"ea31a364-a00e-44fd-a713-630be85c3abf","type":"ColumnDataSource"}},"id":"5de9cd9e-55cb-47af-bebd-e0ba290cbc20","type":"CDSView"},{"attributes":{"fields":[]},"id":"dbf6d7f3-c87f-4ac9-a7f4-bbb9ed04a862","type":"Stack"},{"attributes":{"data_source":{"id":"ea31a364-a00e-44fd-a713-630be85c3abf","type":"ColumnDataSource"},"glyph":{"id":"b9cb454e-ad51-48df-82d6-570c9d23e355","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"name":"Suspect","nonselection_glyph":{"id":"f97a5b36-db44-4f48-8140-fe3ba899744b","type":"VBar"},"selection_glyph":null,"view":{"id":"5de9cd9e-55cb-47af-bebd-e0ba290cbc20","type":"CDSView"}},"id":"48126472-50ce-48ac-9805-e7ae8b292f26","type":"GlyphRenderer"},{"attributes":{"fields":["Victim"]},"id":"0ed6905c-c60c-4d5a-960a-8d524994ac60","type":"Stack"},{"attributes":{"bottom":{"expr":{"id":"0ed6905c-c60c-4d5a-960a-8d524994ac60","type":"Stack"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"expr":{"id":"2d4aaecd-a0bc-4c94-a228-fcf0f7d921c6","type":"Stack"}},"width":{"value":0.9},"x":{"field":"genders"}},"id":"f97a5b36-db44-4f48-8140-fe3ba899744b","type":"VBar"},{"attributes":{"fields":["Victim"]},"id":"2fc7ef5a-420d-4c2d-9b9c-ea4fd83dbe81","type":"Stack"},{"attributes":{"fields":["Victim","Suspect"]},"id":"2d4aaecd-a0bc-4c94-a228-fcf0f7d921c6","type":"Stack"},{"attributes":{"label":{"value":"Suspect"},"renderers":[{"id":"48126472-50ce-48ac-9805-e7ae8b292f26","type":"GlyphRenderer"}]},"id":"63c686d0-a002-4eaa-abda-10db6e06e28d","type":"LegendItem"}],"root_ids":["34f1e316-184f-4316-afe1-3647e3a5f560"]},"title":"Bokeh Application","version":"0.12.13"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('f4d908d0-0921-4473-9a54-027bf016d2a3').textContent;
+                  var render_items = [{"docid":"f819f26a-4bb9-4fb8-94d9-e53312f0590a","elementid":"da07e6a8-edbc-4019-9772-e3acf860bfd8","modelid":"34f1e316-184f-4316-afe1-3647e3a5f560"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    </body>
+</html>

@@ -46,7 +46,7 @@ for incident in data:
         else:
             victimgender[value] += 1
 
-print(victimgender)
+# print(victimgender)
 
 # GENDER PER MAAND
 
@@ -66,7 +66,7 @@ for incident in data:
         elif gender == 'Female':
             gendermonths['Female'][month] += 1
 
-print(gendermonths)
+# print(gendermonths)
 
 # GENDER TYPE PER MAAND
 
@@ -91,7 +91,7 @@ for incident in data:
         elif gender == 'Female' and thetype == 'Victim':
             gender_type_months['Female victim'][month] += 1
 
-print(gender_type_months)
+# print(gender_type_months)
 
 
 # GENDER TYPE PER JAAR
@@ -119,4 +119,39 @@ for incident in data:
         elif gender == 'Female' and thetype == 'Victim':
             gender_type_years['Female victim'][year] += 1
 
-print(gender_type_years)
+# print(gender_type_years)
+print(genderdict, victimgender)
+
+from bokeh.core.properties import value
+from bokeh.io import show, output_file
+from bokeh.models import ColumnDataSource, HoverTool
+from bokeh.plotting import figure
+
+output_file("bar_stacked.html")
+
+genders = ['Male', 'Female']
+types = ["Victim", "Suspect"]
+colors = ["#c9d9d3", "#718dbf"]
+
+data = {'genders' : genders,
+        'Victim'   : [136394, 30630],
+        'Suspect'   : [167708, 11746]}
+
+source = ColumnDataSource(data=data)
+
+p = figure(x_range=genders, plot_height=350, title="Gender in gunviolence by type",
+           toolbar_location=None, tools="")
+
+renderers = p.vbar_stack(types, x='genders', width=0.9, color=colors, source=source,
+                         legend=[value(x) for x in types], name=types)
+
+p.y_range.start = 0
+p.x_range.range_padding = 0.1
+p.xgrid.grid_line_color = None
+p.axis.minor_tick_line_color = None
+p.outline_line_color = None
+p.legend.location = "top_left"
+p.legend.orientation = "horizontal"
+
+show(p)
+
