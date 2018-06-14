@@ -126,38 +126,38 @@ for incident in data:
 
 # print(genderdict, victimgender)
 
-# from bokeh.core.properties import value
-# from bokeh.io import show, output_file
-# from bokeh.models import ColumnDataSource, HoverTool
-# from bokeh.plotting import figure
+from bokeh.core.properties import value
+from bokeh.io import show, output_file
+from bokeh.models import ColumnDataSource, HoverTool
+from bokeh.plotting import figure
 
-# output_file("bar_stacked.html")
+output_file("bar_stacked.html")
 
-# genders = ['Male', 'Female']
-# types = ["Victim", "Suspect"]
-# colors = ["#c9d9d3", "#718dbf"]
+genders = ['Male', 'Female']
+types = ["Victim", "Suspect"]
+colors = ["#c9d9d3", "#718dbf"]
 
-# data = {'genders' : genders,
-#         'Victim'   : [136394, 30630],
-#         'Suspect'   : [167708, 11746]}
+data = {'genders' : genders,
+        'Victim'   : [136394, 30630],
+        'Suspect'   : [167708, 11746]}
 
-# source = ColumnDataSource(data=data)
+source = ColumnDataSource(data=data)
 
-# p = figure(x_range=genders, plot_height=350, title="Gender in gunviolence by type",
-#            toolbar_location=None, tools="")
+p = figure(x_range=genders, plot_height=350, title="Gender in gunviolence by type",
+           toolbar_location=None, tools="")
 
-# renderers = p.vbar_stack(types, x='genders', width=0.9, color=colors, source=source,
-#                          legend=[value(x) for x in types], name=types)
+renderers = p.vbar_stack(types, x='genders', width=0.9, color=colors, source=source,
+                         legend=[value(x) for x in types], name=types)
 
-# p.y_range.start = 0
-# p.x_range.range_padding = 0.1
-# p.xgrid.grid_line_color = None
-# p.axis.minor_tick_line_color = None
-# p.outline_line_color = None
-# p.legend.location = "top_left"
-# p.legend.orientation = "horizontal"
+p.y_range.start = 0
+p.x_range.range_padding = 0.1
+p.xgrid.grid_line_color = None
+p.axis.minor_tick_line_color = None
+p.outline_line_color = None
+p.legend.location = "top_left"
+p.legend.orientation = "horizontal"
 
-# show(p)
+show(p)
 
 # from bokeh.core.properties import value
 # from bokeh.io import show, output_file
@@ -192,39 +192,39 @@ for incident in data:
 
 # show(p)
 
-from bokeh.io import show, output_file
-from bokeh.models import ColumnDataSource, FactorRange
-from bokeh.plotting import figure
-from bokeh.transform import factor_cmap
+# from bokeh.io import show, output_file
+# from bokeh.models import ColumnDataSource, FactorRange
+# from bokeh.plotting import figure
+# from bokeh.transform import factor_cmap
 
-output_file("bar_nested_colormapped.html")
+# output_file("bar_nested_colormapped.html")
 
-fruits = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-years = ['Male', 'Female']
+# fruits = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+# years = ['Male', 'Female']
 
-data = {'fruits' : fruits,
-        'Male'   : [2, 1, 4, 3, 2, 4, 5, 5, 7, 8, 2, 1],
-        'Female'   : [5, 3, 3, 2, 4, 6, 1, 2, 3, 4, 5, 6]}
+# data = {'fruits' : fruits,
+#         'Male'   : [2, 1, 4, 3, 2, 4, 5, 5, 7, 8, 2, 1],
+#         'Female'   : [5, 3, 3, 2, 4, 6, 1, 2, 3, 4, 5, 6]}
 
-palette = ["#718dbf", "#e84d60"]
+# palette = ["#718dbf", "#e84d60"]
 
-# this creates [ ("Apples", "2015"), ("Apples", "2016"), ("Apples", "2017"), ("Pears", "2015), ... ]
-x = [ (fruit, year) for fruit in fruits for year in years ]
-counts = sum(zip(data['Male'], data['Female']), ()) # like an hstack
+# # this creates [ ("Apples", "2015"), ("Apples", "2016"), ("Apples", "2017"), ("Pears", "2015), ... ]
+# x = [ (fruit, year) for fruit in fruits for year in years ]
+# counts = sum(zip(data['Male'], data['Female']), ()) # like an hstack
 
-source = ColumnDataSource(data=dict(x=x, counts=counts))
+# source = ColumnDataSource(data=dict(x=x, counts=counts))
 
-p = figure(x_range=FactorRange(*x), plot_height=350, title="Fruit Counts by Year",
-           toolbar_location=None, tools="")
+# p = figure(x_range=FactorRange(*x), plot_height=350, title="Gender participation by type",
+#            toolbar_location=None, tools="")
 
-p.vbar(x='x', top='counts', width=0.9, source=source, line_color="white",
-       fill_color=factor_cmap('x', palette=palette, factors=years, start=1, end=2))
+# p.vbar(x='x', top='counts', width=0.9, source=source, line_color="white",
+#        fill_color=factor_cmap('x', palette=palette, factors=years, start=1, end=2))
 
-p.y_range.start = 0
-p.x_range.range_padding = 0.1
-p.xaxis.major_label_orientation = 1
-p.xgrid.grid_line_color = None
+# p.y_range.start = 0
+# p.x_range.range_padding = 0.1
+# p.xaxis.major_label_orientation = 1
+# p.xgrid.grid_line_color = None
 
-show(p)
+# show(p)
 
 

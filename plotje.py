@@ -47,7 +47,7 @@ data = {'fruits' : fruits,
 
 source = ColumnDataSource(data=data)
 
-p = figure(x_range=fruits, y_range=(0, 20000), plot_height=350, title="Fruit Counts by Year",
+p = figure(x_range=fruits, y_range=(0, 20000), plot_height=350, title="Types per gender per month",
            toolbar_location=None, tools="")
 
 p.vbar(x=dodge('fruits', -0.25, range=p.x_range), top='Male Victim', width=0.2, source=source,
