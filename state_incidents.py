@@ -31,9 +31,9 @@ def state_incidents(states, data):
     return d
 
 def plot(incidents):
-    years = list(incidents.keys())[2:-1]
+    years = list(incidents.keys())[1:]
     states = incidents['states']
-    colors = ["#c9d9d3", "#718dbf", "#e84d60","#696969"]#, "#FF8C00",  "#FF1493"]
+    colors = ["#c9d9d3", "#718dbf", "#e84d60","#696969", "#FF8C00",  "#FF1493"]
     source = ColumnDataSource(data=incidents)
 
     p = figure(x_range=states, plot_height=250, title="Incidents per state per year",
