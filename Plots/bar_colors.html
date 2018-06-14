@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="bd314d43-f1d8-4706-9191-14e3cf7ca8f5"></div>
+        </div>
+        
+        <script type="application/json" id="b0840784-77f2-44ca-92af-c8ac1946fcd8">
+          {"f3b36571-399f-4819-82e5-0dc1b9b8baed":{"roots":{"references":[{"attributes":{},"id":"b4146061-033e-4cd4-b28f-f206308d1d92","type":"LinearScale"},{"attributes":{"below":[{"id":"a3f66281-7b79-4b1b-b33b-9163b0c01537","type":"CategoricalAxis"}],"left":[{"id":"aaeb0f48-de75-4296-b07e-43a99e359662","type":"LinearAxis"}],"plot_height":800,"plot_width":1600,"renderers":[{"id":"a3f66281-7b79-4b1b-b33b-9163b0c01537","type":"CategoricalAxis"},{"id":"d63b28a2-e6fe-425e-b54a-601d8635fc09","type":"Grid"},{"id":"aaeb0f48-de75-4296-b07e-43a99e359662","type":"LinearAxis"},{"id":"21fdb195-8290-4530-8a03-528b931a202a","type":"Grid"},{"id":"79acf6b7-fcef-454c-a220-69a578db6c78","type":"Legend"},{"id":"411a356f-8a32-446f-8172-d8011eacb4f1","type":"GlyphRenderer"}],"title":{"id":"c2f6da49-31ce-4f2b-8b33-fbb0577d8032","type":"Title"},"toolbar":{"id":"ba8a09e4-b6dd-417b-9de0-cdb67a1b19ad","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"98bf98b2-d7c4-4af7-a8ed-fb94282781bf","type":"FactorRange"},"x_scale":{"id":"92cd0cd5-22bf-42d3-b245-91a378c71047","type":"CategoricalScale"},"y_range":{"id":"ca76bcdb-f3fd-4949-8ace-b3cef442d4d3","type":"Range1d"},"y_scale":{"id":"b4146061-033e-4cd4-b28f-f206308d1d92","type":"LinearScale"}},"id":"08274b3b-2fd9-4c80-96c1-0ac16e28b79c","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"60dcf688-9782-423e-a5c5-4dc5fd218169","type":"ColumnDataSource"},"glyph":{"id":"0fcee1c8-0495-4664-9101-67f68c181516","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f817d4b3-cf22-48bd-9b90-9fa3e5f0758c","type":"VBar"},"selection_glyph":null,"view":{"id":"72d21438-759b-4237-8848-abd37517765b","type":"CDSView"}},"id":"411a356f-8a32-446f-8172-d8011eacb4f1","type":"GlyphRenderer"},{"attributes":{"fill_color":{"field":"color"},"line_color":{"field":"color"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"fruits"}},"id":"0fcee1c8-0495-4664-9101-67f68c181516","type":"VBar"},{"attributes":{},"id":"eda508c9-75e6-4b08-9bf2-559f670e0ef4","type":"UnionRenderers"},{"attributes":{"callback":null,"end":2523},"id":"ca76bcdb-f3fd-4949-8ace-b3cef442d4d3","type":"Range1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"fruits"}},"id":"f817d4b3-cf22-48bd-9b90-9fa3e5f0758c","type":"VBar"},{"attributes":{},"id":"65ed793d-5bf3-427a-8b45-8940121a3b21","type":"Selection"},{"attributes":{"label":{"field":"fruits"},"renderers":[{"id":"411a356f-8a32-446f-8172-d8011eacb4f1","type":"GlyphRenderer"}]},"id":"5b3e34e4-d6b2-4c4b-9cc9-4f366ffe9529","type":"LegendItem"},{"attributes":{"items":[{"id":"5b3e34e4-d6b2-4c4b-9cc9-4f366ffe9529","type":"LegendItem"}],"location":"top_center","orientation":"horizontal","plot":{"id":"08274b3b-2fd9-4c80-96c1-0ac16e28b79c","subtype":"Figure","type":"Plot"}},"id":"79acf6b7-fcef-454c-a220-69a578db6c78","type":"Legend"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto"},"id":"ba8a09e4-b6dd-417b-9de0-cdb67a1b19ad","type":"Toolbar"},{"attributes":{"callback":null,"data":{"color":["#c9d9d3","#718dbf","#e84d60","#624F6D","#c9d9d3","#718dbf","#e84d60","#624F6D","#c9d9d3"],"counts":[2123,685,159,214,281,88,167,607,165],"fruits":["Child Involved Incident","Child injured (not child shooter)","Child injured by child","Child injured self","Child killed (not child shooter)","Child killed by child","Child killed self","Child picked up &amp; fired gun","Child with gun - no shots fired"]},"selected":{"id":"65ed793d-5bf3-427a-8b45-8940121a3b21","type":"Selection"},"selection_policy":{"id":"eda508c9-75e6-4b08-9bf2-559f670e0ef4","type":"UnionRenderers"}},"id":"60dcf688-9782-423e-a5c5-4dc5fd218169","type":"ColumnDataSource"},{"attributes":{},"id":"92cd0cd5-22bf-42d3-b245-91a378c71047","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"bf05e926-06df-4d9d-b510-917b668e1ed2","type":"BasicTickFormatter"},"plot":{"id":"08274b3b-2fd9-4c80-96c1-0ac16e28b79c","subtype":"Figure","type":"Plot"},"ticker":{"id":"3abc9a8b-29cb-4ef1-81ad-be956bf97d9f","type":"BasicTicker"}},"id":"aaeb0f48-de75-4296-b07e-43a99e359662","type":"LinearAxis"},{"attributes":{"formatter":{"id":"7cd38d75-a2f5-4d8c-975f-8fa82bcda36e","type":"CategoricalTickFormatter"},"plot":{"id":"08274b3b-2fd9-4c80-96c1-0ac16e28b79c","subtype":"Figure","type":"Plot"},"ticker":{"id":"2618498d-5120-4646-9926-6ac1e0942ee1","type":"CategoricalTicker"}},"id":"a3f66281-7b79-4b1b-b33b-9163b0c01537","type":"CategoricalAxis"},{"attributes":{},"id":"2618498d-5120-4646-9926-6ac1e0942ee1","type":"CategoricalTicker"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"08274b3b-2fd9-4c80-96c1-0ac16e28b79c","subtype":"Figure","type":"Plot"},"ticker":{"id":"2618498d-5120-4646-9926-6ac1e0942ee1","type":"CategoricalTicker"}},"id":"d63b28a2-e6fe-425e-b54a-601d8635fc09","type":"Grid"},{"attributes":{},"id":"3abc9a8b-29cb-4ef1-81ad-be956bf97d9f","type":"BasicTicker"},{"attributes":{"plot":null,"text":"Fruit Counts"},"id":"c2f6da49-31ce-4f2b-8b33-fbb0577d8032","type":"Title"},{"attributes":{},"id":"7cd38d75-a2f5-4d8c-975f-8fa82bcda36e","type":"CategoricalTickFormatter"},{"attributes":{"dimension":1,"plot":{"id":"08274b3b-2fd9-4c80-96c1-0ac16e28b79c","subtype":"Figure","type":"Plot"},"ticker":{"id":"3abc9a8b-29cb-4ef1-81ad-be956bf97d9f","type":"BasicTicker"}},"id":"21fdb195-8290-4530-8a03-528b931a202a","type":"Grid"},{"attributes":{},"id":"bf05e926-06df-4d9d-b510-917b668e1ed2","type":"BasicTickFormatter"},{"attributes":{"callback":null,"factors":["Child Involved Incident","Child injured (not child shooter)","Child injured by child","Child injured self","Child killed (not child shooter)","Child killed by child","Child killed self","Child picked up &amp; fired gun","Child with gun - no shots fired"]},"id":"98bf98b2-d7c4-4af7-a8ed-fb94282781bf","type":"FactorRange"},{"attributes":{"source":{"id":"60dcf688-9782-423e-a5c5-4dc5fd218169","type":"ColumnDataSource"}},"id":"72d21438-759b-4237-8848-abd37517765b","type":"CDSView"}],"root_ids":["08274b3b-2fd9-4c80-96c1-0ac16e28b79c"]},"title":"Bokeh Application","version":"0.12.16"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('b0840784-77f2-44ca-92af-c8ac1946fcd8').textContent;
+                  var render_items = [{"docid":"f3b36571-399f-4819-82e5-0dc1b9b8baed","elementid":"bd314d43-f1d8-4706-9191-14e3cf7ca8f5","modelid":"08274b3b-2fd9-4c80-96c1-0ac16e28b79c"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    </body>
+</html>

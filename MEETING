@@ -8,8 +8,11 @@ Meeting 11-6:
 - Moeten we alle waarden in de dataset lowercase maken?
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 0f82f3c0a1109466f8dabdb2f4b754e8b2c3ea73
 Besproken:
 - onderbouwen wat we weg doen - behouden
 - onderbouwen waarom json
@@ -18,3 +21,31 @@ Besproken:
 - lege waarden? Hoe zit het in json?
 - wat voor vragen willen we nog beantwoorden?
 - bokeh
+- 2013 niet uit de set halen maar niet gebruiken bij jaarvergelijking
+- lowercase? Hangt er vanaf hoe je ze wil vergelijken, je kan het voor de zekerheid altijd doen
+- Even kijken naar unieke waarden
+- Uiteindelijk: 1 interactieve plot 
+- plots die je gebruikt moet je uiteindelijk wel iets over kunnen zeggen
+- schrijf de vragen op
+
+- Male-female per staat, age per staat
+
+- als female/male victim > welk type incident
+- als age > welk type incident
+
+- incidenten clusteren per staat, komen dan alle grote staten samen??
+- Kun je de grootte van de staat voorspellen?
+- als we staten samenvoegen, gaan de killings omlaag?
+- kijken naar characteristics 
+- Suicides per month - eventueel van de maanden grafiek afhalen
+- gang involvment west-oostkust?
+
+- suicides per month - evenveel van de maanden
+- male/female suicide
+- age suicide
+- staat suicides
+
+- Is er een dag waarin geen gunviolence geweest?
+- Of dagen waarin heeel veel shootings zijn geweest?
+- De meest agressieve feestdag
+

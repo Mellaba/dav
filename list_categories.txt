@@ -1,0 +1,109 @@
+ATF/LE Confiscation/Raid/Arrest
+Accidental Shooting
+Accidental Shooting - Death
+Accidental Shooting - Injury
+Accidental Shooting at a Business
+Accidental/Negligent Discharge
+Animal shot/killed
+Armed robbery with injury/death and/or evidence of DGU found
+Assault weapon (AR-15, AK-47, and ALL variants defined by law enforcement)
+Attempted Murder/Suicide (one variable unsuccessful)
+BB/Pellet/Replica gun
+Bar/club incident - in or around establishment
+Brandishing/flourishing/open carry/lost/found
+Car-jacking
+Child Involved Incident
+Child injured (not child shooter)
+Child injured by child
+Child injured self
+Child killed (not child shooter)
+Child killed by child
+Child killed self
+Child picked up & fired gun
+Child with gun - no shots fired
+Cleaning gun
+Concealed Carry License - Perpetrator
+Concealed Carry License - Victim
+Criminal act with stolen gun
+Defensive Use
+Defensive Use - Crime occurs, victim shoots subject/suspect/perpetrator
+Defensive Use - Good Samaritan/Third Party
+Defensive Use - Shots fired, no injury/death
+Defensive Use - Stand Your Ground/Castle Doctrine established
+Defensive Use - Victim stops crime
+Defensive Use - WITHOUT a gun
+Defensive use - No shots fired
+Domestic Violence
+Drive-by (car to street, car to car)
+Drug involvement
+Gang involvement
+Ghost gun
+Gun at school, no death/injury - elementary/secondary school
+Gun at school, no death/injury - university/college
+Gun buy back action
+Gun range/gun shop/gun show shooting
+Gun shop robbery or burglary
+Gun(s) stolen from owner
+Guns stolen from law enforcement
+Hate crime
+Home Invasion
+Home Invasion - No death or injury
+Home Invasion - Resident injured
+Home Invasion - Resident killed
+Home Invasion - subject/suspect/perpetrator injured
+Home Invasion - subject/suspect/perpetrator killed
+House party
+Hunting accident
+Implied Weapon
+Institution/Group/Business
+Kidnapping/abductions/hostage
+LOCKDOWN/ALERT ONLY: No GV Incident Occurred Onsite
+Mass Murder (4+ deceased victims excluding the subject/suspect/perpetrator , one location)
+Mass Shooting (4+ victims injured or killed excluding the subject/suspect/perpetrator, one location)
+Mistaken ID (thought it was an intruder/threat, was friend/family)
+Murder/Suicide
+NAV
+Non-Aggression Incident
+Non-Shooting Incident
+Officer Involved Incident
+Officer Involved Incident - Weapon involved but no shots fired
+Officer Involved Shooting - Accidental discharge - no injury required
+Officer Involved Shooting - Bystander killed
+Officer Involved Shooting - Bystander shot
+Officer Involved Shooting - Officer killed
+Officer Involved Shooting - Officer shot
+Officer Involved Shooting - Shots fired, no injury
+Officer Involved Shooting - subject/suspect/perpetrator killed
+Officer Involved Shooting - subject/suspect/perpetrator shot
+Officer Involved Shooting - subject/suspect/perpetrator suicide at standoff
+Officer Involved Shooting - subject/suspect/perpetrator suicide by cop
+Officer Involved Shooting - subject/suspect/perpetrator surrender at standoff
+Officer Involved Shooting - subject/suspect/perpetrator unarmed
+Pistol-whipping
+Playing with gun
+Police Targeted
+Political Violence
+Possession (gun(s) found during commission of other crimes)
+Possession of gun by felon or prohibited person
+Road rage
+School Incident
+School Shooting - elementary/secondary school
+School Shooting - university/college
+Self-Inflicted (not suicide or suicide attempt - NO PERP)
+Sex crime involving firearm
+Shootout (where VENN diagram of shooters and victims overlap)
+Shot - Dead (murder, accidental, suicide)
+Shot - Wounded/Injured
+ShotSpotter
+Shots Fired - No Injuries
+Shots fired, no action (reported, no evidence found)
+Spree Shooting (multiple victims, multiple locations)
+Stolen/Illegally owned gun{s} recovered during arrest/warrant
+Suicide - Attempt
+Suicide^
+TSA Action
+Terrorism Involvement
+Thought gun was unloaded
+Under the influence of alcohol or drugs (only applies to the subject/suspect/perpetrator )
+Unlawful purchase/sale
+Workplace shooting (disgruntled employee)

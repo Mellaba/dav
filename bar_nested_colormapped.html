@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="4c410ba0-1dfc-4e19-b67c-3aeee0cb8e07"></div>
+        </div>
+        
+        <script type="application/json" id="6c6ece20-1842-4c70-9f2c-0f62396adc05">
+          {"d8ab0af3-2866-4273-b9dc-4305541f0ee3":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto"},"id":"b3e4b2fe-74bc-4b5e-b2ab-f4a7ad1ad64b","type":"Toolbar"},{"attributes":{},"id":"355fdc81-2c8a-46a3-8caf-0c767d8e2dcf","type":"CategoricalTicker"},{"attributes":{"plot":null,"text":"Gender participation by type"},"id":"d1d7c33d-90ac-46a2-b625-59e91988c73b","type":"Title"},{"attributes":{"below":[{"id":"c5f80c4c-33ac-4aa9-a82d-38a6f867cef8","type":"CategoricalAxis"}],"left":[{"id":"275ff8ff-44b4-426d-9848-502db729d59d","type":"LinearAxis"}],"plot_height":350,"renderers":[{"id":"c5f80c4c-33ac-4aa9-a82d-38a6f867cef8","type":"CategoricalAxis"},{"id":"788b635d-7b2e-4191-ae04-5dcdbc826e73","type":"Grid"},{"id":"275ff8ff-44b4-426d-9848-502db729d59d","type":"LinearAxis"},{"id":"299ae5df-d499-4520-96ab-4338041e4e70","type":"Grid"},{"id":"b45cc594-ef3c-4bb1-915a-8e1b8631464b","type":"GlyphRenderer"}],"title":{"id":"d1d7c33d-90ac-46a2-b625-59e91988c73b","type":"Title"},"toolbar":{"id":"b3e4b2fe-74bc-4b5e-b2ab-f4a7ad1ad64b","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"e8bd7662-6fce-404e-9692-d939ace0a8c0","type":"FactorRange"},"x_scale":{"id":"56bf1847-aad4-4eb4-8917-737e593fec2e","type":"CategoricalScale"},"y_range":{"id":"3b4e74f3-3ee0-48ea-ad0f-5a1503b84689","type":"DataRange1d"},"y_scale":{"id":"07aac77d-8cbd-416b-a6af-9a44d3cd850a","type":"LinearScale"}},"id":"cda647a6-c0b6-4b4d-adb6-cce42a04e374","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"factors":[["January","Male"],["January","Female"],["February","Male"],["February","Female"],["March","Male"],["March","Female"],["April","Male"],["April","Female"],["May","Male"],["May","Female"],["June","Male"],["June","Female"],["July","Male"],["July","Female"],["August","Male"],["August","Female"],["September","Male"],["September","Female"],["October","Male"],["October","Female"],["November","Male"],["November","Female"],["December","Male"],["December","Female"]],"range_padding":0.1},"id":"e8bd7662-6fce-404e-9692-d939ace0a8c0","type":"FactorRange"},{"attributes":{"data_source":{"id":"c8c61961-c6b1-454c-8782-ea66f06a4e66","type":"ColumnDataSource"},"glyph":{"id":"cbc8cd99-f621-4afa-b0da-c09be96e935f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4e0ea681-c3ce-44ec-830b-17d869ba831c","type":"VBar"},"selection_glyph":null,"view":{"id":"00ee85fa-f3e4-4c73-b4bd-6216f163a184","type":"CDSView"}},"id":"b45cc594-ef3c-4bb1-915a-8e1b8631464b","type":"GlyphRenderer"},{"attributes":{"end":2,"factors":["Male","Female"],"palette":["#718dbf","#e84d60"],"start":1},"id":"2e68afa6-c388-4250-9ccc-d773159ffef2","type":"CategoricalColorMapper"},{"attributes":{},"id":"cc54419e-7483-48f0-8023-c9e8bd1dbc40","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"c8c61961-c6b1-454c-8782-ea66f06a4e66","type":"ColumnDataSource"}},"id":"00ee85fa-f3e4-4c73-b4bd-6216f163a184","type":"CDSView"},{"attributes":{"callback":null,"column_names":["x","counts"],"data":{"counts":[2,5,1,3,4,3,3,2,2,4,4,6,5,1,5,2,7,3,8,4,2,5,1,6],"x":[["January","Male"],["January","Female"],["February","Male"],["February","Female"],["March","Male"],["March","Female"],["April","Male"],["April","Female"],["May","Male"],["May","Female"],["June","Male"],["June","Female"],["July","Male"],["July","Female"],["August","Male"],["August","Female"],["September","Male"],["September","Female"],["October","Male"],["October","Female"],["November","Male"],["November","Female"],["December","Male"],["December","Female"]]}},"id":"c8c61961-c6b1-454c-8782-ea66f06a4e66","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"x"}},"id":"4e0ea681-c3ce-44ec-830b-17d869ba831c","type":"VBar"},{"attributes":{"fill_color":{"field":"x","transform":{"id":"2e68afa6-c388-4250-9ccc-d773159ffef2","type":"CategoricalColorMapper"}},"line_color":{"value":"white"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"x"}},"id":"cbc8cd99-f621-4afa-b0da-c09be96e935f","type":"VBar"},{"attributes":{"formatter":{"id":"cc54419e-7483-48f0-8023-c9e8bd1dbc40","type":"BasicTickFormatter"},"plot":{"id":"cda647a6-c0b6-4b4d-adb6-cce42a04e374","subtype":"Figure","type":"Plot"},"ticker":{"id":"79c5a1af-4dcc-4ae9-b2a0-7efccfb94999","type":"BasicTicker"}},"id":"275ff8ff-44b4-426d-9848-502db729d59d","type":"LinearAxis"},{"attributes":{"formatter":{"id":"2d1ecbcd-dee2-4115-b45b-d297cccc5412","type":"CategoricalTickFormatter"},"major_label_orientation":1,"plot":{"id":"cda647a6-c0b6-4b4d-adb6-cce42a04e374","subtype":"Figure","type":"Plot"},"ticker":{"id":"355fdc81-2c8a-46a3-8caf-0c767d8e2dcf","type":"CategoricalTicker"}},"id":"c5f80c4c-33ac-4aa9-a82d-38a6f867cef8","type":"CategoricalAxis"},{"attributes":{},"id":"56bf1847-aad4-4eb4-8917-737e593fec2e","type":"CategoricalScale"},{"attributes":{},"id":"2d1ecbcd-dee2-4115-b45b-d297cccc5412","type":"CategoricalTickFormatter"},{"attributes":{},"id":"07aac77d-8cbd-416b-a6af-9a44d3cd850a","type":"LinearScale"},{"attributes":{"dimension":1,"plot":{"id":"cda647a6-c0b6-4b4d-adb6-cce42a04e374","subtype":"Figure","type":"Plot"},"ticker":{"id":"79c5a1af-4dcc-4ae9-b2a0-7efccfb94999","type":"BasicTicker"}},"id":"299ae5df-d499-4520-96ab-4338041e4e70","type":"Grid"},{"attributes":{},"id":"79c5a1af-4dcc-4ae9-b2a0-7efccfb94999","type":"BasicTicker"},{"attributes":{"callback":null,"start":0},"id":"3b4e74f3-3ee0-48ea-ad0f-5a1503b84689","type":"DataRange1d"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"cda647a6-c0b6-4b4d-adb6-cce42a04e374","subtype":"Figure","type":"Plot"},"ticker":{"id":"355fdc81-2c8a-46a3-8caf-0c767d8e2dcf","type":"CategoricalTicker"}},"id":"788b635d-7b2e-4191-ae04-5dcdbc826e73","type":"Grid"}],"root_ids":["cda647a6-c0b6-4b4d-adb6-cce42a04e374"]},"title":"Bokeh Application","version":"0.12.13"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('6c6ece20-1842-4c70-9f2c-0f62396adc05').textContent;
+                  var render_items = [{"docid":"d8ab0af3-2866-4273-b9dc-4305541f0ee3","elementid":"4c410ba0-1dfc-4e19-b67c-3aeee0cb8e07","modelid":"cda647a6-c0b6-4b4d-adb6-cce42a04e374"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    </body>
+</html>
