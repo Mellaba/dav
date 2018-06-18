@@ -30,6 +30,24 @@ for incident in data:
         elif gender == 'Female' and thetype == 'Victim':
             states[state]['Female victim'] += 1
 
+statelist = []
+countlist = []
+with open('populationstate2017.txt') as s:
+    temp = s.read().splitlines()
+    for elem in temp:
+        state, amount = elem.split(',')
+        statelist.append(state)
+        countlist.append(amount)
+
+# print(statelist, countlist)
+print(statelist)
+
+for iets in statelist:
+    indexnum = int(statelist.index(iets))
+    for key in states[iets]:
+        howmany = int(states[iets].get(key))
+        standardized = howmany/int(countlist[indexnum])*100000
+        print(standardized)
 
 output_file("bar_dodged.html")
 
@@ -45,7 +63,7 @@ data = {'fruits' : fruits,
         'Female Victim' : [states[key]['Female victim'] for key in states],
         'Female Suspect' : [states[key]['Female suspect'] for key in states]}
 
-print([states[key]['Male victim'] for key in states])
+# print([states[key]['Male victim'] for key in states])
 
 source = ColumnDataSource(data=data)
 
@@ -71,4 +89,4 @@ p.xgrid.grid_line_color = None
 p.legend.location = "top_left"
 p.legend.orientation = "horizontal"
 
-show(p)
+# show(p)
