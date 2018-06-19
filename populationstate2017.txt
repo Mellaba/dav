@@ -48,3 +48,4 @@ North Dakota,755393
 Alaska,739795
 Vermont,623657
 Wyoming,579315
+District of Columbia,693972
