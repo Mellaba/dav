@@ -8,11 +8,6 @@ Meeting 11-6:
 - Moeten we alle waarden in de dataset lowercase maken?
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 0f82f3c0a1109466f8dabdb2f4b754e8b2c3ea73
 Besproken:
 - onderbouwen wat we weg doen - behouden
 - onderbouwen waarom json
@@ -30,7 +25,7 @@ Besproken:
 
 - Male-female per staat, age per staat
 
-- als female/male victim > welk type incident
+- als female/male victim > welk type incident >> ANNA
 - als age > welk type incident
 
 - incidenten clusteren per staat, komen dan alle grote staten samen??
@@ -48,4 +43,11 @@ Besproken:
 - Is er een dag waarin geen gunviolence geweest?
 - Of dagen waarin heeel veel shootings zijn geweest?
 - De meest agressieve feestdag
+
+- bij categorie per age - normaliseren en dan bepaalde categoriën die op elkaar lijken laten zien
+    en de uitschieters laten zien
+- % subject killed: sorteren op volgorde: wat valt je op?
+
+- Per jaar per staat -  % van hoeveelheid incidenten die er voorkomen
+- Voor vrijdag report mailen
 
