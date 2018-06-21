@@ -89,4 +89,4 @@ p.xgrid.grid_line_color = None
 p.legend.location = "top_left"
 p.legend.orientation = "horizontal"
 
-# show(p)
+show(p)
