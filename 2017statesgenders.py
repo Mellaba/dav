@@ -7,6 +7,8 @@ from bokeh.layouts import gridplot
 from bokeh.layouts import column
 import json
 import math
+from bokeh.layouts import widgetbox
+from bokeh.models.widgets import CheckboxGroup
 
 with open('gunfire.json') as f:
     data = json.load(f)
@@ -52,9 +54,31 @@ for iets in statelist:
         states[iets][key] = standardized
         print(states[iets][key])
 
+
 output_file("bar_dodged2017.html")
 
 sort = sorted(states)
+
+
+# carrier_selection = CheckboxGroup(labels=[key for key in sort], 
+#                                   active = [0, 1])
+# [carrier_selection.labels[i] for i in carrier_selection.active]
+
+# def update(attr, old, new):
+#     # Get the list of carriers for the graph
+#     carriers_to_plot = [carrier_selection.labels[i] for i in 
+#                         carrier_selection.active]
+#     # Make a new dataset based on the selected carriers and the 
+#     # make_dataset function defined earlier
+#     new_src = make_dataset(carriers_to_plot,
+#                            range_start = -60,
+#                            range_end = 120,
+#                            bin_width = 5)
+#     # Update the source used in the quad glpyhs
+#     src.data.update(new_src.data)
+
+# carrier_selection.on_change('active', update)
+
 
 fruits1 = [key for key in sorted(states)]
 years = ['Male Victim', 'Male Suspect', 'Female Victim', 'Female Suspect']
@@ -87,6 +111,9 @@ p1.vbar(x=dodge('fruits1',  0.25,  range=p1.x_range), top='Female Victim', width
 
 p1.vbar(x=dodge('fruits1',  0.5,  range=p1.x_range), top='Female Suspect', width=0.2, source=source,
        color="#c64737", legend=value("Female Suspect"))
+
+
+# output_file("checkbox_group.html")
 
 
 p1.xaxis.major_label_orientation = math.pi/2
