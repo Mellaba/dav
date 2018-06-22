@@ -37,11 +37,14 @@ p = figure(title="US map plot", toolbar_location="left",plot_width=1100, plot_he
 
 
 p.circle(x="lon", y="lat", size=5, fill_color="blue", fill_alpha=0.8, source=source)
+
 p.patches(county_xs, county_ys, fill_color="white", fill_alpha=0.7,
           line_color="gray", line_width=0.5)
 
 p.patches(state_xs, state_ys, fill_alpha=0.0,
           line_color="#884444", line_width=2, line_alpha=0.3)
+
+p.grid.grid_line_color = None
 
 output_file("USAMAP.html", title="USAMAP.py example")
 show(p)
