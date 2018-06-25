@@ -89,4 +89,15 @@ p.legend.location = "top_left"
 p.axis.minor_tick_line_color = None
 p.outline_line_color = None
 
-show(p)
+from bokeh.io import output_file, show
+from bokeh.layouts import widgetbox
+from bokeh.models.widgets import CheckboxGroup
+
+output_file("checkbox_group.html")
+
+checkbox_group = CheckboxGroup(
+        labels=["Option 1", "Option 2", "Option 3"], active=[0, 1])
+
+from bokeh.layouts import row
+
+show(row(widgetbox(checkbox_group), p))

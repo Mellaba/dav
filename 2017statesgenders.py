@@ -9,6 +9,10 @@ import json
 import math
 from bokeh.layouts import widgetbox
 from bokeh.models.widgets import CheckboxGroup
+from bokeh.layouts import row
+from bokeh.io import output_file, show
+from bokeh.layouts import widgetbox
+from bokeh.models.widgets import CheckboxGroup
 
 with open('gunfire.json') as f:
     data = json.load(f)
@@ -37,6 +41,12 @@ for incident in data:
             elif gender == 'Female' and thetype == 'Victim':
                 states[state]['Female victim'] += 1
 
+allmalesus = 0
+allfemsus  = 0
+allmalevic = 0
+allfemvic = 0
+
+
 statelist = []
 countlist = []
 with open('populationstate2017.txt') as s:
@@ -52,8 +62,17 @@ for iets in statelist:
         howmany = int(states[iets].get(key))
         standardized = howmany/int(countlist[indexnum])*100000
         states[iets][key] = standardized
-        print(states[iets][key])
+        if key == 'Male suspect':
+            allmalesus += states[iets]['Male suspect']
+        elif key == 'Female suspect':
+            allfemsus += states[iets]['Female suspect']
+        elif key == 'Male victim':
+            allmalevic += states[iets]['Male victim']
+        elif key == 'Female victim':
+            allfemvic += states[iets]['Female victim']
+        # print(states[iets][key])
 
+print(allmalesus, allfemsus, allmalevic, allfemvic)
 
 output_file("bar_dodged2017.html")
 
@@ -122,6 +141,16 @@ p1.xgrid.grid_line_color = None
 p1.legend.location = "top_left"
 p1.legend.orientation = "horizontal"
 
-# show(gridplot(p1,p2, nrows=2, plot_width=2000, plot_height=350, toolbar_location=None))
+
 show(p1)
 #show(p2)
+
+''' Present an interactive function explorer with slider widgets.
+Scrub the sliders to change the properties of the ``sin`` curve, or
+type into the title text box to update the title of the plot.
+Use the ``bokeh serve`` command to run the example by executing:
+    bokeh serve sliders.py
+at your command prompt. Then navigate to the URL
+    http://localhost:5006/sliders
+in your browser.
+'''
