@@ -51,7 +51,6 @@ def statesincident(year):
             howmany = int(states2[iets].get(key))
             standardized = howmany/int(countlist[indexnum])*100000
             states2[iets][key] = standardized
-            print(states2[iets][key])
 
     sort = sorted(states2)
 
