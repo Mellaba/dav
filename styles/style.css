@@ -10,7 +10,7 @@ div.transbox {
     margin: 10px;
     background-color: #ffffff;
     border: 1px solid black;
-    opacity: 0.6;
+    opacity: 0.3;
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
@@ -36,6 +36,6 @@ div.transbox p {
 .bokeh_map {
   height: 1200px;
   width: 1200px;
-  opacity: 0.2;
+  opacity: 0.6;
   align: left;
 }
