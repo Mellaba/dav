@@ -27,6 +27,12 @@ div.transbox p {
     color: #000000;
 }
 
+div.titlebox {
+  height: 42px;
+  color: #FFFF00;
+  opacity: 0.7;
+}
+
 .title {
   text-align: center;
   font-family: "Georgia", serif;
