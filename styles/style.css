@@ -43,6 +43,7 @@ div.transbox p {
   display:inline-block;
   float: left;
   width: 700px;
+  height: 1200px;
   opacity: 0.9;
   padding: 20px;
 }
