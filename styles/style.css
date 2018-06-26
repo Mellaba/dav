@@ -7,14 +7,14 @@ body {
 }
 div.names {
   background-color: #FFFFFF;
-  height: 40px;
+  padding: 20px;
 }
 
 div.names p{
   text-align: center;
   font-family: "Georgia", serif;
   font-size: 32px;
-  color: black;
+  color: #4D4D4D;
 }
   
 
