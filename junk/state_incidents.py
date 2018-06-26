@@ -53,6 +53,7 @@ def plot(incidents):
     show(p)
 
 def main():
+
     with open('gunfire.json') as f:
 	    data = json.load(f)
     states = all_states(data)
