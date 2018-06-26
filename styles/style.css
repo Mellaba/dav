@@ -33,10 +33,9 @@ div.transbox {
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
-div.transboxright {
-    width: 200px;
+div.transbox {
+    width: 25%;
     margin-top: 50px;
-    margin-left: 30px;
     background-color: #FFFF00;
     opacity: 0.7;
     float: right;
@@ -79,8 +78,9 @@ div.titlebox {
 .bokeh {
   display:inline-block;
   float: left;
-  height: 1000px;
-  width: 1000px;
+  width: 70%;
+  height: 600px;
+  opacity: 0.9;
 }
 
 .bokeh_map {
