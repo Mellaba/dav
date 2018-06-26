@@ -23,7 +23,7 @@ div.wrapper {
 }
 
 div.transbox {
-    width: 200px;
+    width: 25%;
     margin-top: 50px;
     margin-left: 30px;
     background-color: #FFFF00;
@@ -86,7 +86,7 @@ div.titlebox {
 .bokeh_map {
   display:inline-block;
   float: right;
-  width: 950px;
+  width: 75%;
   height: 600px;
   opacity: 0.9;
   padding: 20px;
