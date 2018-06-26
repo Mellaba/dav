@@ -41,6 +41,7 @@ div.transbox p {
 
 .bokeh_map {
   display:inline-block;
+  float: right;
   height: 1200px;
   width: 1200px;
   opacity: 0.9;
