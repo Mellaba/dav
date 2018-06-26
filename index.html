@@ -15,26 +15,31 @@
     </header>
     
 
-    <p class="title"> <font color="#ffff00">De kaart van Amerika </font></p>
+    <p class="title"> <font color="#ffff00">Incidenten per categorie op de kaart </font></p>
     
     <div class="wrapper">
       <div class="transbox">
-        <center> <h2> De kaart van Amerika </h2> </center>
-        <p> Elk puntje op deze kaart is een incident op die locatie van een bepaalde categorie.
-            De kaart is interactief, bekijk de verschillen tussen de categorieën.</p>
-        <!-- Hey gebruiker: hieronder kan je bokeh plots neerzetten:
-        EERST: embed je je plot, met de <embed> tag,
-        zorg dat je class bokeh_plot heet zodat de juiste css style erop komt,
-        sluit af met een </center> tag.-->
+        
+        <p> Dit is de kaart van Amerika exclusief Hawaii en Alaska. Elk putje op deze kaart
+        is een incident, de verschillende kleuren zijn de verschillende categorieën die de incidenten kunnen
+        hebben. Deze kaart is interactief, bekijk de verschillen tussen de categorieën!</p>
         
       </div>
       <embed class="bokeh_map" src="docs/map_incidents.html">
     </div>
-
-
     
+    <p class="title"> <font color="#ffff00">Meer incidenten in de warme maanden? </font></p>
+    <div class="wrapper">
+       <embed class="bokeh_map" src="docs/incidents_suicides_per_maand.html">
+      <div class="transbox">
+        
+        <p> Uit onderzoek blijkt dat mensen agresiever gedrag vertonen in de zomermaanden. In deze plots
+        is te zien of dit ook uit onze dataset blijkt.</p>
+        
+      </div>
+     
+    </div>
 
-    <embed class="bokeh" src="docs/incidents_suicides_per_maand.html">
   </body>
 
 <html>
