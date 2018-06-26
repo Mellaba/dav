@@ -1,0 +1,34 @@
+body {
+  background-image: url("https://github.com/annanas93/gunviolenceUSA/blob/master/styles/background.jpg?raw=true");
+  background-color: #A9A9A9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+div.transbox {
+    width: 600px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+.title {
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 40px;
+  color: white;
+}
+
+.bokeh {
+  display:inline-block;
+  height: 1000px;
+  width: 1000px;
+}
