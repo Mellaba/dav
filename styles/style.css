@@ -13,6 +13,7 @@ div.wrapper {
 div.transbox {
     width: 200px;
     margin: 10px;
+    vertical-align: middle;
     background-color: #FFFF00;
     opacity: 0.5;
     float: left;
