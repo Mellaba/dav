@@ -35,4 +35,6 @@ div.transbox p {
 
 .bokeh_map{
   align: center;
+  height: 1200px;
+  width: 1200px;
 }
