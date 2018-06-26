@@ -11,7 +11,7 @@ div.wrapper {
 }
 
 div.transbox {
-    width: 150px;
+    width: 200px;
     margin: 10px;
     background-color: #FFFF00;
     opacity: 0.5;
@@ -42,7 +42,7 @@ div.transbox p {
 .bokeh_map {
   display:inline-block;
   float: left;
-  width: 1000px;
+  width: 950px;
   height: 600px;
   opacity: 0.9;
   padding: 20px;
