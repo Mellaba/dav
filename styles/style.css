@@ -25,6 +25,7 @@ div.wrapper {
 div.transbox {
     width: 22%;
     margin-top: 50px;
+    margin-left: 10px;
     background-color: #FFFF00;
     opacity: 0.7;
     float: left;
