@@ -37,5 +37,5 @@ div.transbox p {
   height: 1200px;
   width: 1200px;
   opacity: 0.9;
-  align: center;
+  padding: 20px;
 }
