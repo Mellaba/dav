@@ -15,7 +15,7 @@ div.transbox {
     margin-top: 50px;
     margin-left: 10px;
     background-color: #FFFF00;
-    opacity: 0.5;
+    opacity: 0.4;
     float: left;
     display:inline-block;
     filter: alpha(opacity=60); /* For IE8 and earlier */
