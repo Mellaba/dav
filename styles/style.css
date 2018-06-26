@@ -31,12 +31,11 @@ div.transbox p {
   display:inline-block;
   height: 1000px;
   width: 1000px;
-  aligh: left;
 }
 
 .bokeh_map {
   height: 1200px;
   width: 1200px;
   opacity: 0.9;
-  align: right;
+  padding: 20px;
 }
