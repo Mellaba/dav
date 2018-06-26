@@ -5,6 +5,17 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+div.names {
+  background-color: #FFFFFF;
+}
+
+div.names p{
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 40px;
+  color: black;
+}
+  
 
 div.wrapper {
     overflow: hidden; /* will contain if #first is longer than #second */
