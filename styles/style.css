@@ -21,6 +21,17 @@ div.transbox {
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
+div.transboxright {
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 30px;
+    background-color: #FFFF00;
+    opacity: 0.7;
+    float: right;
+    display:inline-block;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
 div.transbox p {
     margin: 5%;
     font-weight: bold;
@@ -49,6 +60,7 @@ div.titlebox {
 
 .bokeh {
   display:inline-block;
+  float: left;
   height: 1000px;
   width: 1000px;
 }
