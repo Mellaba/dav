@@ -5,12 +5,19 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
+div.wrapper {
+    width: 500px;
+    border: 1px solid black;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+
 div.transbox {
     width: 100px;
     margin: 10px;
     background-color: #FFFF00;
     opacity: 0.5;
-    align: left;
+    float: left;
     display:inline-block;
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
