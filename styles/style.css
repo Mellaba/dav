@@ -34,6 +34,13 @@ div.transbox p {
   color: white;
 }
 
+.subtitle {
+   text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 32px;
+  color: white;
+}  
+
 .bokeh {
   display:inline-block;
   height: 1000px;
