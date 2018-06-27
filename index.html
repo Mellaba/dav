@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  <link rel="shortcut icon" type="image/png" href="styles/favicon.png"/>
+  <head>
+    <!-- link to css style sheet-->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Data visualization</title>
+  </head>
+
+  <body>
+    <header>
+      <p class="title"> Vuurwapengeweld in de US </p>
+      
+    </header>
+    <div class="names"> <p> Anna Stalknecht, Bart van Laatum, Lisa Pleijt, Melanie Baaten </p></div>
+    
+
+    <p class="title"> <font color="#ffff00">Incidenten per categorie op de kaart </font></p>
+    
+    <div class="wrapper">
+      <div class="transbox">
+        
+        <p> Dit is de kaart van Amerika exclusief Hawaii en Alaska. De punten op de kaart zijn afzonderlijke incidenten,
+        de verschillende kleuren zijn de verschillende categorieën die de incidenten kunnen
+        hebben. Deze kaart is interactief, bekijk de verschillen tussen de categorieën!</p>
+        
+      </div>
+      <embed class="bokeh_map" src="docs/map_incidents.html">
+    </div>
+    
+    <p class="title"> <font color="#ffff00">Meer incidenten in de warme maanden? </font></p>
+    <div class="wrapper">
+       <embed class="bokeh" src="docs/incidents_suicides_per_maand.html">
+      <div class="transboxright">
+        
+        <p> Uit onderzoek blijkt dat mensen agresiever gedrag vertonen in de zomermaanden. In deze plots
+        is te zien of dit ook uit onze dataset blijkt.</p>
+        
+      </div>
+     
+    </div>
+
+  </body>
+
+<html>
