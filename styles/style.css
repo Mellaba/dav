@@ -34,7 +34,7 @@ div.transbox {
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
-div.transbox'right {
+div.transboxright {
     width: 25%;
     margin-top: 50px;
     background-color: #FFFF00;
