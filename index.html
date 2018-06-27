@@ -44,7 +44,7 @@
   </body>
 
 <html>
-  
+<script>  
 function calcParallax(tileheight, speedratio, scrollposition) {
   //    by Brett Taylor http://inner.geek.nz/
   //    originally published at http://inner.geek.nz/javascript/parallax/
@@ -52,7 +52,7 @@ function calcParallax(tileheight, speedratio, scrollposition) {
   //    http://creativecommons.org/licenses/by/3.0/
   return ((tileheight) - (Math.floor(scrollposition / speedratio) % (tileheight+1)));
 }
-<script>
+
 window.onload = function() {
 
   window.onscroll = function() {
