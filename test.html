@@ -1,71 +1,936 @@
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Bokeh Plot</title>
-        
-<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.css" type="text/css" />
-        
-<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.js"></script>
-<script type="text/javascript">
-    Bokeh.set_log_level("info");
+<html>
+  <head>
+    
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.css">
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.16.min.css">
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.16.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<style>div.bk-hbox {
+    display: flex;
+    justify-content: center;
+}
+
+div.bk-hbox div.bk-plot {
+    padding: 8px;
+}
+
+div.bk-hbox div.bk-data-table {
+    padding: 20px;
+}
+
+div.hololayout {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+div.holoframe {
+  width: 75%;
+}
+
+div.holowell {
+  display: flex;
+  align-items: center;
+}
+
+form.holoform {
+  background-color: #fafafa;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  border: 1px solid #e3e3e3;
+}
+
+div.holowidgets {
+  padding-right: 0;
+  width: 25%;
+}
+
+div.holoslider {
+  min-height: 0 !important;
+  height: 0.8em;
+  width: 100%;
+}
+
+div.holoformgroup {
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+div.hologroup {
+  padding-left: 0;
+  padding-right: 0.8em;
+  width: 100%;
+}
+
+.holoselect {
+  width: 92%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.holotext {
+  padding-left:  0.5em;
+  padding-right: 0;
+  width: 100%;
+}
+
+.holowidgets .ui-resizable-se {
+  visibility: hidden
+}
+
+.holoframe > .ui-resizable-se {
+  visibility: hidden
+}
+
+.holowidgets .ui-resizable-s {
+  visibility: hidden
+}
+
+
+/* CSS rules for noUISlider based slider used by JupyterLab extension  */
+
+.noUi-handle {
+  width: 20px !important;
+  height: 20px !important;
+  left: -5px !important;
+  top: -5px !important;
+}
+
+.noUi-handle:before, .noUi-handle:after {
+  visibility: hidden;
+  height: 0px;
+}
+
+.noUi-target {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+</style>
+    
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.js" type="text/javascript"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.16.min.js" type="text/javascript"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.16.min.js" type="text/javascript"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-gl-0.12.16.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" type="text/javascript"></script>
+<script type="text/javascript">function HoloViewsWidget() {
+}
+
+HoloViewsWidget.prototype.init_slider = function(init_val){
+  if(this.load_json) {
+    this.from_json()
+  } else {
+    this.update_cache();
+  }
+}
+
+HoloViewsWidget.prototype.populate_cache = function(idx){
+  this.cache[idx].innerHTML = this.frames[idx];
+  if (this.embed) {
+    delete this.frames[idx];
+  }
+}
+
+HoloViewsWidget.prototype.process_error = function(msg){
+}
+
+HoloViewsWidget.prototype.from_json = function() {
+  var data_url = this.json_path + this.id + '.json';
+  $.getJSON(data_url, $.proxy(function(json_data) {
+    this.frames = json_data;
+    this.update_cache();
+    this.update(0);
+  }, this));
+}
+
+HoloViewsWidget.prototype.dynamic_update = function(current){
+  if (current === undefined) {
+    return
+  }
+  this.current = current;
+  if (this.comm) {
+    var msg = {comm_id: this.id+'_client', content: current}
+    this.comm.send(msg);
+  }
+}
+
+HoloViewsWidget.prototype.update_cache = function(force){
+  var frame_len = Object.keys(this.frames).length;
+  for (var i=0; i<frame_len; i++) {
+    if(!this.load_json || this.dynamic)  {
+      var frame = Object.keys(this.frames)[i];
+    } else {
+      var frame = i;
+    }
+    if(!(frame in this.cache) || force) {
+      if ((frame in this.cache) && force) { this.cache[frame].remove() }
+      var div = document.createElement("div");
+      var parent = document.getElementById("_anim_img"+this.id);
+      div.style.display = "none";
+      parent.appendChild(div)
+      this.cache[frame] = div;
+      var cache_id = "_anim_img"+this.id+"_"+frame;
+      this.populate_cache(frame);
+    }
+  }
+}
+
+HoloViewsWidget.prototype.update = function(current){
+  if(current in this.cache) {
+    for (var index in this.cache) {
+      this.cache[index].style.display = "none";
+    }
+    this.cache[current].style.display = "";
+    this.wait = false;
+  }
+}
+
+HoloViewsWidget.prototype.init_comms = function() {
+  var that = this
+  HoloViews.comm_manager.register_target(this.plot_id, this.id, function (msg) { that.process_msg(msg) })
+  if (!this.cached || this.dynamic) {
+    function ack_callback(msg) {
+      msg = JSON.parse(msg.content.data);
+      var comm_id = msg["comm_id"]
+      var comm_status = HoloViews.comm_status[comm_id];
+      if (that.queue.length > 0) {
+        that.time = Date.now();
+        that.dynamic_update(that.queue[that.queue.length-1]);
+        that.queue = [];
+      } else {
+        that.wait = false;
+      }
+      if ((msg.msg_type == "Ready") && msg.content) {
+        console.log("Python callback returned following output:", msg.content);
+      } else if (msg.msg_type == "Error") {
+        console.log("Python failed with the following traceback:", msg['traceback'])
+      }
+    }
+    var comm = HoloViews.comm_manager.get_client_comm(this.plot_id, this.id+'_client', ack_callback);
+    return comm
+  }
+}
+
+HoloViewsWidget.prototype.process_msg = function(msg) {
+}
+
+function SelectionWidget(frames, id, slider_ids, keyMap, dim_vals, notFound, load_json, mode, cached, json_path, dynamic, plot_id){
+  this.frames = frames;
+  this.id = id;
+  this.plot_id = plot_id;
+  this.slider_ids = slider_ids;
+  this.keyMap = keyMap
+  this.current_frame = 0;
+  this.current_vals = dim_vals;
+  this.load_json = load_json;
+  this.mode = mode;
+  this.notFound = notFound;
+  this.cached = cached;
+  this.dynamic = dynamic;
+  this.cache = {};
+  this.json_path = json_path;
+  this.init_slider(this.current_vals[0]);
+  this.queue = [];
+  this.wait = false;
+  if (!this.cached || this.dynamic) {
+    this.comm = this.init_comms();
+  }
+}
+
+SelectionWidget.prototype = new HoloViewsWidget;
+
+
+SelectionWidget.prototype.get_key = function(current_vals) {
+  var key = "(";
+  for (var i=0; i<this.slider_ids.length; i++)
+  {
+    var val = this.current_vals[i];
+    if (!(typeof val === 'string')) {
+      if (val % 1 === 0) { val = val.toFixed(1); }
+      else { val = val.toFixed(10); val = val.slice(0, val.length-1);}
+    }
+    key += "'" + val + "'";
+    if(i != this.slider_ids.length-1) { key += ', ';}
+    else if(this.slider_ids.length == 1) { key += ',';}
+  }
+  key += ")";
+  return this.keyMap[key];
+}
+
+SelectionWidget.prototype.set_frame = function(dim_val, dim_idx){
+  this.current_vals[dim_idx] = dim_val;
+  var key = this.current_vals;
+  if (!this.dynamic) {
+    key = this.get_key(key)
+  }
+  if (this.dynamic || !this.cached) {
+    if ((this.time !== undefined) && ((this.wait) && ((this.time + 10000) > Date.now()))) {
+      this.queue.push(key);
+      return
+    }
+    this.queue = [];
+    this.time = Date.now();
+    this.current_frame = key;
+    this.wait = true;
+    this.dynamic_update(key)
+  } else if (key !== undefined) {
+    this.update(key)
+  }
+}
+
+
+/* Define the ScrubberWidget class */
+function ScrubberWidget(frames, num_frames, id, interval, load_json, mode, cached, json_path, dynamic, plot_id){
+  this.slider_id = "_anim_slider" + id;
+  this.loop_select_id = "_anim_loop_select" + id;
+  this.id = id;
+  this.plot_id = plot_id;
+  this.interval = interval;
+  this.current_frame = 0;
+  this.direction = 0;
+  this.dynamic = dynamic;
+  this.timer = null;
+  this.load_json = load_json;
+  this.mode = mode;
+  this.cached = cached;
+  this.frames = frames;
+  this.cache = {};
+  this.length = num_frames;
+  this.json_path = json_path;
+  document.getElementById(this.slider_id).max = this.length - 1;
+  this.init_slider(0);
+  this.wait = false;
+  this.queue = [];
+  if (!this.cached || this.dynamic) {
+    this.comm = this.init_comms()
+  }
+}
+
+ScrubberWidget.prototype = new HoloViewsWidget;
+
+ScrubberWidget.prototype.set_frame = function(frame){
+  this.current_frame = frame;
+  var widget = document.getElementById(this.slider_id);
+  if (widget === null) {
+    this.pause_animation();
+    return
+  }
+  widget.value = this.current_frame;
+  if (this.dynamic || !this.cached) {
+    if ((this.time !== undefined) && ((this.wait) && ((this.time + 10000) > Date.now()))) {
+      this.queue.push(frame);
+      return
+    }
+    this.queue = [];
+    this.time = Date.now();
+    this.wait = true;
+    this.dynamic_update(frame)
+  } else {
+    this.update(frame)
+  }
+}
+
+ScrubberWidget.prototype.get_loop_state = function(){
+  var button_group = document[this.loop_select_id].state;
+  for (var i = 0; i < button_group.length; i++) {
+    var button = button_group[i];
+    if (button.checked) {
+      return button.value;
+    }
+  }
+  return undefined;
+}
+
+
+ScrubberWidget.prototype.next_frame = function() {
+  this.set_frame(Math.min(this.length - 1, this.current_frame + 1));
+}
+
+ScrubberWidget.prototype.previous_frame = function() {
+  this.set_frame(Math.max(0, this.current_frame - 1));
+}
+
+ScrubberWidget.prototype.first_frame = function() {
+  this.set_frame(0);
+}
+
+ScrubberWidget.prototype.last_frame = function() {
+  this.set_frame(this.length - 1);
+}
+
+ScrubberWidget.prototype.slower = function() {
+  this.interval /= 0.7;
+  if(this.direction > 0){this.play_animation();}
+  else if(this.direction < 0){this.reverse_animation();}
+}
+
+ScrubberWidget.prototype.faster = function() {
+  this.interval *= 0.7;
+  if(this.direction > 0){this.play_animation();}
+  else if(this.direction < 0){this.reverse_animation();}
+}
+
+ScrubberWidget.prototype.anim_step_forward = function() {
+  if(this.current_frame < this.length - 1){
+    this.next_frame();
+  }else{
+    var loop_state = this.get_loop_state();
+    if(loop_state == "loop"){
+      this.first_frame();
+    }else if(loop_state == "reflect"){
+      this.last_frame();
+      this.reverse_animation();
+    }else{
+      this.pause_animation();
+      this.last_frame();
+    }
+  }
+}
+
+ScrubberWidget.prototype.anim_step_reverse = function() {
+  if(this.current_frame > 0){
+    this.previous_frame();
+  } else {
+    var loop_state = this.get_loop_state();
+    if(loop_state == "loop"){
+      this.last_frame();
+    }else if(loop_state == "reflect"){
+      this.first_frame();
+      this.play_animation();
+    }else{
+      this.pause_animation();
+      this.first_frame();
+    }
+  }
+}
+
+ScrubberWidget.prototype.pause_animation = function() {
+  this.direction = 0;
+  if (this.timer){
+    clearInterval(this.timer);
+    this.timer = null;
+  }
+}
+
+ScrubberWidget.prototype.play_animation = function() {
+  this.pause_animation();
+  this.direction = 1;
+  var t = this;
+  if (!this.timer) this.timer = setInterval(function(){t.anim_step_forward();}, this.interval);
+}
+
+ScrubberWidget.prototype.reverse_animation = function() {
+  this.pause_animation();
+  this.direction = -1;
+  var t = this;
+  if (!this.timer) this.timer = setInterval(function(){t.anim_step_reverse();}, this.interval);
+}
+
+function extend(destination, source) {
+  for (var k in source) {
+    if (source.hasOwnProperty(k)) {
+      destination[k] = source[k];
+    }
+  }
+  return destination;
+}
+
+function update_widget(widget, values) {
+  if (widget.hasClass("ui-slider")) {
+    widget.slider('option', {
+      min: 0,
+      max: values.length-1,
+      dim_vals: values,
+      value: 0,
+      dim_labels: values
+    })
+    widget.slider('option', 'slide').call(widget, event, {value: 0})
+  } else {
+    widget.empty();
+    for (var i=0; i<values.length; i++){
+      widget.append($("<option>", {
+        value: i,
+        text: values[i]
+      }))
+    };
+    widget.data('values', values);
+    widget.data('value', 0);
+    widget.trigger("change");
+  };
+}
+
+function init_slider(id, plot_id, dim, values, next_vals, labels, dynamic, step, value, next_dim,
+                     dim_idx, delay, jQueryUI_CDN, UNDERSCORE_CDN) {
+  // Slider JS Block START
+  function loadcssfile(filename){
+    var fileref=document.createElement("link")
+    fileref.setAttribute("rel", "stylesheet")
+    fileref.setAttribute("type", "text/css")
+    fileref.setAttribute("href", filename)
+    document.getElementsByTagName("head")[0].appendChild(fileref)
+  }
+  loadcssfile("https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css");
+  /* Check if jQuery and jQueryUI have been loaded
+     otherwise load with require.js */
+  var jQuery = window.jQuery,
+    // check for old versions of jQuery
+    oldjQuery = jQuery && !!jQuery.fn.jquery.match(/^1\.[0-4](\.|$)/),
+    jquery_path = '',
+    paths = {},
+    noConflict;
+  var jQueryUI = jQuery.ui;
+  // check for jQuery
+  if (!jQuery || oldjQuery) {
+    // load if it's not available or doesn't meet min standards
+    paths.jQuery = jQuery;
+    noConflict = !!oldjQuery;
+  } else {
+    // register the current jQuery
+    define('jquery', [], function() { return jQuery; });
+  }
+  if (!jQueryUI) {
+    paths.jQueryUI = jQueryUI_CDN.slice(null, -3);
+  } else {
+    define('jQueryUI', [], function() { return jQuery.ui; });
+  }
+  paths.underscore = UNDERSCORE_CDN.slice(null, -3);
+  var jquery_require = {
+    paths: paths,
+    shim: {
+      "jQueryUI": {
+        exports:"$",
+        deps: ['jquery']
+      },
+      "underscore": {
+        exports: '_'
+      }
+    }
+  }
+  require.config(jquery_require);
+  require(["jQueryUI", "underscore"], function(jUI, _){
+    if (noConflict) $.noConflict(true);
+    var vals = values;
+    if (dynamic && vals.constructor === Array) {
+      var default_value = parseFloat(value);
+      var min = parseFloat(vals[0]);
+      var max = parseFloat(vals[vals.length-1]);
+      var wstep = step;
+      var wlabels = [default_value];
+      var init_label = default_value;
+    } else {
+      var min = 0;
+      if (dynamic) {
+        var max = Object.keys(vals).length - 1;
+        var init_label = labels[value];
+        var default_value = values[value];
+      } else {
+        var max = vals.length - 1;
+        var init_label = labels[value];
+        var default_value = value;
+      }
+      var wstep = 1;
+      var wlabels = labels;
+    }
+    function adjustFontSize(text) {
+      var width_ratio = (text.parent().width()/8)/text.val().length;
+      var size = Math.min(0.9, Math.max(0.6, width_ratio))+'em';
+      text.css('font-size', size);
+    }
+    var slider = $('#_anim_widget'+id+'_'+dim);
+    slider.slider({
+      animate: "fast",
+      min: min,
+      max: max,
+      step: wstep,
+      value: default_value,
+      dim_vals: vals,
+      dim_labels: wlabels,
+      next_vals: next_vals,
+      slide: function(event, ui) {
+        var vals = slider.slider("option", "dim_vals");
+        var next_vals = slider.slider("option", "next_vals");
+        var dlabels = slider.slider("option", "dim_labels");
+        if (dynamic) {
+          var dim_val = ui.value;
+          if (vals.constructor === Array) {
+            var label = ui.value;
+          } else {
+            var label = dlabels[ui.value];
+          }
+        } else {
+          var dim_val = vals[ui.value];
+          var label = dlabels[ui.value];
+        }
+        var text = $('#textInput'+id+'_'+dim);
+        text.val(label);
+        adjustFontSize(text);
+        HoloViews.index[plot_id].set_frame(dim_val, dim_idx);
+        if (Object.keys(next_vals).length > 0) {
+          var new_vals = next_vals[dim_val];
+          var next_widget = $('#_anim_widget'+id+'_'+next_dim);
+          update_widget(next_widget, new_vals);
+        }
+      }
+    });
+    slider.keypress(function(event) {
+      if (event.which == 80 || event.which == 112) {
+        var start = slider.slider("option", "value");
+        var stop =  slider.slider("option", "max");
+        for (var i=start; i<=stop; i++) {
+          var delay = i*delay;
+          $.proxy(function doSetTimeout(i) { setTimeout($.proxy(function() {
+            var val = {value:i};
+            slider.slider('value',i);
+            slider.slider("option", "slide")(null, val);
+          }, slider), delay);}, slider)(i);
+        }
+      }
+      if (event.which == 82 || event.which == 114) {
+        var start = slider.slider("option", "value");
+        var stop =  slider.slider("option", "min");
+        var count = 0;
+        for (var i=start; i>=stop; i--) {
+          var delay = count*delay;
+          count = count + 1;
+          $.proxy(function doSetTimeout(i) { setTimeout($.proxy(function() {
+            var val = {value:i};
+            slider.slider('value',i);
+            slider.slider("option", "slide")(null, val);
+          }, slider), delay);}, slider)(i);
+        }
+      }
+    });
+    var textInput = $('#textInput'+id+'_'+dim)
+    textInput.val(init_label);
+    adjustFontSize(textInput);
+  });
+}
+
+function init_dropdown(id, plot_id, dim, vals, value, next_vals, labels, next_dim, dim_idx, dynamic) {
+  var widget = $("#_anim_widget"+id+'_'+dim);
+  widget.data('values', vals)
+  for (var i=0; i<vals.length; i++){
+    if (dynamic) {
+      var val = vals[i];
+    } else {
+      var val = i;
+    }
+    widget.append($("<option>", {
+      value: val,
+      text: labels[i]
+    }));
+  };
+  widget.data("next_vals", next_vals);
+  widget.val(value);
+  widget.on('change', function(event, ui) {
+    if (dynamic) {
+      var dim_val = parseInt(this.value);
+    } else {
+      var dim_val = $.data(this, 'values')[this.value];
+    }
+    var next_vals = $.data(this, "next_vals");
+    if (Object.keys(next_vals).length > 0) {
+      var new_vals = next_vals[dim_val];
+      var next_widget = $('#_anim_widget'+id+'_'+next_dim);
+      update_widget(next_widget, new_vals);
+    }
+    var widgets = HoloViews.index[plot_id]
+    if (widgets) {
+      widgets.set_frame(dim_val, dim_idx);
+    }
+  });
+}
+
+
+if (window.HoloViews === undefined) {
+  window.HoloViews = {}
+  window.PyViz = window.HoloViews
+} else if (window.PyViz === undefined) {
+  window.PyViz = window.HoloViews
+}
+
+
+var _namespace = {
+  init_slider: init_slider,
+  init_dropdown: init_dropdown,
+  comms: {},
+  comm_status: {},
+  index: {},
+  plot_index: {},
+  kernels: {},
+  receivers: {}
+}
+
+for (var k in _namespace) {
+  if (!(k in window.HoloViews)) {
+    window.HoloViews[k] = _namespace[k];
+  }
+}
+
+var JS_MIME_TYPE = 'application/javascript';
+var HTML_MIME_TYPE = 'text/html';
+var EXEC_MIME_TYPE = 'application/vnd.holoviews_exec.v0+json';
+var CLASS_NAME = 'output';
+
+/**
+ * Render data to the DOM node
+ */
+function render(props, node) {
+  var div = document.createElement("div");
+  var script = document.createElement("script");
+  node.appendChild(div);
+  node.appendChild(script);
+}
+
+/**
+ * Handle when a new output is added
+ */
+function handle_add_output(event, handle) {
+  var output_area = handle.output_area;
+  var output = handle.output;
+  if (!output.data.hasOwnProperty(EXEC_MIME_TYPE)) {
+    return
+  }
+  var id = output.metadata[EXEC_MIME_TYPE]["id"];
+  var toinsert = output_area.element.find("." + CLASS_NAME.split(' ')[0]);
+  if (id !== undefined) {
+    var nchildren = toinsert.length;
+    toinsert[nchildren-1].children[0].innerHTML = output.data[HTML_MIME_TYPE];
+    toinsert[nchildren-1].children[1].textContent = output.data[JS_MIME_TYPE];
+    output_area._hv_plot_id = id;
+    if ((window.Bokeh !== undefined) && (id in Bokeh.index)) {
+      HoloViews.plot_index[id] = Bokeh.index[id];
+    } else {
+      HoloViews.plot_index[id] = null;
+    }
+  }
+}
+
+/**
+ * Handle when an output is cleared or removed
+ */
+function handle_clear_output(event, handle) {
+  var id = handle.cell.output_area._hv_plot_id;
+  if ((id === undefined) || !(id in HoloViews.plot_index)) { return; }
+  var comm = window.HoloViews.comm_manager.get_client_comm("hv-extension-comm", "hv-extension-comm", function () {});
+  if (comm !== null) {
+    comm.send({event_type: 'delete', 'id': id});
+  }
+  delete HoloViews.plot_index[id];
+  if ((window.Bokeh !== undefined) & (id in window.Bokeh.index)) {
+    window.Bokeh.index[id].model.document.clear();
+    delete Bokeh.index[id];
+  }
+}
+
+/**
+ * Handle kernel restart event
+ */
+function handle_kernel_cleanup(event, handle) {
+  delete HoloViews.comms["hv-extension-comm"];
+  window.HoloViews.plot_index = {}
+}
+
+/**
+ * Handle update_display_data messages
+ */
+function handle_update_output(event, handle) {
+  handle_clear_output(event, {cell: {output_area: handle.output_area}})
+  handle_add_output(event, handle)
+}
+
+function register_renderer(events, OutputArea) {
+  function append_mime(data, metadata, element) {
+    // create a DOM node to render to
+    var toinsert = this.create_output_subarea(
+    metadata,
+    CLASS_NAME,
+    EXEC_MIME_TYPE
+    );
+    this.keyboard_manager.register_events(toinsert);
+    // Render to node
+    var props = {data: data, metadata: metadata[EXEC_MIME_TYPE]};
+    render(props, toinsert[0]);
+    element.append(toinsert);
+    return toinsert
+  }
+
+  events.on('output_added.OutputArea', handle_add_output);	
+  events.on('output_updated.OutputArea', handle_update_output);
+  events.on('clear_output.CodeCell', handle_clear_output);
+  events.on('delete.Cell', handle_clear_output);
+  events.on('kernel_ready.Kernel', handle_kernel_cleanup);
+
+  OutputArea.prototype.register_mime_type(EXEC_MIME_TYPE, append_mime, {
+    safe: true,
+    index: 0
+  });
+}
+
+if (window.Jupyter !== undefined) {
+  try {
+    var events = require('base/js/events');
+    var OutputArea = require('notebook/js/outputarea').OutputArea;
+    if (OutputArea.prototype.mime_types().indexOf(EXEC_MIME_TYPE) == -1) {
+      register_renderer(events, OutputArea);
+    }
+  } catch(err) {
+  }
+}
+
+// Define Bokeh specific subclasses
+function BokehSelectionWidget() {
+  SelectionWidget.apply(this, arguments);
+}
+
+function BokehScrubberWidget() {
+  ScrubberWidget.apply(this, arguments);
+}
+
+// Let them inherit from the baseclasses
+BokehSelectionWidget.prototype = Object.create(SelectionWidget.prototype);
+BokehScrubberWidget.prototype = Object.create(ScrubberWidget.prototype);
+
+// Define methods to override on widgets
+var BokehMethods = {
+  update_cache : function(){
+    for (var index in this.frames) {
+      this.frames[index] = JSON.parse(this.frames[index]);
+    }
+  },
+  update : function(current){
+    if (current === undefined) {
+      return;
+    }
+    var data = this.frames[current];
+    if (data !== undefined) {
+      if (data.root in HoloViews.plot_index) {
+        var doc = HoloViews.plot_index[data.root].model.document;
+      } else {
+        var doc = Bokeh.index[data.root].model.document;
+      }
+      doc.apply_json_patch(data.content);
+    }
+  },
+  init_comms: function() {
+    if (Bokeh.protocol !== undefined) {
+      this.receiver = new Bokeh.protocol.Receiver()
+    } else {
+      this.receiver = null;
+    }
+    return HoloViewsWidget.prototype.init_comms.call(this);
+  },
+  process_msg : function(msg) {
+    if (this.plot_id in HoloViews.plot_index) {
+      var doc = HoloViews.plot_index[this.plot_id].model.document;
+    } else {
+      var doc = Bokeh.index[this.plot_id].model.document;
+    }
+    if (this.receiver === null) { return }
+    var receiver = this.receiver;
+    if (msg.buffers.length > 0) {
+      receiver.consume(msg.buffers[0].buffer)
+    } else {
+      receiver.consume(msg.content.data)
+    }
+    const comm_msg = receiver.message;
+    if ((comm_msg != null) && (doc != null)) {
+      doc.apply_json_patch(comm_msg.content, comm_msg.buffers)
+    }
+  }
+}
+
+// Extend Bokeh widgets with backend specific methods
+extend(BokehSelectionWidget.prototype, BokehMethods);
+extend(BokehScrubberWidget.prototype, BokehMethods);
+
+window.HoloViews.BokehSelectionWidget = BokehSelectionWidget
+window.HoloViews.BokehScrubberWidget = BokehScrubberWidget
 </script>
-        <style>
-          html {
-            width: 100%;
-            height: 100%;
-          }
-          body {
-            width: 90%;
-            height: 100%;
-            margin: auto;
-          }
-        </style>
-    </head>
-    <body>
-        
-        <div class="bk-root">
-            <div class="bk-plotdiv" id="cd354658-5548-4984-9e9c-09e297716104"></div>
-        </div>
-        
-        <script type="application/json" id="30073e3e-3562-4100-818f-bc5a0a4bb09d">
-          {"d1f70102-d90d-426b-9e3e-6f8e8941ffba":{"roots":{"references":[{"attributes":{"fill_color":{"value":"#e69584"},"line_color":{"value":"#e69584"},"top":{"field":"Female Victim"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"53828edb-c122-4b26-8875-9353409226af","type":"Dodge"}}},"id":"58158e50-af79-46e4-b167-9dd4f67c6e7f","type":"VBar"},{"attributes":{"fill_color":{"value":"#c64737"},"line_color":{"value":"#c64737"},"top":{"field":"Female Suspect"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"395a19d8-878b-4633-b0cb-379dbe6624e3","type":"Dodge"}}},"id":"6e279c87-80d9-45f3-93f8-8f19d1977756","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Female Suspect"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"395a19d8-878b-4633-b0cb-379dbe6624e3","type":"Dodge"}}},"id":"2a3d6a56-61b1-4e44-ad3b-861cca371063","type":"VBar"},{"attributes":{"data_source":{"id":"255bb687-f83c-4b7c-8b00-c776627eb2cf","type":"ColumnDataSource"},"glyph":{"id":"6e279c87-80d9-45f3-93f8-8f19d1977756","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2a3d6a56-61b1-4e44-ad3b-861cca371063","type":"VBar"},"selection_glyph":null,"view":{"id":"aae77bf4-5a68-4541-98c0-ddd358d60edb","type":"CDSView"}},"id":"ec77521b-aa9f-44eb-baf3-a931a51f1363","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["fruits2","Male Victim","Male Suspect","Female Victim","Female Suspect"],"data":{"Female Suspect":[1.1807891724256865,1.0311622815329426,1.3412868371344093,0.5521541517764784,2.390948722048582,1.1008177503288157,0.7262483408544288,0.3465139044521548,2.0845791175202324,0.6276218904473438,0.7959938736684169,0.610728116723246,0.9204766650056537,0.46044755502348284,1.4154580740292777,0.9433097013644003,1.1413990056274539,1.5325156723673057,0.7004578659583814,0.4608646617804077,0.6926103792583869,1.1328048970125877,1.0415227880805795,1.0049771870178548,1.8825377830420995,0.8236850779185829,1.709058007439429,0.5604053972643811,1.3034738059697168,0.7376523219879833,1.2397833113086358,1.6521124736143873,0.4130745019519423,1.1982908378349681,0.5763921310946263,1.3534037806538493,1.663307132780769,1.8858651934168038,0.4988405520312075,4.595867774180685,1.2268329119634138,0.9519339967044045,1.5624381534897576,1.9547734417581002,1.2725436725760102,1.4561956491521633,1.3404875651160453,1.33959019023928,1.2083236235899295,0.3868680228755062,1.282756386924223],"Female Victim":[1.2099444606337282,1.8951090579524348,4.007503354852808,2.277635876077973,7.514410269295543,2.611463754026801,2.4364460467374385,1.042071011929108,3.3799961405506624,1.1835155648435625,1.3300150800535573,1.3880184470982864,2.8956661753302857,2.278625079988005,3.8976381748632285,2.03853819358524,1.3019082407938145,1.8198623609361755,2.4015698261430223,4.444610043272068,2.499420064280266,1.5104065293501168,2.667077046112886,3.0749301990844806,3.052763972500702,1.7553944283510783,4.590998961160819,1.0507601198707144,1.7379650746262894,3.0706922240895116,1.5894657837290203,2.2028166314858493,2.1479874101500998,3.561586656898377,8.357685900872081,3.9805993548642626,3.846397744555528,2.918600894573625,1.3682483712855975,6.08276617170973,1.6986917242570345,2.6654151907723325,2.031169599536685,1.2648534034905354,1.2725436725760102,1.7209584944525564,1.936259816278732,0.9901318797420764,1.2083236235899295,1.0316480610013499,1.122411838558695],"Male Suspect":[20.219192372276876,16.359250250265873,17.273157317243125,8.575644169778428,36.5046635241346,14.0485312899106,13.86119145179152,5.97673252715651,21.14358819199093,6.2941509584862185,10.73584142270504,8.905526356582605,11.189544458974979,10.944484192481244,16.780358037042742,10.228020919288161,10.611443880442735,14.94202780558123,14.242643274487092,19.293825671145882,10.258663878290891,13.559331343029456,12.868160054603047,14.71466597708232,20.30088041712967,9.614160253738214,18.196441138031567,4.833496551405287,10.620897678271769,15.327729062703792,14.305192053561182,18.17323720975826,10.739937050750498,17.275359578787455,27.81092032531572,19.942802767869956,19.439902114375236,15.827797159033889,5.059668456316533,45.5531599970262,19.06309601666228,11.899174958805057,14.686918642803722,13.91338743839589,12.42601468515398,17.07720352187537,15.341135467439186,7.688082830938476,7.9404123835909655,6.866907406040235,11.384462933952477],"Male Victim":[7.215933831490306,10.032930306807009,15.424798627045709,9.127798321554907,30.441900693225698,10.031261317931415,11.30760857588401,5.617572129841138,16.73619234351958,3.640206964594594,7.355386427568915,8.505777043818298,9.923889044592205,12.254988772163465,16.554705300603292,7.9598380418501655,5.403810917267476,7.8541428208824415,12.141269676611945,34.38519052809076,8.59238383543738,9.096766597222294,11.670895541202007,13.27469866434032,11.396985497335955,5.333698455374431,18.464528668610303,2.872077660979953,4.996649589550581,13.55221707838388,5.976391346821116,9.196759436453421,15.895106835110738,13.181199216184648,38.762370816113624,16.38016634526644,20.79133915975961,11.562149697733975,4.7176063634951335,21.357267891780833,8.87094567112007,3.236575588794975,9.270466377372562,3.9095468835162004,4.11705305833415,4.103824102156096,4.095934226743472,2.9121525874766956,3.107117889231247,3.933158232567646,4.168958257503724],"fruits2":["Massachusetts","Connecticut","Missouri","Wisconsin","Louisiana","Florida","Pennsylvania","California","Tennessee","Minnesota","New York","New Jersey","Georgia","Virginia","Alabama","Texas","Colorado","New Mexico","Nevada","Illinois","Michigan","Kansas","North Carolina","Indiana","Oklahoma","Washington","Mississippi","Hawaii","Oregon","Ohio","Iowa","West Virginia","Maryland","Arkansas","District of Columbia","South Carolina","Delaware","Kentucky","Arizona","Alaska","Rhode Island","Montana","Nebraska","South Dakota","Maine","North Dakota","New Hampshire","Idaho","Wyoming","Utah","Vermont"]}},"id":"255bb687-f83c-4b7c-8b00-c776627eb2cf","type":"ColumnDataSource"},{"attributes":{"label":{"value":"Female Victim"},"renderers":[{"id":"608bd4ef-5e89-4bba-ba0f-27a83be4ce4b","type":"GlyphRenderer"}]},"id":"d2896844-85f3-45e6-9b77-0e7c485ba135","type":"LegendItem"},{"attributes":{"source":{"id":"255bb687-f83c-4b7c-8b00-c776627eb2cf","type":"ColumnDataSource"}},"id":"06234276-56b0-4b5b-ab6b-dc4d062ab242","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Female Victim"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"53828edb-c122-4b26-8875-9353409226af","type":"Dodge"}}},"id":"8aaa44bd-e78b-4437-9660-f38a31e41d5a","type":"VBar"},{"attributes":{"data_source":{"id":"255bb687-f83c-4b7c-8b00-c776627eb2cf","type":"ColumnDataSource"},"glyph":{"id":"58158e50-af79-46e4-b167-9dd4f67c6e7f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"8aaa44bd-e78b-4437-9660-f38a31e41d5a","type":"VBar"},"selection_glyph":null,"view":{"id":"06234276-56b0-4b5b-ab6b-dc4d062ab242","type":"CDSView"}},"id":"608bd4ef-5e89-4bba-ba0f-27a83be4ce4b","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Male Victim"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"c91c1f26-4f2d-4105-b717-59961998bbf0","type":"Dodge"}}},"id":"4523bd01-0bc8-44c7-a7b1-844f6cebab06","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Male Suspect"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"c290fa77-a057-48f3-8dd4-5c5d29a15249","type":"Dodge"}}},"id":"a5065486-2b71-4e47-94eb-69c6df1876b7","type":"VBar"},{"attributes":{"fill_color":{"value":"#0d3362"},"line_color":{"value":"#0d3362"},"top":{"field":"Male Suspect"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"c290fa77-a057-48f3-8dd4-5c5d29a15249","type":"Dodge"}}},"id":"1679a4b7-a6b4-4223-b4d8-01cfc6e316b6","type":"VBar"},{"attributes":{"range":{"id":"239d839f-e670-4f0c-b8ee-b5b8358194eb","type":"FactorRange"},"value":0.5},"id":"395a19d8-878b-4633-b0cb-379dbe6624e3","type":"Dodge"},{"attributes":{},"id":"07abab7d-07fd-4184-93fa-c6c4cd9d5c94","type":"BasicTicker"},{"attributes":{"data_source":{"id":"255bb687-f83c-4b7c-8b00-c776627eb2cf","type":"ColumnDataSource"},"glyph":{"id":"1679a4b7-a6b4-4223-b4d8-01cfc6e316b6","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"a5065486-2b71-4e47-94eb-69c6df1876b7","type":"VBar"},"selection_glyph":null,"view":{"id":"9bfac7d4-6b8b-4c52-a3fc-276e7dfa8b98","type":"CDSView"}},"id":"dfa0079f-96aa-4bd6-9bd5-87b54d0da452","type":"GlyphRenderer"},{"attributes":{},"id":"f336e4ae-ab65-48cd-9105-27f3eb8fd160","type":"CategoricalTicker"},{"attributes":{},"id":"c0f66042-2bcc-40ea-bdb1-cfdffe076dae","type":"CategoricalTickFormatter"},{"attributes":{"label":{"value":"Female Suspect"},"renderers":[{"id":"ec77521b-aa9f-44eb-baf3-a931a51f1363","type":"GlyphRenderer"}]},"id":"925aa11b-4e3a-455f-b1c5-80d0ae0771ca","type":"LegendItem"},{"attributes":{"formatter":{"id":"c0f66042-2bcc-40ea-bdb1-cfdffe076dae","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"f39120aa-c114-4d51-a4c2-a7f56e26e157","subtype":"Figure","type":"Plot"},"ticker":{"id":"f336e4ae-ab65-48cd-9105-27f3eb8fd160","type":"CategoricalTicker"}},"id":"eb4898c9-8692-408f-ab35-67cc2d9dd853","type":"CategoricalAxis"},{"attributes":{"range":{"id":"239d839f-e670-4f0c-b8ee-b5b8358194eb","type":"FactorRange"},"value":0.25},"id":"53828edb-c122-4b26-8875-9353409226af","type":"Dodge"},{"attributes":{"source":{"id":"255bb687-f83c-4b7c-8b00-c776627eb2cf","type":"ColumnDataSource"}},"id":"aae77bf4-5a68-4541-98c0-ddd358d60edb","type":"CDSView"},{"attributes":{},"id":"06bb5cb8-d205-4668-b8c8-a09390367d70","type":"BasicTickFormatter"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"f39120aa-c114-4d51-a4c2-a7f56e26e157","subtype":"Figure","type":"Plot"},"ticker":{"id":"f336e4ae-ab65-48cd-9105-27f3eb8fd160","type":"CategoricalTicker"}},"id":"c400d42f-0743-4274-ac5f-05ffbba2a53f","type":"Grid"},{"attributes":{"formatter":{"id":"06bb5cb8-d205-4668-b8c8-a09390367d70","type":"BasicTickFormatter"},"plot":{"id":"f39120aa-c114-4d51-a4c2-a7f56e26e157","subtype":"Figure","type":"Plot"},"ticker":{"id":"07abab7d-07fd-4184-93fa-c6c4cd9d5c94","type":"BasicTicker"}},"id":"808b5789-98d3-4a99-b116-40c09602133b","type":"LinearAxis"},{"attributes":{"items":[{"id":"1c902b8e-4f2e-4f52-8ff6-8ec96fad177a","type":"LegendItem"},{"id":"fa0be7fe-cbff-4f37-b1b6-dd73f7c1adb7","type":"LegendItem"},{"id":"d2896844-85f3-45e6-9b77-0e7c485ba135","type":"LegendItem"},{"id":"925aa11b-4e3a-455f-b1c5-80d0ae0771ca","type":"LegendItem"}],"location":"top_left","orientation":"horizontal","plot":{"id":"f39120aa-c114-4d51-a4c2-a7f56e26e157","subtype":"Figure","type":"Plot"}},"id":"aa1a63ae-17b3-4883-9bd8-386f5f6a18c9","type":"Legend"},{"attributes":{},"id":"3b3603e9-47bd-47ba-a788-919d19a63c93","type":"LinearScale"},{"attributes":{"range":{"id":"239d839f-e670-4f0c-b8ee-b5b8358194eb","type":"FactorRange"}},"id":"c290fa77-a057-48f3-8dd4-5c5d29a15249","type":"Dodge"},{"attributes":{"callback":null,"end":50},"id":"1db3f64d-8e6b-4d6a-88b0-315d049fc86d","type":"Range1d"},{"attributes":{"data_source":{"id":"255bb687-f83c-4b7c-8b00-c776627eb2cf","type":"ColumnDataSource"},"glyph":{"id":"a2487dc3-8564-453e-8731-553af41bb300","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4523bd01-0bc8-44c7-a7b1-844f6cebab06","type":"VBar"},"selection_glyph":null,"view":{"id":"4c93d1fa-23a7-4bd4-9d0a-092ad5050e0d","type":"CDSView"}},"id":"1a60a3db-d410-47db-9a93-86d1fd686409","type":"GlyphRenderer"},{"attributes":{},"id":"5de7ea74-a073-4460-ab40-f5d483e2cf4d","type":"CategoricalScale"},{"attributes":{"label":{"value":"Male Victim"},"renderers":[{"id":"1a60a3db-d410-47db-9a93-86d1fd686409","type":"GlyphRenderer"}]},"id":"1c902b8e-4f2e-4f52-8ff6-8ec96fad177a","type":"LegendItem"},{"attributes":{"below":[{"id":"eb4898c9-8692-408f-ab35-67cc2d9dd853","type":"CategoricalAxis"}],"left":[{"id":"808b5789-98d3-4a99-b116-40c09602133b","type":"LinearAxis"}],"plot_height":350,"plot_width":2000,"renderers":[{"id":"eb4898c9-8692-408f-ab35-67cc2d9dd853","type":"CategoricalAxis"},{"id":"c400d42f-0743-4274-ac5f-05ffbba2a53f","type":"Grid"},{"id":"808b5789-98d3-4a99-b116-40c09602133b","type":"LinearAxis"},{"id":"873e2f38-1632-45d5-9bc7-a4ca0c6eac14","type":"Grid"},{"id":"aa1a63ae-17b3-4883-9bd8-386f5f6a18c9","type":"Legend"},{"id":"1a60a3db-d410-47db-9a93-86d1fd686409","type":"GlyphRenderer"},{"id":"dfa0079f-96aa-4bd6-9bd5-87b54d0da452","type":"GlyphRenderer"},{"id":"608bd4ef-5e89-4bba-ba0f-27a83be4ce4b","type":"GlyphRenderer"},{"id":"ec77521b-aa9f-44eb-baf3-a931a51f1363","type":"GlyphRenderer"}],"title":{"id":"16031d83-b914-44e8-b420-ef5210222c47","type":"Title"},"toolbar":{"id":"350b06e4-d273-4cbb-bb57-b2be949b9b38","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"239d839f-e670-4f0c-b8ee-b5b8358194eb","type":"FactorRange"},"x_scale":{"id":"5de7ea74-a073-4460-ab40-f5d483e2cf4d","type":"CategoricalScale"},"y_range":{"id":"1db3f64d-8e6b-4d6a-88b0-315d049fc86d","type":"Range1d"},"y_scale":{"id":"3b3603e9-47bd-47ba-a788-919d19a63c93","type":"LinearScale"}},"id":"f39120aa-c114-4d51-a4c2-a7f56e26e157","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto"},"id":"350b06e4-d273-4cbb-bb57-b2be949b9b38","type":"Toolbar"},{"attributes":{"callback":null,"factors":["Massachusetts","Connecticut","Missouri","Wisconsin","Louisiana","Florida","Pennsylvania","California","Tennessee","Minnesota","New York","New Jersey","Georgia","Virginia","Alabama","Texas","Colorado","New Mexico","Nevada","Illinois","Michigan","Kansas","North Carolina","Indiana","Oklahoma","Washington","Mississippi","Hawaii","Oregon","Ohio","Iowa","West Virginia","Maryland","Arkansas","District of Columbia","South Carolina","Delaware","Kentucky","Arizona","Alaska","Rhode Island","Montana","Nebraska","South Dakota","Maine","North Dakota","New Hampshire","Idaho","Wyoming","Utah","Vermont"],"range_padding":0.1},"id":"239d839f-e670-4f0c-b8ee-b5b8358194eb","type":"FactorRange"},{"attributes":{"source":{"id":"255bb687-f83c-4b7c-8b00-c776627eb2cf","type":"ColumnDataSource"}},"id":"4c93d1fa-23a7-4bd4-9d0a-092ad5050e0d","type":"CDSView"},{"attributes":{"plot":null,"text":"Types per gender per month"},"id":"16031d83-b914-44e8-b420-ef5210222c47","type":"Title"},{"attributes":{"label":{"value":"Male Suspect"},"renderers":[{"id":"dfa0079f-96aa-4bd6-9bd5-87b54d0da452","type":"GlyphRenderer"}]},"id":"fa0be7fe-cbff-4f37-b1b6-dd73f7c1adb7","type":"LegendItem"},{"attributes":{"range":{"id":"239d839f-e670-4f0c-b8ee-b5b8358194eb","type":"FactorRange"},"value":-0.25},"id":"c91c1f26-4f2d-4105-b717-59961998bbf0","type":"Dodge"},{"attributes":{"dimension":1,"plot":{"id":"f39120aa-c114-4d51-a4c2-a7f56e26e157","subtype":"Figure","type":"Plot"},"ticker":{"id":"07abab7d-07fd-4184-93fa-c6c4cd9d5c94","type":"BasicTicker"}},"id":"873e2f38-1632-45d5-9bc7-a4ca0c6eac14","type":"Grid"},{"attributes":{"source":{"id":"255bb687-f83c-4b7c-8b00-c776627eb2cf","type":"ColumnDataSource"}},"id":"9bfac7d4-6b8b-4c52-a3fc-276e7dfa8b98","type":"CDSView"},{"attributes":{"fill_color":{"value":"#aeaeb8"},"line_color":{"value":"#aeaeb8"},"top":{"field":"Male Victim"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"c91c1f26-4f2d-4105-b717-59961998bbf0","type":"Dodge"}}},"id":"a2487dc3-8564-453e-8731-553af41bb300","type":"VBar"}],"root_ids":["f39120aa-c114-4d51-a4c2-a7f56e26e157"]},"title":"Bokeh Application","version":"0.12.13"}}
-        </script>
-        <script type="text/javascript">
-          (function() {
-            var fn = function() {
-              Bokeh.safely(function() {
-                (function(root) {
-                  function embed_document(root) {
-                    
-                  var docs_json = document.getElementById('30073e3e-3562-4100-818f-bc5a0a4bb09d').textContent;
-                  var render_items = [{"docid":"d1f70102-d90d-426b-9e3e-6f8e8941ffba","elementid":"cd354658-5548-4984-9e9c-09e297716104","modelid":"f39120aa-c114-4d51-a4c2-a7f56e26e157"}];
-                  root.Bokeh.embed.embed_items(docs_json, render_items);
-                
-                  }
-                  if (root.Bokeh !== undefined) {
-                    embed_document(root);
-                  } else {
-                    var attempts = 0;
-                    var timer = setInterval(function(root) {
-                      if (root.Bokeh !== undefined) {
-                        embed_document(root);
-                        clearInterval(timer);
-                      }
-                      attempts++;
-                      if (attempts > 100) {
-                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
-                        clearInterval(timer);
-                      }
-                    }, 10, root)
-                  }
-                })(window);
-              });
-            };
-            if (document.readyState != "loading") fn();
-            else document.addEventListener("DOMContentLoaded", fn);
-          })();
-        </script>
-    </body>
+<script type="text/javascript">
+    function JupyterCommManager() {
+    }
+
+    JupyterCommManager.prototype.register_target = function(plot_id, comm_id, msg_handler) {
+      if (window.comm_manager || ((window.Jupyter !== undefined) && (Jupyter.notebook.kernel != null))) {
+        var comm_manager = window.comm_manager || Jupyter.notebook.kernel.comm_manager;
+        comm_manager.register_target(comm_id, function(comm) {
+          comm.on_msg(msg_handler);
+        });
+      } else if ((plot_id in window.PyViz.kernels) && (window.PyViz.kernels[plot_id])) {
+        window.PyViz.kernels[plot_id].registerCommTarget(comm_id, function(comm) {
+          comm.onMsg = msg_handler;
+        });
+      }
+    }
+
+    JupyterCommManager.prototype.get_client_comm = function(plot_id, comm_id, msg_handler) {
+      if (comm_id in window.PyViz.comms) {
+        return window.PyViz.comms[comm_id];
+      } else if (window.comm_manager || ((window.Jupyter !== undefined) && (Jupyter.notebook.kernel != null))) {
+        var comm_manager = window.comm_manager || Jupyter.notebook.kernel.comm_manager;
+        var comm = comm_manager.new_comm(comm_id, {}, {}, {}, comm_id);
+        if (msg_handler) {
+          comm.on_msg(msg_handler);
+        }
+      } else if ((plot_id in window.PyViz.kernels) && (window.PyViz.kernels[plot_id])) {
+        var comm = window.PyViz.kernels[plot_id].connectToComm(comm_id);
+        comm.open();
+        if (msg_handler) {
+          comm.onMsg = msg_handler;
+        }
+      }
+
+      window.PyViz.comms[comm_id] = comm;
+      return comm;
+    }
+
+    window.PyViz.comm_manager = new JupyterCommManager();
+    </script>
+  </head>
+  <body>
+    <div style='display: table; margin: 0 auto;'>
+
+<div class="bk-root">
+    <div class="bk-plotdiv" id="7f1e6e4c-e2bc-42f3-947d-fe638fe0d027"></div>
+</div>
+<script type="text/javascript">
+  (function(root) {
+  function embed_document(root) {
+    
+  var docs_json = {"5160c65c-c5ba-4486-aa47-a789a3059ba8":{"roots":{"references":[{"attributes":{"dimension":1,"grid_line_color":{"value":null},"plot":{"id":"cfa92fed-e09c-41cf-8565-b20d5335ff75","subtype":"Figure","type":"Plot"},"ticker":{"id":"01501531-3f79-467c-a9fb-8f78d59787bb","type":"BasicTicker"}},"id":"f94c34cc-3fee-4f2d-9729-3932b9a0ec2e","type":"Grid"},{"attributes":{"source":{"id":"0d14d16b-550a-4554-a813-71bf3e0032a2","type":"ColumnDataSource"}},"id":"fa78c4a7-4a9c-4245-878c-405c816b7390","type":"CDSView"},{"attributes":{"callback":null,"data":{"x":{"__ndarray__":"AAAAAAAAAACRGkt8Vz/AP5EaS3xXP9A/2qdwOgNf2D+RGkt8Vz/gPzXhXVstT+Q/2qdwOgNf6D9+boMZ2W7sP5EaS3xXP/A/433Ua0JH8j814V1bLU/0P4dE50oYV/Y/2qdwOgNf+D8sC/op7mb6P35ugxnZbvw/0NEMCcR2/j+RGkt8Vz8AQDrMD/RMQwFA433Ua0JHAkCML5njN0sDQDXhXVstTwRA3pIi0yJTBUCHROdKGFcGQDD2q8INWwdA2qdwOgNfCECDWTWy+GIJQCwL+inuZgpA1by+oeNqC0B+boMZ2W4MQCcgSJHOcg1A0NEMCcR2DkB5g9GAuXoPQJEaS3xXPxBAZnMtOFLBEEA6zA/0TEMRQA8l8q9HxRFA433Ua0JHEkC41rYnPckSQIwvmeM3SxNAYYh7nzLNE0A14V1bLU8UQAo6QBco0RRA3pIi0yJTFUCz6wSPHdUVQIdE50oYVxZAXJ3JBhPZFkAw9qvCDVsXQAVPjn4I3RdA2qdwOgNfGECuAFP2/eAYQINZNbL4YhlAV7IXbvPkGUAsC/op7mYaQABk3OXo6BpA1by+oeNqG0CpFaFd3uwbQH5ugxnZbhxAUsdl1dPwHEAnIEiRznIdQPt4Kk3J9B1A0NEMCcR2HkCkKu/EvvgeQHmD0YC5eh9ATdyzPLT8H0CRGkt8Vz8gQPtGPNpUgCBAZnMtOFLBIEDQnx6WTwIhQDrMD/RMQyFApPgAUkqEIUAPJfKvR8UhQHlR4w1FBiJA433Ua0JHIkBNqsXJP4giQLjWtic9ySJAIgOohToKI0CML5njN0sjQPZbikE1jCNAYYh7nzLNI0DLtGz9Lw4kQDXhXVstTyRAoA1PuSqQJEAKOkAXKNEkQHRmMXUlEiVA3pIi0yJTJUBJvxMxIJQlQLPrBI8d1SVAHRj27BoWJkCHROdKGFcmQPJw2KgVmCZAXJ3JBhPZJkDGybpkEBonQDD2q8INWydAmyKdIAucJ0AFT45+CN0nQG97f9wFHihA2qdwOgNfKEBE1GGYAKAoQK4AU/b94ChAGC1EVPshKUA=","dtype":"float64","shape":[100]},"y":{"__ndarray__":"AAAAAAAAAADwgwJ4LjTAP5qI2QHPEtA/+5MNU1HJ1z8ZTT7q2B3fP0aFmgwa+eI/ABg/lCAV5j+IQCEcMdboP3fOhmLzMOs/EyzujrQb7T/9Izwlj47uPxccgYyLg+8/g6xao7j27z9mZrL8O+bvP7+X94FZUu8/xVNiW3I97j9RB8Ai+6vsP5FWKYlppOo/oSg6uxkv6D/Th2bxK1blPyZGRbpaJeI/8qg+VZVT3T/4C4p0qOPVP+UppLIiM8w/3FNHxZdVuD/J23zJpD6gv+3ENsZjOcS/wo12/ecH0r/dgWKM2KjZv2MTsJELcOC/83ixWvXH47+358MBZM7mv5eCD4nhdum/rExY6Hq267+TIxAn7YPtvwSssILL1+6/70I4BJ6s77/vOc8G+P7vvzTGy1KGze+/3176khQZ77/C8a4NiuTtvzGcHq/dNOy/l0FFlgER6r+FGZN4xoHnvx8WPFK3keS/Cli7+O1M4b+HQNqEwoHbv9kfIiFb+NO/gKyggGI5yL8EhrXMjDywvyGGtcyMPLA/jqyggGI5yD/gHyIhW/jTP39A2oTCgds/DVi7+O1M4T8bFjxSt5HkP4cZk3jGgec/lUFFlgER6j8ynB6v3TTsP8Hxrg2K5O0/4F76khQZ7z80xstShs3vP+85zwb4/u8/8EI4BJ6s7z8DrLCCy9fuP5UjECftg+0/p0xY6Hq26z+Vgg+J4XbpP7fnwwFkzuY/9nixWvXH4z9dE7CRC3DgP9eBYozYqNk/w412/ecH0j/+xDbGYznEP0/bfMmkPqA/+FNHxZdVuL/UKaSyIjPMv+gLinSo49W/+Kg+VZVT3b8lRkW6WiXiv8+HZvErVuW/pig6uxkv6L+TVimJaaTqv1EHwCL7q+y/xFNiW3I97r/Al/eBWVLvv2Zmsvw75u+/g6xao7j2778YHIGMi4Pvv/sjPCWPju6/EyzujrQb7b94zoZi8zDrv4xAIRwx1ui//Bc/lCAV5r9GhZoMGvnivx9NPurYHd+/65MNU1HJ17+SiNkBzxLQv/GDAnguNMC/B1wUMyamwbw=","dtype":"float64","shape":[100]}},"selected":{"id":"7c896c4a-1b47-4f06-ab92-ac08109e91ca","type":"Selection"},"selection_policy":{"id":"393ffe8f-76c4-42b3-9276-e8a29eed6ef3","type":"UnionRenderers"}},"id":"0d14d16b-550a-4554-a813-71bf3e0032a2","type":"ColumnDataSource"},{"attributes":{},"id":"e443081d-14fa-4b2b-996b-68f0d95b461b","type":"BasicTickFormatter"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"cf26c6a1-27bc-4c3e-88e8-9201b52a3120","type":"BoxAnnotation"},{"attributes":{},"id":"0f38064b-75ca-4543-b56c-2ba3f5fdca4f","type":"BasicTickFormatter"},{"attributes":{},"id":"c0ebd46d-e19d-4510-a820-927a77994ead","type":"SaveTool"},{"attributes":{"callback":null,"end":0.9998741276738751,"start":-0.9998741276738751},"id":"965628fa-0909-4e87-b082-664fc415caa3","type":"Range1d"},{"attributes":{"axis_label":"y","bounds":"auto","formatter":{"id":"0f38064b-75ca-4543-b56c-2ba3f5fdca4f","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"cfa92fed-e09c-41cf-8565-b20d5335ff75","subtype":"Figure","type":"Plot"},"ticker":{"id":"01501531-3f79-467c-a9fb-8f78d59787bb","type":"BasicTicker"}},"id":"2c3bf857-1237-4ffc-ae58-2c36f669459f","type":"LinearAxis"},{"attributes":{"data_source":{"id":"0d14d16b-550a-4554-a813-71bf3e0032a2","type":"ColumnDataSource"},"glyph":{"id":"5549977d-601c-4834-9e50-08bc545b905f","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"344eb4b6-537f-4498-8fa5-4586539f6bfa","type":"Line"},"nonselection_glyph":{"id":"7e79ff1f-64ab-467b-81e7-a4caf128f2fd","type":"Line"},"selection_glyph":null,"view":{"id":"fa78c4a7-4a9c-4245-878c-405c816b7390","type":"CDSView"}},"id":"648fadc6-576c-434c-aad8-90b40bdc1f7c","type":"GlyphRenderer"},{"attributes":{},"id":"c564b4e4-ed33-47b1-bed2-28734724f8c1","type":"PanTool"},{"attributes":{"callback":null,"end":12.566370614359172},"id":"dabba017-41a9-4a3b-aa50-d604169e02f1","type":"Range1d"},{"attributes":{"line_alpha":0.2,"line_color":"orange","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"344eb4b6-537f-4498-8fa5-4586539f6bfa","type":"Line"},{"attributes":{},"id":"81d1b33f-2961-48a7-8615-7715c4378ab3","type":"WheelZoomTool"},{"attributes":{"below":[{"id":"3b90b139-de26-4220-a449-963280fbc2bb","type":"LinearAxis"}],"left":[{"id":"2c3bf857-1237-4ffc-ae58-2c36f669459f","type":"LinearAxis"}],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"plot_height":300,"plot_width":300,"renderers":[{"id":"3b90b139-de26-4220-a449-963280fbc2bb","type":"LinearAxis"},{"id":"ddf5b29e-834f-42af-910b-e222d92a5037","type":"Grid"},{"id":"2c3bf857-1237-4ffc-ae58-2c36f669459f","type":"LinearAxis"},{"id":"f94c34cc-3fee-4f2d-9729-3932b9a0ec2e","type":"Grid"},{"id":"cf26c6a1-27bc-4c3e-88e8-9201b52a3120","type":"BoxAnnotation"},{"id":"5a5c5e1c-66e7-4443-9c5a-22663a6fee46","type":"Legend"},{"id":"648fadc6-576c-434c-aad8-90b40bdc1f7c","type":"GlyphRenderer"}],"title":{"id":"db324f7d-fa45-47b8-89be-f2b16df2762a","type":"Title"},"toolbar":{"id":"9e588b13-adc2-4044-9b07-2db6191341f1","type":"Toolbar"},"x_range":{"id":"dabba017-41a9-4a3b-aa50-d604169e02f1","type":"Range1d"},"x_scale":{"id":"ecf35bcb-ffd4-405b-aedf-74f50b1ac02a","type":"LinearScale"},"y_range":{"id":"965628fa-0909-4e87-b082-664fc415caa3","type":"Range1d"},"y_scale":{"id":"0d52150b-4ee6-48ee-92fa-0a59d1f2c4c7","type":"LinearScale"}},"id":"cfa92fed-e09c-41cf-8565-b20d5335ff75","subtype":"Figure","type":"Plot"},{"attributes":{"line_color":"orange","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"5549977d-601c-4834-9e50-08bc545b905f","type":"Line"},{"attributes":{"plot":null,"text":"MY LABEL","text_color":{"value":"black"},"text_font_size":{"value":"12pt"}},"id":"db324f7d-fa45-47b8-89be-f2b16df2762a","type":"Title"},{"attributes":{"overlay":{"id":"cf26c6a1-27bc-4c3e-88e8-9201b52a3120","type":"BoxAnnotation"}},"id":"c3125108-5928-4c1f-9de9-580bc4fccef6","type":"BoxZoomTool"},{"attributes":{},"id":"2f2e1d5a-7d8d-4dbd-98c7-6a207f11fc26","type":"ResetTool"},{"attributes":{},"id":"ecf35bcb-ffd4-405b-aedf-74f50b1ac02a","type":"LinearScale"},{"attributes":{"line_alpha":0.1,"line_color":"orange","line_width":2,"x":{"field":"x"},"y":{"field":"y"}},"id":"7e79ff1f-64ab-467b-81e7-a4caf128f2fd","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"c0ebd46d-e19d-4510-a820-927a77994ead","type":"SaveTool"},{"id":"c564b4e4-ed33-47b1-bed2-28734724f8c1","type":"PanTool"},{"id":"81d1b33f-2961-48a7-8615-7715c4378ab3","type":"WheelZoomTool"},{"id":"c3125108-5928-4c1f-9de9-580bc4fccef6","type":"BoxZoomTool"},{"id":"2f2e1d5a-7d8d-4dbd-98c7-6a207f11fc26","type":"ResetTool"}]},"id":"9e588b13-adc2-4044-9b07-2db6191341f1","type":"Toolbar"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"cfa92fed-e09c-41cf-8565-b20d5335ff75","subtype":"Figure","type":"Plot"},"ticker":{"id":"d4826c2a-1f92-4099-ab03-9195f7dd171a","type":"BasicTicker"}},"id":"ddf5b29e-834f-42af-910b-e222d92a5037","type":"Grid"},{"attributes":{},"id":"7c896c4a-1b47-4f06-ab92-ac08109e91ca","type":"Selection"},{"attributes":{},"id":"0d52150b-4ee6-48ee-92fa-0a59d1f2c4c7","type":"LinearScale"},{"attributes":{"axis_label":"x","bounds":"auto","formatter":{"id":"e443081d-14fa-4b2b-996b-68f0d95b461b","type":"BasicTickFormatter"},"major_label_orientation":"horizontal","plot":{"id":"cfa92fed-e09c-41cf-8565-b20d5335ff75","subtype":"Figure","type":"Plot"},"ticker":{"id":"d4826c2a-1f92-4099-ab03-9195f7dd171a","type":"BasicTicker"}},"id":"3b90b139-de26-4220-a449-963280fbc2bb","type":"LinearAxis"},{"attributes":{},"id":"d4826c2a-1f92-4099-ab03-9195f7dd171a","type":"BasicTicker"},{"attributes":{},"id":"393ffe8f-76c4-42b3-9276-e8a29eed6ef3","type":"UnionRenderers"},{"attributes":{"background_fill_alpha":{"value":0},"border_line_alpha":{"value":0},"items":[],"plot":{"id":"cfa92fed-e09c-41cf-8565-b20d5335ff75","subtype":"Figure","type":"Plot"}},"id":"5a5c5e1c-66e7-4443-9c5a-22663a6fee46","type":"Legend"},{"attributes":{},"id":"01501531-3f79-467c-a9fb-8f78d59787bb","type":"BasicTicker"}],"root_ids":["cfa92fed-e09c-41cf-8565-b20d5335ff75"]},"title":"Bokeh Application","version":"0.12.16"}};
+  var render_items = [{"docid":"5160c65c-c5ba-4486-aa47-a789a3059ba8","elementid":"7f1e6e4c-e2bc-42f3-947d-fe638fe0d027","modelid":"cfa92fed-e09c-41cf-8565-b20d5335ff75"}];
+  root.Bokeh.embed.embed_items_notebook(docs_json, render_items);
+
+  }
+  if (root.Bokeh !== undefined) {
+    embed_document(root);
+  } else {
+    var attempts = 0;
+    var timer = setInterval(function(root) {
+      if (root.Bokeh !== undefined) {
+        embed_document(root);
+        clearInterval(timer);
+      }
+      attempts++;
+      if (attempts > 100) {
+        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+        clearInterval(timer);
+      }
+    }, 10, root)
+  }
+})(window);
+</script>
+</div>
+  </body>
 </html>
