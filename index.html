@@ -43,29 +43,4 @@
 
   </body>
 
-
-<script>  
-function calcParallax(tileheight, speedratio, scrollposition) {
-  return ((tileheight) - (Math.floor(scrollposition / speedratio) % (tileheight+1)));
-}
-
-window.onload = function() {
-
-  window.onscroll = function() {
-    var posX = (document.documentElement.scrollLeft) ? document.documentElement.scrollLeft : window.pageXOffset;
-    var posY = (document.documentElement.scrollTop) ? document.documentElement.scrollTop : window.pageYOffset;
-    
-    var ground = document.getElementById('ground');
-    var groundparallax = calcParallax(53, 8, posY);
-    ground.style.backgroundPosition = "0 " + groundparallax + "px"; 
-  }
-
-  document.getElementById('javascriptcode').onscroll = function() {
-    var posX = (this.scrollLeft) ? this.scrollLeft : this.pageXOffset;
-    var j = calcParallax(53, 16, posX);
-    console.log('scroll js: '+ j);
-    document.getElementById('javascriptcode').style.backgroundPosition = j + "px 0";
-  }
-}
-  </script>
 </html>
