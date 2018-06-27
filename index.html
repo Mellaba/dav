@@ -52,7 +52,7 @@ function calcParallax(tileheight, speedratio, scrollposition) {
   //    http://creativecommons.org/licenses/by/3.0/
   return ((tileheight) - (Math.floor(scrollposition / speedratio) % (tileheight+1)));
 }
-
+<script>
 window.onload = function() {
 
   window.onscroll = function() {
@@ -75,3 +75,4 @@ window.onload = function() {
     document.getElementById('javascriptcode').style.backgroundPosition = j + "px 0";
   }
 }
+  </script>
