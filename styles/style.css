@@ -1,9 +1,9 @@
-.javascriptcode {
+#javascriptcode {
 	background-image: url("https://github.com/annanas93/gunviolenceUSA/blob/master/styles/background.jpg?raw=true");
 	background-repeat: repeat;
 }
 
-.ground {
+#ground {
   background-image: url("https://github.com/annanas93/gunviolenceUSA/blob/master/styles/background.jpg?raw=true");
   background-repeat: repeat;
   background-attachment: fixed;
