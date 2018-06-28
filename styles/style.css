@@ -23,7 +23,7 @@ div.text {
     overflow: hidden; /* will contain if #first is longer than #second */
 }
 
-div.transbox {
+div.transboxleft {
     width: 25%;
     margin-top: 50px;
     margin-left: 10px;
@@ -44,7 +44,7 @@ div.transboxright {
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
-div.transbox p {
+div.transboxleft p {
     margin: 5%;
     font-weight: bold;
     color: #000000;
@@ -76,7 +76,7 @@ div.titlebox {
   color: white;
 }  
 
-.bokeh {
+.bokehleft {
   display:inline-block;
   float: left;
   width: 70%;
@@ -84,7 +84,7 @@ div.titlebox {
   opacity: 0.9;
 }
 
-.bokeh_map {
+.bokehright {
   display:inline-block;
   float: right;
   margin-left: 10px;
