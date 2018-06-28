@@ -1,0 +1,33 @@
+Dataset
+
+Welke data gaat weg?
+incident_url
+source_url
+incident_url_fields_missing
+gun_stolen
+location_description
+n_guns_involved
+participant_relationship
+notes
+sources
+
+Welke soort data hebben we?
+incident_id : categorical data: nominal
+Date: categorical data: ordinal
+State: categorical data: nominal
+City or county: categorical data: nominal
+Adress: categorical data: nominal
+n_killed: continuous: ratio
+n_injured: continuous: ratio
+Congressional district: categorical: nominal
+Incident characteristics: categorical: nominal
+Latitude: continuous: interval
+longitude: continuous: interval
+Participant age: continuous: ratio
+Participant_age_group: categorical: ordinal
+Participant_gender: categorical: nominal
+Participant_name: categorical: nominal
+Participant_status: categorical: nominal
+Participant_type: categorical: nominal
+State_house_district: categorical: nominal
+Senate_house_district: categorical: nominal
