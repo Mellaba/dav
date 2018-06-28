@@ -1,6 +1,7 @@
 .content {
     max-width: 500px;
     margin: auto;
+    align-self: auto;
 }
 
 body {
