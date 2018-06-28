@@ -33,9 +33,9 @@ div.text {
 
 div.transboxleft {
     display: block;
+    margin: 0 auto;
     width: 25%;
     margin-top: 50px;
-    margin: 0 auto;
     background-color: #FFFF00;
     opacity: 0.7;
     filter: alpha(opacity=60); /* For IE8 and earlier */
