@@ -1,17 +1,8 @@
-5 juni		Lisa		Deze file gemaakt, git gefixt
 5 juni      Bart        Git geconnect, data gedacht over data visualisaties
-5 juni		Melanie		data_types file met welke data typen we hebben en welke data we verwijderen
-5 juni		Melanie		converthap.py die de json file op een overzichtelijke manier indent
 5 juni		Anna		script gemaakt om csv kolommen te verwijderen en json string te maken
 6 juni      Bart        Bokeh documentatie bestudeerd, bar chart geplot
-6 juni		Lisa		gekeken naar mogelijkheden van de dataset en error gefixt
-6 juni      Melanie     	nested dictionary gemaakt
-6 juni      Melanie     	nested dictionary gemaakt
 11 juni     Bart        bar plot staten gemaakt
 11 juni     Bart        map plot documentatie bekeken
-11 juni		Lisa		bokeh uitgezocht en eerste plots gemaakt
-11 juni     Anna        bokeh uitgezocht en bezig aan plot
-12 juni     Anna        maand en jaar plot gemaakt
-11 juni     Melanie     bokeh bekeken, documentatie eda gelezen en gender.py gemaakt 
 12 juni     Bart        Incidents per state per year geplot
-13 juni     Melanie     gender types op maand plot
+
+
