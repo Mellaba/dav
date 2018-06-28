@@ -1,8 +1,4 @@
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .content {
     max-width: 85%;
@@ -36,11 +32,10 @@ div.text {
 }
 
 div.transboxleft {
-    align-content: center;
     display: block;
     width: 25%;
     margin-top: 50px;
-    margin-left: 10px;
+    margin: 0 auto;
     background-color: #FFFF00;
     opacity: 0.7;
     filter: alpha(opacity=60); /* For IE8 and earlier */
@@ -51,6 +46,7 @@ div.transboxright {
     display: block;
     width: 25%;
     margin-top: 50px;
+    margin: 0 auto;
     background-color: #FFFF00;
     opacity: 0.7;
     filter: alpha(opacity=60); /* For IE8 and earlier */
@@ -90,17 +86,16 @@ div.titlebox {
 }  
 
 .bokehleft {
-    align-content: center;
     display:block;
+    margin: 0 auto;
     width: 70%;
     height: 600px;
     opacity: 0.9;
 }
 
 .bokehright {
-    align-content: center;
     display:block;
-    margin-left: 10px;
+    margin: 0 auto;
     width: 70%;
     height: 600px;
     opacity: 0.9;
