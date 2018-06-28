@@ -3,44 +3,79 @@
 <html>
   <link rel="shortcut icon" type="image/png" href="styles/favicon.png"/>
   <head>
-    <!-- link to css style sheet-->
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <title>Data visualization</title>
   </head>
-
   <body>
     <header>
       <p class="title"> Vuurwapengeweld in de US </p>
-      
     </header>
+  
     <div class="names"> <p> Anna Stalknecht, Bart van Laatum, Lisa Pleijt, Melanie Baaten </p></div>
-    
+    <p class="title"> <font color="#ffff00">Verschillen tussen staten en jaren </font></p>
 
-    <p class="title"> <font color="#ffff00">Incidenten per categorie op de kaart </font></p>
-    
     <div class="wrapper">
-      <div class="transbox">
-        
-        <p> Dit is de kaart van Amerika exclusief Hawaii en Alaska. De punten op de kaart zijn afzonderlijke incidenten,
-        de verschillende kleuren zijn de verschillende categorieën die de incidenten kunnen
-        hebben. Deze kaart is interactief, bekijk de verschillen tussen de categorieën!</p>
-        
+          
+      <div class="transboxleft">
+        <p> Om een indruk te geven van het vuurwapengeweld in Amerika hebben we een heat map gemaakt van de Verenigde Staten van Amerika.
+        Het gaat hier om het aantal vuurwapengeweld incidenten per 10,000 inwoners over 2017.
+        Er is en redelijk gelijke verdeling te zien, alleen in de staten Arizona, Utah en Idaho ligt de ratio lager.
+        </p>
       </div>
-      <embed class="bokeh_map" src="docs/map_incidents.html">
+
+      <embed class="bokehright" src="docs/states_heat_map.html">
+    </div>
+
+    <div class="wrapper">
+      
+        <div class="transboxright">     
+          <p> Dit is de kaart van Amerika exclusief Hawaii en Alaska. Elk putje op deze kaart
+          is een incident, de verschillende kleuren zijn de verschillende categorieën die de incidenten kunnen
+          hebben. Deze kaart is interactief, bekijk de verschillen tussen de categorieën!</p>  
+      </div>      
+      <embed class="bokehleft" src="docs/map_incidents.html">
     </div>
     
-    <p class="title"> <font color="#ffff00">Meer incidenten in de warme maanden? </font></p>
-    <div class="wrapper">
-       <embed class="bokeh" src="docs/incidents_suicides_per_maand.html">
-      <div class="transboxright">
-        
-        <p> Uit onderzoek blijkt dat mensen agresiever gedrag vertonen in de zomermaanden. In deze plots
-        is te zien of dit ook uit onze dataset blijkt.</p>
-        
+  <div class="wrapper">
+      
+        <div class="transboxleft">     
+          <p> In Hier onder zijn een aantal opmerkelijkeresultaten weergegeven.  
+            In  een  aantal  staten  was  er  te  zien  dat  er  meervictims vielen dan er suspects waren.  
+            Een voorbeeld hiervan is Illinois.  </p>  
+      </div>      
+      <embed class="bokehright" src="docs/somegenderstates.html">
       </div>
-     
-    </div>
+    
+    <p class="title"> <font color="#ffff00">Opmerkelijke patronen in de data </font></p>
+    <div class="wrapper">
+      
+      
+        <div class="transboxright">     
+          <p> In eerste instantie verwachtte we een piek in suicides in de feestmaanden maar uit een artikel bleek dat dit
+          niet het geval was. De decembermaand bevat zelfs over het algemeen de minste suicides, waarbij de lente en de herfst juist 
+          een piek zouden moeten vertonen. Dit is in onze data niet het geval en dit is opvallend</p>  
+      </div>      
+      <embed class="bokehleft" src="docs/suicides_per_maand2.html">
+      </div>
+  
+    <div class="wrapper">
+      <p class="title"> <font color="#ffff00">Patroon in victim/suspect per categorie en leeftijd </font></p>
+
+      <div class="transboxleft">
+        <p>Rechts zien we een grafiek van de verdeling van de leeftijd van verdachten bij vuurwapengeweld in vier categorieën.
+          Wat opvalt is de piek rond de 20 en dat en dat zelfmoord minder leeftijd gebonden is.
+        </p>
+      </div>
+      <embed class="bokehright" src="docs/ages_suspect.html">
+      </div>
+
+    <div class="wrapper">
+  
+        <div class="transboxright">
+          <p>Links is een grafiek te zien van de slachtoffers die vallen bij vuurwapengeweld uit de gekozen categorieën.</p>
+        </div>
+        <embed class="bokehleft" src="docs/ages_victims.html">
+        </div>
 
   </body>
-
 <html>

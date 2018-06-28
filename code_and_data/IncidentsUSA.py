@@ -19,25 +19,30 @@ def get_lat_lon(data, characteristic1, characteristic2, characteristic3, charact
     lon3 = []
     lat4 = []
     lon4 = []
+    lat5 = []
+    lon5 = []
     for incident in data:
         lat = incident["latitude"]
         lon = incident["longitude"]
         if lat != None and lon != None:
-            if lat < 50 and lat > 23 and lon > -128 and lon < -60:
-                if incident["incident_characteristics"] and characteristic2 in incident["incident_characteristics"]:
+            if lat < 50 and lat > 23 and lon > -128 and lon < -60 and incident["incident_characteristics"]:
+                if  characteristic1 in incident["incident_characteristics"]:
                     lat2.append(lat)
                     lon2.append(lon)
-                elif incident["incident_characteristics"] and characteristic3 in incident["incident_characteristics"]:
+                if characteristic2 in incident["incident_characteristics"]:
                     lat3.append(lat)
                     lon3.append(lon)
-                elif incident["incident_characteristics"] and characteristic4 in incident["incident_characteristics"]:
+                if characteristic3 in incident["incident_characteristics"]:
                     lat4.append(lat)
                     lon4.append(lon)
+                if characteristic4 in incident["incident_characteristics"]:
+                    lat5.append(lat)
+                    lon5.append(lon)
 
                 lat1.append(lat)
                 lon1.append(lon)
                 
-    return [(lat1, lon1), (lat2, lon2), (lat3, lon3), (lat4, lon4)]
+    return [(lat1, lon1), (lat2, lon2), (lat3, lon3), (lat4, lon4), (lat5, lon5)]
 
 def create_map(d):
     ''' Gets coordinates of all states of America except for states Alaska and Hawaii.
@@ -62,7 +67,8 @@ def plot(state_map, coords, characteristics):
     p.circle(x=coords[0][1], y=coords[0][0], size=3, fill_color="blue", line_color=None, fill_alpha=0.8, legend="All incidents")
     p.circle(x=coords[1][1], y=coords[1][0], size=3, fill_color="red", line_color=None, fill_alpha=0.8, legend="Suicide")
     p.circle(x=coords[2][1], y=coords[2][0], size=3, fill_color="green", line_color=None, fill_alpha=0.8, legend=characteristics[2])
-    p.circle(x=coords[3][1], y=coords[3][0], size=3, fill_color="orange", line_color=None, fill_alpha=0.8, legend="Mass shooting")
+    p.circle(x=coords[3][1], y=coords[3][0], size=3, fill_color="orange", line_color=None, fill_alpha=0.8, legend=characteristics[3])
+    p.circle(x=coords[4][1], y=coords[4][0], size=3, fill_color="#EE82EE" , line_color=None, fill_alpha=0.8, legend=characteristics[4])
 
     p.grid.grid_line_color = None
     p.legend.location = "bottom_left"
@@ -76,7 +82,7 @@ def main():
 
     with open('gunfire.json') as f:
         d = json.load(f)
-    characteristics = [0, "Suicide^", "Gang involvement", "Mass Shooting (4+ victims injured or killed excluding the subject/suspect/perpetrator, one location)"]
+    characteristics = ["Suicide^", "Gang involvement", "Drug involvement", "Drive-by (car to street, car to car)"]
     state_map = create_map(d)
     coords = get_lat_lon(d, characteristics[0], characteristics[1], characteristics[2], characteristics[3])
     plot(state_map, coords, characteristics)
