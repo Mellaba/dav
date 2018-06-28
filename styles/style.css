@@ -1,3 +1,7 @@
+.content {
+    margin: auto;
+}
+
 body {
     background-image: url("https://github.com/annanas93/gunviolenceUSA/blob/master/styles/background.jpg?raw=true");
     background-color: #A9A9A9;
