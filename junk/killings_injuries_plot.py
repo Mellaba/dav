@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import json
-
+import math
 
 def injured_killed(years, data):
     injuries = {}
@@ -154,7 +154,7 @@ def plot_victims_status(incidents_with_no_victim, incidents_with_kill, incidents
 
     source = ColumnDataSource(data=data)
 
-    p = figure(x_range=years, plot_height=350, title="Verdeling van victims ofzo",
+    p = figure(x_range=years, plot_height=650, plot_width=400, title="Verdeling van victims ofzo",
            toolbar_location=None, tools="")
 
 
@@ -167,7 +167,7 @@ def plot_victims_status(incidents_with_no_victim, incidents_with_kill, incidents
         p.add_tools(hover)
 
     p.y_range.start = 0
-    p.x_range.range_padding = 0.1
+    p.x_range.range_padding = 0.3
     p.xgrid.grid_line_color = None
     p.axis.minor_tick_line_color = None
     p.outline_line_color = None
@@ -189,14 +189,124 @@ def victim_status(data):
     incidents_with_no_victim, incidents_with_kill, incidents_with_injury, incidents_with_kill_and_injury = count_stuff(data)
     plot_victims_status(incidents_with_no_victim, incidents_with_kill, incidents_with_injury, incidents_with_kill_and_injury)
 
+def childs_incidents(data):
+    childs_incidents = ["Child Involved Incident", "Child injured (not child shooter)", 
+                    "Child injured by child", "Child injured self", "Child killed (not child shooter)",
+                    "Child killed by child", "Child killed self", "Child picked up & fired gun", "Child with gun - no shots fired"]
+
+    dicciedict = {}
+
+    for child_inc in childs_incidents:
+        dicciedict[child_inc] = 0
+
+    child_involved_incident = 0
+    all_child_inc = 0
+    for incident in data:
+        if incident['incident_characteristics']:
+            if [child_inc for child_inc in incident['incident_characteristics'] if child_inc in childs_incidents]:
+                #print(incident['incident_characteristics'])
+                all_child_inc += 1
+                if 'Child Involved Incident' in incident['incident_characteristics']:
+                    child_involved_incident += 1
+
+    #print(all_child_inc, child_involved_incident)
+
+
+    for incident in data:
+        if incident['incident_characteristics']:
+            if "Child Involved Incident" in incident['incident_characteristics']:
+                l = [child_inc for child_inc in incident['incident_characteristics'] if child_inc in childs_incidents]
+                for child_inc in l:
+                    dicciedict[child_inc] += 1
+                #print(incident['incident_characteristics'], incident['participant_age'])
+
+    #print(dicciedict)
+
+
+    from bokeh.io import show, output_file
+    output_file("bar_colors.html")
+
+    counts = []
+    for child_inc in childs_incidents:
+        counts.append(dicciedict[child_inc])
+
+    fruits = childs_incidents
+    print(childs_incidents)
+
+    colors = ["#c9d9d3", "#718dbf", "#e84d60", "#624F6D","#c9d9d3", "#718dbf", "#e84d60", "#624F6D", "#c9d9d3"]
+
+    source = ColumnDataSource(data=dict(fruits=fruits, counts=counts, color=colors))
+
+    p = figure(x_range=fruits, y_range=(0,max(counts)+400), plot_height=800, plot_width=1600, title="Fruit Counts",
+               toolbar_location=None, tools="")
+
+    p.vbar(x='fruits', top='counts', width=0.9, color='color', legend="fruits", source=source)
+
+    p.xgrid.grid_line_color = None
+    p.legend.orientation = "horizontal"
+    p.legend.location = "top_center"
+
+    show(p)
+
+def categories_occurence(data): 
+    categories = []
+    with open('list_categories.txt') as f:
+        for line in f:
+            categories.append(line.rstrip())
+
+
+    dicciedict = {}
+
+    for cat in categories:
+        dicciedict[cat] = 0
+
+    #if [child_inc for child_inc in characteristics if child_inc in childs_incidents]
+
+    for incident in data:
+        if incident['incident_characteristics']:
+            for inc in incident['incident_characteristics']:
+                dicciedict[inc] += 1
+
+    from bokeh.io import output_file
+    output_file("categories_occurence.html")
+
+    counts = []
+    for cat in categories:
+        counts.append(dicciedict[cat])
+
+
+
+    c = "#c9d9d3"
+    colors = []
+    for x in range(len(categories)):
+        colors.append(c)
+
+    #colors = ["#c9d9d3", "#718dbf", "#e84d60", "#624F6D","#c9d9d3", "#718dbf", "#e84d60", "#624F6D", "#c9d9d3"]
+
+    source = ColumnDataSource(data=dict(categories=categories, counts=counts, color=colors))
+
+    p = figure(x_range=categories, y_range=(0,max(counts)+400), plot_height=800, plot_width=1600, title="Fruit Counts",
+               toolbar_location=None, tools="")
+
+    p.vbar(x='categories', top='counts', width=0.9, color='color', legend="categories", source=source)
+
+    p.xgrid.grid_line_color = None
+    p.xaxis.major_label_orientation = math.pi/2
+    p.legend.orientation = "horizontal"
+    p.legend.location = "top_center"
+
+    show(p)
+
 
 
 def main():
     with open('gunfire.json') as f:
         data = json.load(f)
 
-    injuries_kill_year(data)
-    victim_status(data)
+    #injuries_kill_year(data)
+    #victim_status(data)
+    #childs_incidents(data)
+    categories_occurence(data)
     return None
 
 main()
