@@ -8,27 +8,24 @@
     <title>Data visualization</title>
   </head>
 
+  <body>
     <header>
-      <p class="title"> Vuurwapengeweld in de USA </p>
+      <p class="title"> Vuurwapengeweld in de US </p>
       
     </header>
     <div class="names"> <p> Anna Stalknecht, Bart van Laatum, Lisa Pleijt, Melanie Baaten </p></div>
 
-    <p class="title"> <font color="#ffff00">Zijn er verschillen tussen staten en jaren? </font></p>
+    <p class="title"> <font color="#ffff00">Incidenten per categorie op de kaart </font></p>
     
     <div class="wrapper">
-    
       <div class="transbox">
-        <div class="text">
         
         <p> Rechts zien we een heatmap van Verenigde Staten van Amerika. 
-          Het gaat hier om het aantal vuurwapengeweld incidenten per 10,000 inwoners.</p>
+        Het gaat hier om het aantal vuurwapengeweld incidenten per 10,000 inwoners.</p>
         
-      <embed class="bokeh_map" src="docs/states_heat_map.html">
       </div>
-
-      </div> 
-    </div>
+      <embed class="bokeh_map" src="docs/states_heat_map.html">
+    </div>    
     
     <div class="wrapper">
       <div class="transbox">
@@ -41,21 +38,18 @@
       <embed class="bokeh_map" src="docs/map_incidents.html">
     </div>
     
-    <p class="title"> <font color="#ffff00">Hoe ziet het patroon tussen killer/victim eruit? </font></p>
-    <div class="text">
+    <p class="title"> <font color="#ffff00">Meer incidenten in de warme maanden? </font></p>
+    <div class="wrapper">
        <embed class="bokeh" src="docs/incidents_suicides_per_maand.html">
       <div class="transboxright">
         
         <p> Uit onderzoek blijkt dat mensen agresiever gedrag vertonen in de zomermaanden. In deze plots
         is te zien of dit ook uit onze dataset blijkt.</p>
         
-            
       </div>
-      
-      
      
     </div>
 
   </body>
 
-</html>
+<html>
