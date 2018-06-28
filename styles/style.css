@@ -1,5 +1,3 @@
-
-
 .content {
     max-width: 85%;
     margin: auto;
@@ -7,7 +5,7 @@
 }
 
 body {
-    background-image: url("https://github.com/annanas93/gunviolenceUSA/blob/master/styles/background.jpg?raw=true");
+    /* background-image: url("https://github.com/annanas93/gunviolenceUSA/blob/master/styles/background.jpg?raw=true"); */
     background-color: #A9A9A9;
     background-repeat: no-repeat;
     background-size: cover;
