@@ -1,6 +1,9 @@
 .center {
-    align-content: center;
     display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 600px;
+    opacity: 0.9;
 }
 .content {
     max-width: 85%;
@@ -89,9 +92,7 @@ div.titlebox {
 .bokehleft {
     display:block;
     margin: 0 auto;
-    width: 70%;
-    height: 600px;
-    opacity: 0.9;
+   
 }
 
 .bokehright {
