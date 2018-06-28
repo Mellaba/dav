@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="be4371e2-83e1-4861-bf37-798bacb81df1"></div>
+        </div>
+        
+        <script type="application/json" id="d165ff78-a959-4e55-ab63-086d134edfd1">
+          {"45a4d73f-4ed2-4c0b-a76e-830395cf0ad5":{"roots":{"references":[{"attributes":{"range":{"id":"ea293e1b-cb3a-4538-917a-d90a193838b6","type":"FactorRange"}},"id":"c1af278b-2d61-46d5-9a74-03d6baa27be6","type":"Dodge"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Male Victim"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"6cd99c07-909f-4087-a958-2e9a4f2993c8","type":"Dodge"}}},"id":"ad816b2c-a7df-4824-b87b-6febce271c5e","type":"VBar"},{"attributes":{"items":[{"id":"d94b167a-e465-4782-a5c6-b084f951fd2e","type":"LegendItem"},{"id":"55be0c6f-5da2-4b2b-bc58-dd66fb3ea587","type":"LegendItem"},{"id":"c4289f87-df5f-4a84-8169-18a4b3f9d399","type":"LegendItem"},{"id":"d4c4056d-dac7-4dba-915c-635296622667","type":"LegendItem"}],"location":"top_left","orientation":"horizontal","plot":{"id":"34ca474f-f42b-4fee-951a-d970713e014f","subtype":"Figure","type":"Plot"}},"id":"ff46fdaa-d52b-429e-86a4-d35404ec61f4","type":"Legend"},{"attributes":{"data_source":{"id":"8e49cece-f366-4c40-a637-3a7b72884373","type":"ColumnDataSource"},"glyph":{"id":"78aedd03-d2ee-4d1f-b014-b980e1f3c33f","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"4fef233c-98f8-4457-8ed1-b9ef7f29b52c","type":"VBar"},"selection_glyph":null,"view":{"id":"fb868a0b-5705-4fce-af23-58bd84d020aa","type":"CDSView"}},"id":"ec73705d-1789-458f-8977-0600900d06c4","type":"GlyphRenderer"},{"attributes":{"callback":null,"end":60},"id":"4869f6de-850d-4302-bc6d-8370b126c95b","type":"Range1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Female Victim"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"7c7eb51c-89b1-46f3-97b5-18183a59ead1","type":"Dodge"}}},"id":"4fef233c-98f8-4457-8ed1-b9ef7f29b52c","type":"VBar"},{"attributes":{},"id":"456ba710-b9ab-4270-89c6-a21da2024da8","type":"CategoricalScale"},{"attributes":{"label":{"value":"Male Suspect"},"renderers":[{"id":"c5f989c7-7ade-457e-ba23-853adae0d56f","type":"GlyphRenderer"}]},"id":"55be0c6f-5da2-4b2b-bc58-dd66fb3ea587","type":"LegendItem"},{"attributes":{"callback":null,"factors":["Average","District of Columbia","Illinois","Minnesota"],"range_padding":0.1},"id":"ea293e1b-cb3a-4538-917a-d90a193838b6","type":"FactorRange"},{"attributes":{"callback":null,"column_names":["fruits2","Male Victim","Male Suspect","Female Victim","Female Suspect"],"data":{"Female Suspect":[0.9643077655886669,1.1379800853485065,0.4842984581421233,0.5289955933770469],"Female Victim":[2.1777041881007158,5.298719772403983,3.6341912524294013,1.1297194028052187],"Male Suspect":[13.789200451938536,50.71123755334281,16.692674274995444,6.5720977956843285],"Male Victim":[9.543348614795777,35.17069701280227,26.782876425077504,4.043678179882172],"fruits2":["Average","District of Columbia","Illinois","Minnesota"]}},"id":"8e49cece-f366-4c40-a637-3a7b72884373","type":"ColumnDataSource"},{"attributes":{"source":{"id":"8e49cece-f366-4c40-a637-3a7b72884373","type":"ColumnDataSource"}},"id":"b438a27f-b8c8-4442-8f53-c1c3c8c21d6e","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto"},"id":"0e9e4036-4891-4242-a0fa-318020ec4d1a","type":"Toolbar"},{"attributes":{"plot":null,"text":"Types per gender per state 1 op de 100.000"},"id":"3d8e9039-e81f-4412-9d27-8e8b432adb67","type":"Title"},{"attributes":{"below":[{"id":"6897442f-6e4d-4103-89ec-317c8cdd3735","type":"CategoricalAxis"}],"left":[{"id":"14e0ecd1-7173-458c-b824-3aec11ef1025","type":"LinearAxis"}],"plot_height":350,"renderers":[{"id":"6897442f-6e4d-4103-89ec-317c8cdd3735","type":"CategoricalAxis"},{"id":"944bd111-fd86-47ce-a61f-4c40280925a2","type":"Grid"},{"id":"14e0ecd1-7173-458c-b824-3aec11ef1025","type":"LinearAxis"},{"id":"8d14312d-79c0-4b6f-9e06-c0830b602749","type":"Grid"},{"id":"ff46fdaa-d52b-429e-86a4-d35404ec61f4","type":"Legend"},{"id":"b815b812-9ca2-4cc1-bbc1-d440815d784a","type":"GlyphRenderer"},{"id":"c5f989c7-7ade-457e-ba23-853adae0d56f","type":"GlyphRenderer"},{"id":"ec73705d-1789-458f-8977-0600900d06c4","type":"GlyphRenderer"},{"id":"9bb3159e-59d5-425b-9595-b4b40cbecd0d","type":"GlyphRenderer"}],"title":{"id":"3d8e9039-e81f-4412-9d27-8e8b432adb67","type":"Title"},"toolbar":{"id":"0e9e4036-4891-4242-a0fa-318020ec4d1a","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"ea293e1b-cb3a-4538-917a-d90a193838b6","type":"FactorRange"},"x_scale":{"id":"456ba710-b9ab-4270-89c6-a21da2024da8","type":"CategoricalScale"},"y_range":{"id":"4869f6de-850d-4302-bc6d-8370b126c95b","type":"Range1d"},"y_scale":{"id":"d6271648-6908-48f9-b1c1-98adc5eb1ba6","type":"LinearScale"}},"id":"34ca474f-f42b-4fee-951a-d970713e014f","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"8e49cece-f366-4c40-a637-3a7b72884373","type":"ColumnDataSource"}},"id":"c24de547-e44a-43df-b86e-705138e8544f","type":"CDSView"},{"attributes":{"source":{"id":"8e49cece-f366-4c40-a637-3a7b72884373","type":"ColumnDataSource"}},"id":"588e4508-e46e-45e1-8c92-a105b35ef783","type":"CDSView"},{"attributes":{},"id":"542398b1-8b82-47e5-82c2-ffbdc9b8dfba","type":"BasicTickFormatter"},{"attributes":{"range":{"id":"ea293e1b-cb3a-4538-917a-d90a193838b6","type":"FactorRange"},"value":-0.25},"id":"6cd99c07-909f-4087-a958-2e9a4f2993c8","type":"Dodge"},{"attributes":{"label":{"value":"Female Suspect"},"renderers":[{"id":"9bb3159e-59d5-425b-9595-b4b40cbecd0d","type":"GlyphRenderer"}]},"id":"d4c4056d-dac7-4dba-915c-635296622667","type":"LegendItem"},{"attributes":{"formatter":{"id":"ea8f2fbb-8f8e-44b6-935c-8d35a1e7c655","type":"CategoricalTickFormatter"},"major_label_orientation":1.5707963267948966,"plot":{"id":"34ca474f-f42b-4fee-951a-d970713e014f","subtype":"Figure","type":"Plot"},"ticker":{"id":"674bc8d9-caeb-4dc6-89d5-9680bb6a2cf9","type":"CategoricalTicker"}},"id":"6897442f-6e4d-4103-89ec-317c8cdd3735","type":"CategoricalAxis"},{"attributes":{},"id":"674bc8d9-caeb-4dc6-89d5-9680bb6a2cf9","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"8e49cece-f366-4c40-a637-3a7b72884373","type":"ColumnDataSource"},"glyph":{"id":"281fab6f-0bd2-4f5b-bf18-ff55f8887157","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b39755b8-ab6e-4438-a84d-5d068ecd162a","type":"VBar"},"selection_glyph":null,"view":{"id":"588e4508-e46e-45e1-8c92-a105b35ef783","type":"CDSView"}},"id":"9bb3159e-59d5-425b-9595-b4b40cbecd0d","type":"GlyphRenderer"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"34ca474f-f42b-4fee-951a-d970713e014f","subtype":"Figure","type":"Plot"},"ticker":{"id":"674bc8d9-caeb-4dc6-89d5-9680bb6a2cf9","type":"CategoricalTicker"}},"id":"944bd111-fd86-47ce-a61f-4c40280925a2","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Female Suspect"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"b4d24636-ddf2-4031-93e3-f4acb0e2a743","type":"Dodge"}}},"id":"b39755b8-ab6e-4438-a84d-5d068ecd162a","type":"VBar"},{"attributes":{"formatter":{"id":"542398b1-8b82-47e5-82c2-ffbdc9b8dfba","type":"BasicTickFormatter"},"plot":{"id":"34ca474f-f42b-4fee-951a-d970713e014f","subtype":"Figure","type":"Plot"},"ticker":{"id":"bc935da9-c204-4c11-b608-663b5faef965","type":"BasicTicker"}},"id":"14e0ecd1-7173-458c-b824-3aec11ef1025","type":"LinearAxis"},{"attributes":{"fill_color":{"value":"#c64737"},"line_color":{"value":"#c64737"},"top":{"field":"Female Suspect"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"b4d24636-ddf2-4031-93e3-f4acb0e2a743","type":"Dodge"}}},"id":"281fab6f-0bd2-4f5b-bf18-ff55f8887157","type":"VBar"},{"attributes":{},"id":"d6271648-6908-48f9-b1c1-98adc5eb1ba6","type":"LinearScale"},{"attributes":{},"id":"bc935da9-c204-4c11-b608-663b5faef965","type":"BasicTicker"},{"attributes":{"label":{"value":"Female Victim"},"renderers":[{"id":"ec73705d-1789-458f-8977-0600900d06c4","type":"GlyphRenderer"}]},"id":"c4289f87-df5f-4a84-8169-18a4b3f9d399","type":"LegendItem"},{"attributes":{"dimension":1,"plot":{"id":"34ca474f-f42b-4fee-951a-d970713e014f","subtype":"Figure","type":"Plot"},"ticker":{"id":"bc935da9-c204-4c11-b608-663b5faef965","type":"BasicTicker"}},"id":"8d14312d-79c0-4b6f-9e06-c0830b602749","type":"Grid"},{"attributes":{"data_source":{"id":"8e49cece-f366-4c40-a637-3a7b72884373","type":"ColumnDataSource"},"glyph":{"id":"ddd83559-a245-4f19-ba03-34c7178076ca","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ad816b2c-a7df-4824-b87b-6febce271c5e","type":"VBar"},"selection_glyph":null,"view":{"id":"c24de547-e44a-43df-b86e-705138e8544f","type":"CDSView"}},"id":"b815b812-9ca2-4cc1-bbc1-d440815d784a","type":"GlyphRenderer"},{"attributes":{"source":{"id":"8e49cece-f366-4c40-a637-3a7b72884373","type":"ColumnDataSource"}},"id":"fb868a0b-5705-4fce-af23-58bd84d020aa","type":"CDSView"},{"attributes":{"range":{"id":"ea293e1b-cb3a-4538-917a-d90a193838b6","type":"FactorRange"},"value":0.5},"id":"b4d24636-ddf2-4031-93e3-f4acb0e2a743","type":"Dodge"},{"attributes":{"fill_color":{"value":"#aeaeb8"},"line_color":{"value":"#aeaeb8"},"top":{"field":"Male Victim"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"6cd99c07-909f-4087-a958-2e9a4f2993c8","type":"Dodge"}}},"id":"ddd83559-a245-4f19-ba03-34c7178076ca","type":"VBar"},{"attributes":{},"id":"ea8f2fbb-8f8e-44b6-935c-8d35a1e7c655","type":"CategoricalTickFormatter"},{"attributes":{"data_source":{"id":"8e49cece-f366-4c40-a637-3a7b72884373","type":"ColumnDataSource"},"glyph":{"id":"e950674f-b8db-48e4-b548-d6f9e8c18562","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"98343d6b-b1b3-492e-b5de-733f8a3e0a56","type":"VBar"},"selection_glyph":null,"view":{"id":"b438a27f-b8c8-4442-8f53-c1c3c8c21d6e","type":"CDSView"}},"id":"c5f989c7-7ade-457e-ba23-853adae0d56f","type":"GlyphRenderer"},{"attributes":{"label":{"value":"Male Victim"},"renderers":[{"id":"b815b812-9ca2-4cc1-bbc1-d440815d784a","type":"GlyphRenderer"}]},"id":"d94b167a-e465-4782-a5c6-b084f951fd2e","type":"LegendItem"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Male Suspect"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"c1af278b-2d61-46d5-9a74-03d6baa27be6","type":"Dodge"}}},"id":"98343d6b-b1b3-492e-b5de-733f8a3e0a56","type":"VBar"},{"attributes":{"fill_color":{"value":"#0d3362"},"line_color":{"value":"#0d3362"},"top":{"field":"Male Suspect"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"c1af278b-2d61-46d5-9a74-03d6baa27be6","type":"Dodge"}}},"id":"e950674f-b8db-48e4-b548-d6f9e8c18562","type":"VBar"},{"attributes":{"fill_color":{"value":"#e69584"},"line_color":{"value":"#e69584"},"top":{"field":"Female Victim"},"width":{"value":0.2},"x":{"field":"fruits2","transform":{"id":"7c7eb51c-89b1-46f3-97b5-18183a59ead1","type":"Dodge"}}},"id":"78aedd03-d2ee-4d1f-b014-b980e1f3c33f","type":"VBar"},{"attributes":{"range":{"id":"ea293e1b-cb3a-4538-917a-d90a193838b6","type":"FactorRange"},"value":0.25},"id":"7c7eb51c-89b1-46f3-97b5-18183a59ead1","type":"Dodge"}],"root_ids":["34ca474f-f42b-4fee-951a-d970713e014f"]},"title":"Bokeh Application","version":"0.12.13"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('d165ff78-a959-4e55-ab63-086d134edfd1').textContent;
+                  var render_items = [{"docid":"45a4d73f-4ed2-4c0b-a76e-830395cf0ad5","elementid":"be4371e2-83e1-4861-bf37-798bacb81df1","modelid":"34ca474f-f42b-4fee-951a-d970713e014f"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    </body>
+</html>
